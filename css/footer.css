@@ -1,0 +1,135 @@
+/* -----------------------------------------------------------
+	font-face
+----------------------------------------------------------- */
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  background-image: url("../images/background-footer.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.footer .footer-content {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer-content {
+    margin: 24px 0px;
+  }
+}
+.footer .logo-footer {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  width: 204px;
+  height: 52px;
+}
+.footer .logo-footer img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer .list-club {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  margin: 24px 0px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 991px) {
+  .footer .list-club {
+    gap: 12px;
+  }
+}
+.footer .list-club li a {
+  display: block;
+  text-decoration: none;
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (max-width: 991px) {
+  .footer .list-club li a {
+    width: 56px;
+    height: 56px;
+  }
+}
+.footer .list-club li a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer .footer-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 24px;
+  text-align: center;
+  max-width: 685px;
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer-description {
+    margin: 24px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+.footer .footer-privacy {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer-privacy {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
