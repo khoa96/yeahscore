@@ -1,0 +1,202 @@
+/* -----------------------------------------------------------
+	font-face
+----------------------------------------------------------- */
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* -----------------------------------------------------------
+	.main-header
+----------------------------------------------------------- */
+.fixed-header .main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+}
+.fixed-header .main-header .logo img {
+  max-height: 35px;
+}
+
+.main-header {
+  position: relative;
+  width: 100%;
+  background: white;
+  transition: all 0.4s ease;
+  padding: 8px 40px;
+  z-index: 1000;
+}
+@media only screen and (max-width: 1199px) {
+  .main-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.main-header .btn-menu {
+  outline: 0;
+  line-height: 1;
+  box-shadow: none;
+  margin-left: 5px;
+}
+.main-header .btn-menu:hover path {
+  stroke: #E34B31;
+}
+.main-header .btn-menu path {
+  transition: all 0.4s ease;
+}
+.main-header .logo img {
+  max-height: 50px;
+  transition: all 0.4s ease;
+}
+@media only screen and (max-width: 575px) {
+  .main-header .logo img {
+    max-width: 150px;
+  }
+}
+.main-header .col-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-header .col-nav .main-nav {
+  margin-top: -2px;
+}
+.main-header .col-nav .main-nav li:first-child {
+  margin-left: 0 !important;
+}
+@media only screen and (max-width: 1199px) {
+  .main-header .col-nav .main-nav li {
+    margin-left: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main-header .col-nav .main-nav li {
+    margin-left: 4px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .main-header .col-nav .main-nav li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main-header .col-nav .main-nav li a {
+    font-size: 15px;
+  }
+}
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-nav li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 22px;
+}
+.main-nav li a {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a202c;
+  text-decoration: none;
+}
+.main-nav li a:hover, .main-nav li a.active {
+  color: #E34B31;
+}
+.main-nav li a:hover:before, .main-nav li a.active:before {
+  opacity: 1;
+  width: 100%;
+}
+.main-nav li a:before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transform: translate(-50%, 0);
+  height: 3px;
+  width: 0;
+  background: #E34B31;
+  transition: all 0.4s ease;
+}
+.main-nav li .btn-header {
+  outline: none;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #E34B31;
+  border-radius: 8px;
+  min-width: 72px;
+}
+.main-nav li .btn-header:focus {
+  outline: none;
+}
+.main-nav li .btn-signin {
+  background: #E34B31;
+  color: #fff;
+}
+.main-nav li .btn-signup {
+  border: 1px solid #E34B31;
+  color: #E34B31;
+  background-color: #fff;
+}
+
+/* -----------------------------------------------------------
+	off canvas menu
+----------------------------------------------------------- */
+.offcanvas.show {
+  width: 100%;
+  border: 0;
+}
+.offcanvas .logo img {
+  max-width: 170px;
+}
+@media only screen and (max-width: 575px) {
+  .offcanvas .logo img {
+    max-width: 140px;
+  }
+}
+.offcanvas .main-nav {
+  text-align: center;
+}
+.offcanvas .main-nav li {
+  display: block;
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=header.css.map */
