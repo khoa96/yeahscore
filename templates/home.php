@@ -397,6 +397,1278 @@
         </ul>
       </div>
     </div>
+
+    <div class="list-score">
+
+      <!-- score item 01 -->
+      <div class="score-item">
+        <div class="score-header">
+          <img src="./images/flag-match-1.png" alt="flag" />
+          <h3 class="name">England - Premier League</h3>
+        </div>
+        <div class="list-timeline">
+
+          <!-- START MATCH REPORT -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon">
+                <img src="./images/icon-arrow-up.png" alt="" class="icon-arrow icon-arrow-up">
+                <img src="./images/icon-arrow-down.png" alt="" class="icon-arrow icon-arrow-down">
+              </div>
+              <!-- collapse title for PC -->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">
+                  <span class="score default">3</span>
+                  <span class="dot">:</span>
+                  <span class="score default">2</span>
+                </div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline math-report">Math Report</span>
+                </div>
+              </div>
+              <!-- end collapse title for PC -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="score default">3</span>
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="score default">2</span>
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline math-report">Math Report</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+            <div class="timeline-content">
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result"></div>
+                  <div class="time-result">67'</div>
+                  <div class="right-result">
+                    <div class="player-info">
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <span class="player-name">Messi <span class="type">(Pen.)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MATCH REPORT  -->
+
+          <!-- START REVIEW  -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon"></div>
+              <!-- collapse title for PC-->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">vs</div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline preview">Preview</span>
+                </div>
+              </div>
+              <!-- end collapse title for pc -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <span class="with-status">vs</span>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline preview">Preview</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+          </div>
+          <!-- END PREVIEW -->
+
+          <!-- START LINEUPS -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon"></div>
+              <!-- collapse title for PC-->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">vs</div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline lineup">Lineups</span>
+                </div>
+              </div>
+              <!-- end collapse title for PC -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <span class="with-status">vs</span>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline lineup">Lineups</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+          </div>
+          <!-- END LINE UPS -->
+
+          <!-- WATCH NOW -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon">
+                <img src="./images/icon-arrow-up.png" alt="" class="icon-arrow icon-arrow-up">
+                <img src="./images/icon-arrow-down.png" alt="" class="icon-arrow icon-arrow-down">
+              </div>
+              <!-- collapse title for PC -->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:30</span>
+                    <span>71'</span>
+                    <span class="live-status">Live</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">
+                  <span class="score live">0</span>
+                  <span class="dot">:</span>
+                  <span class="score live">2</span>
+                </div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline watch-now">Watch Now</span>
+                </div>
+              </div>
+              <!-- END collapse title for PC -->
+
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="live-status">LIVE</span>
+                    <span class="time">1:00</span>
+                  </div>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="score live">1</span>
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="score live">2</span>
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline watch-now">Watch Now</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+            <div class="timeline-content">
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result"></div>
+                  <div class="time-result">67'</div>
+                  <div class="right-result">
+                    <div class="player-info">
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <span class="player-name">Messi <span class="type">(Pen.)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WATCH NOW. -->
+        </div>
+      </div>
+      <!-- end score item 01 -->
+
+      <!-- score item 02-->
+      <div class="score-item">
+        <div class="score-header">
+          <img src="./images/flag-match-1.png" alt="flag" />
+          <h3 class="name">England - Premier League</h3>
+        </div>
+        <div class="list-timeline">
+
+          <!-- START MATCH REPORT -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon">
+                <img src="./images/icon-arrow-up.png" alt="" class="icon-arrow icon-arrow-up">
+                <img src="./images/icon-arrow-down.png" alt="" class="icon-arrow icon-arrow-down">
+              </div>
+              <!-- collapse title for PC -->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">
+                  <span class="score default">3</span>
+                  <span class="dot">:</span>
+                  <span class="score default">2</span>
+                </div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline math-report">Math Report</span>
+                </div>
+              </div>
+              <!-- end collapse title for PC -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="score default">3</span>
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="score default">2</span>
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline math-report">Math Report</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+            <div class="timeline-content">
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result"></div>
+                  <div class="time-result">67'</div>
+                  <div class="right-result">
+                    <div class="player-info">
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <span class="player-name">Messi <span class="type">(Pen.)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MATCH REPORT  -->
+
+          <!-- START REVIEW  -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon"></div>
+              <!-- collapse title for PC-->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">vs</div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline preview">Preview</span>
+                </div>
+              </div>
+              <!-- end collapse title for pc -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <span class="with-status">vs</span>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline preview">Preview</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+          </div>
+          <!-- END PREVIEW -->
+
+          <!-- START LINEUPS -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon"></div>
+              <!-- collapse title for PC-->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">vs</div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline lineup">Lineups</span>
+                </div>
+              </div>
+              <!-- end collapse title for PC -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <span class="with-status">vs</span>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline lineup">Lineups</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+          </div>
+          <!-- END LINE UPS -->
+
+          <!-- WATCH NOW -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon">
+                <img src="./images/icon-arrow-up.png" alt="" class="icon-arrow icon-arrow-up">
+                <img src="./images/icon-arrow-down.png" alt="" class="icon-arrow icon-arrow-down">
+              </div>
+              <!-- collapse title for PC -->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:30</span>
+                    <span>71'</span>
+                    <span class="live-status">Live</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">
+                  <span class="score live">0</span>
+                  <span class="dot">:</span>
+                  <span class="score live">2</span>
+                </div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline watch-now">Watch Now</span>
+                </div>
+              </div>
+              <!-- END collapse title for PC -->
+
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="live-status">LIVE</span>
+                    <span class="time">1:00</span>
+                  </div>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="score live">1</span>
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="score live">2</span>
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline watch-now">Watch Now</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+            <div class="timeline-content">
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result"></div>
+                  <div class="time-result">67'</div>
+                  <div class="right-result">
+                    <div class="player-info">
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <span class="player-name">Messi <span class="type">(Pen.)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WATCH NOW. -->
+        </div>
+      </div>
+      <!-- end score item 02 -->
+
+      <!-- score item 03-->
+      <div class="score-item">
+        <div class="score-header">
+          <img src="./images/flag-match-1.png" alt="flag" />
+          <h3 class="name">England - Premier League</h3>
+        </div>
+        <div class="list-timeline">
+
+          <!-- START MATCH REPORT -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon">
+                <img src="./images/icon-arrow-up.png" alt="" class="icon-arrow icon-arrow-up">
+                <img src="./images/icon-arrow-down.png" alt="" class="icon-arrow icon-arrow-down">
+              </div>
+              <!-- collapse title for PC -->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">
+                  <span class="score default">3</span>
+                  <span class="dot">:</span>
+                  <span class="score default">2</span>
+                </div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline math-report">Math Report</span>
+                </div>
+              </div>
+              <!-- end collapse title for PC -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="score default">3</span>
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="score default">2</span>
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline math-report">Math Report</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+            <div class="timeline-content">
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result"></div>
+                  <div class="time-result">67'</div>
+                  <div class="right-result">
+                    <div class="player-info">
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <span class="player-name">Messi <span class="type">(Pen.)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MATCH REPORT  -->
+
+          <!-- START REVIEW  -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon"></div>
+              <!-- collapse title for PC-->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">vs</div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline preview">Preview</span>
+                </div>
+              </div>
+              <!-- end collapse title for pc -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <span class="with-status">vs</span>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline preview">Preview</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+          </div>
+          <!-- END PREVIEW -->
+
+          <!-- START LINEUPS -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon"></div>
+              <!-- collapse title for PC-->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">vs</div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline lineup">Lineups</span>
+                </div>
+              </div>
+              <!-- end collapse title for PC -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <span class="with-status">vs</span>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline lineup">Lineups</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+          </div>
+          <!-- END LINE UPS -->
+
+          <!-- WATCH NOW -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon">
+                <img src="./images/icon-arrow-up.png" alt="" class="icon-arrow icon-arrow-up">
+                <img src="./images/icon-arrow-down.png" alt="" class="icon-arrow icon-arrow-down">
+              </div>
+              <!-- collapse title for PC -->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:30</span>
+                    <span>71'</span>
+                    <span class="live-status">Live</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">
+                  <span class="score live">0</span>
+                  <span class="dot">:</span>
+                  <span class="score live">2</span>
+                </div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline watch-now">Watch Now</span>
+                </div>
+              </div>
+              <!-- END collapse title for PC -->
+
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="live-status">LIVE</span>
+                    <span class="time">1:00</span>
+                  </div>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="score live">1</span>
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="score live">2</span>
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline watch-now">Watch Now</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+            <div class="timeline-content">
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result"></div>
+                  <div class="time-result">67'</div>
+                  <div class="right-result">
+                    <div class="player-info">
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <span class="player-name">Messi <span class="type">(Pen.)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WATCH NOW. -->
+        </div>
+      </div>
+      <!-- end score item 03 -->
+
+
+      <!-- score item 04-->
+      <div class="score-item">
+        <div class="score-header">
+          <img src="./images/flag-match-1.png" alt="flag" />
+          <h3 class="name">England - Premier League</h3>
+        </div>
+        <div class="list-timeline">
+
+          <!-- START MATCH REPORT -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon">
+                <img src="./images/icon-arrow-up.png" alt="" class="icon-arrow icon-arrow-up">
+                <img src="./images/icon-arrow-down.png" alt="" class="icon-arrow icon-arrow-down">
+              </div>
+              <!-- collapse title for PC -->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">
+                  <span class="score default">3</span>
+                  <span class="dot">:</span>
+                  <span class="score default">2</span>
+                </div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline math-report">Math Report</span>
+                </div>
+              </div>
+              <!-- end collapse title for PC -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="score default">3</span>
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="score default">2</span>
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline math-report">Math Report</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+            <div class="timeline-content">
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result"></div>
+                  <div class="time-result">67'</div>
+                  <div class="right-result">
+                    <div class="player-info">
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <span class="player-name">Messi <span class="type">(Pen.)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MATCH REPORT  -->
+
+          <!-- START REVIEW  -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon"></div>
+              <!-- collapse title for PC-->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">vs</div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline preview">Preview</span>
+                </div>
+              </div>
+              <!-- end collapse title for pc -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <span class="with-status">vs</span>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline preview">Preview</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+          </div>
+          <!-- END PREVIEW -->
+
+          <!-- START LINEUPS -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon"></div>
+              <!-- collapse title for PC-->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:00</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">vs</div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline lineup">Lineups</span>
+                </div>
+              </div>
+              <!-- end collapse title for PC -->
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="time">1:00</span>
+                  </div>
+                  <span class="with-status">vs</span>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline lineup">Lineups</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+          </div>
+          <!-- END LINE UPS -->
+
+          <!-- WATCH NOW -->
+          <div class="timeline-item">
+            <button type="button" class="collapsible">
+              <div class="collapse-icon">
+                <img src="./images/icon-arrow-up.png" alt="" class="icon-arrow icon-arrow-up">
+                <img src="./images/icon-arrow-down.png" alt="" class="icon-arrow icon-arrow-down">
+              </div>
+              <!-- collapse title for PC -->
+              <div class="collapse-title">
+                <div class="left-column">
+                  <div class="time-info">
+                    <span class="time">20:30</span>
+                    <span>71'</span>
+                    <span class="live-status">Live</span>
+                  </div>
+                  <div class="club-info">
+                    <a href="#" class="name-club">Manchester United</a>
+                    <img src="./images/mc-club.png" alt="" />
+                  </div>
+                </div>
+                <div class="middle-column">
+                  <span class="score live">0</span>
+                  <span class="dot">:</span>
+                  <span class="score live">2</span>
+                </div>
+                <div class="right-column">
+                  <div class="club-info">
+                    <img src="./images/mu-club.png" alt="" />
+                    <a href="#" class="name-club">Manchester City</a>
+                  </div>
+                  <span class="btn-timeline watch-now">Watch Now</span>
+                </div>
+              </div>
+              <!-- END collapse title for PC -->
+
+
+              <!-- collapse title for MOBILE -->
+              <div class="collapse-title-mb">
+                <div class="collapse-title-mb__left">
+                  <div class="time-info">
+                    <span class="live-status">LIVE</span>
+                    <span class="time">1:00</span>
+                  </div>
+                  <div class="list-club">
+                    <div class="club-item">
+                      <span class="score live">1</span>
+                      <span class="club-name">Man United</span>
+                    </div>
+                    <div class="club-item">
+                      <span class="score live">2</span>
+                      <span class="club-name">Liverpool</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse-title-mb__right">
+                  <span class="btn-timeline watch-now">Watch Now</span>
+                </div>
+              </div>
+              <!-- END collapse title for MOBILE -->
+            </button>
+            <div class="timeline-content">
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result"></div>
+                  <div class="time-result">67'</div>
+                  <div class="right-result">
+                    <div class="player-info">
+                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <span class="player-name">Messi <span class="type">(Pen.)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WATCH NOW. -->
+        </div>
+      </div>
+      <!-- end score item 04-->
+    </div>
   </div>
 </div>
 <script>
@@ -434,7 +1706,7 @@
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 2,
           }
         }
       ]
@@ -443,6 +1715,33 @@
     $('.banner-slider .slick-next').on('click', function() {
       moderatorsPCSlider.slick('next');
     });
-
   });
+
+  /* -----------------------------------------------------------
+    handle toggle show timeline of score.
+  ----------------------------------------------------------- */
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      const isActive = this.classList.contains('active')
+      const iconArrowUp = this.querySelector('.icon-arrow-up')
+      const iconArrowDown = this.querySelector('.icon-arrow-down')
+      if (isActive) {
+        iconArrowDown.style.display = 'none'
+        iconArrowUp.style.display = 'block'
+      } else {
+        iconArrowDown.style.display = 'block'
+        iconArrowUp.style.display = 'none'
+      }
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
 </script>

@@ -13,8 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="css/font-awesome-all.min.css">
 		<link rel="stylesheet" type="text/css" href="css/slick.min.css">
 		<link rel="stylesheet" type="text/css" href="css/header.css">
-		<link rel="stylesheet" type="text/css" href="css/home.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file://-->
