@@ -1717,9 +1717,8 @@
     });
   });
 
-
   /* -----------------------------------------------------------
-    handle toggle show timeline of score
+    handle toggle show timeline of score.
   ----------------------------------------------------------- */
   var coll = document.getElementsByClassName("collapsible");
   var i;
