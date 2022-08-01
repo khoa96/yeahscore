@@ -1,0 +1,392 @@
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.live-wrapper {
+  .header {
+    width: 100%;
+    height: 1000px;
+    background-image: url("../images/background-live-header.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .play-match {
+      width: 100%;
+      height: auto;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .player-wrapper {
+      width: 100%;
+      display: flex;
+      height: 695px;
+      justify-content: center;
+
+      @media only screen and (max-width: 1500px) {
+        height: 560px;
+      }
+
+      .box-player {
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        max-width: 1230px;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .box-chat {
+        min-width: 370px;
+        max-width: 370px;
+        display: flex;
+        flex-direction: column;
+
+        .chat-header {
+          width: 100%;
+          height: auto;
+          padding: 10px 16px;
+          display: flex;
+          background-color: #652079;
+          justify-content: space-between;
+          align-items: center;
+          .box-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+          }
+
+          .list-dot {
+            display: flex;
+            gap: 5px;
+            cursor: pointer;
+
+            .dot {
+              width: 4px;
+              height: 4px;
+              border: none;
+              border-radius: 50%;
+              background-color: #fff;
+            }
+          }
+        }
+
+        .chat-content {
+          flex-grow: 1;
+          background-color: #fff;
+          padding: 16px 12px 12px 16px;
+          max-height: 600px;
+          overflow: auto;
+          @media only screen and (max-width: 1500px) {
+            max-height: 470px;
+          }
+
+          /* width */
+          &::-webkit-scrollbar {
+            width: 5px;
+          }
+
+          /* Track */
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 5px;
+          }
+          .list-message {
+            width: 100%;
+            height: auto;
+            padding-right: 5px;
+            .message-item {
+              display: flex;
+              gap: 12px;
+              margin-bottom: 16px;
+
+              .avatar {
+                display: block;
+                text-decoration: none;
+                min-width: 40px;
+                min-height: 40px;
+                border: none;
+                border-radius: 50%;
+
+                img {
+                  display: block;
+                  min-width: 40px;
+                  object-fit: cover;
+                  border: none;
+                  border-radius: 50%;
+                }
+              }
+
+              .message-detail {
+                margin: 0;
+                padding: 0;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #1a202c;
+              }
+            }
+          }
+        }
+
+        .chat-form {
+          width: 100%;
+          height: fit-content;
+          padding: 16px;
+          background-color: #fff;
+          .form-wrapper {
+            display: flex;
+            position: relative;
+            width: 100%;
+
+            form {
+              display: block;
+              width: 100%;
+              cursor: pointer;
+            }
+            input {
+              width: 100%;
+              height: auto;
+              display: block;
+              padding: 10px 50px 10px 20px;
+              background: #edf2f7;
+              border-radius: 1000px;
+              border: none;
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .btn-send {
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background: #e34b31;
+              border: none;
+              outline: none;
+              border-radius: 50%;
+              cursor: pointer;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .control {
+      width: 100%;
+      height: auto;
+      background-color: #31113a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      .list-server {
+        display: flex;
+        gap: 12px;
+
+        .btn-server {
+          outline: none;
+          padding: 8px 16px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          border-radius: 8px;
+          color: #e34b31;
+          border: 1px solid #e34b31;
+          background-color: transparent;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        .active {
+          color: #fff;
+          background-color: #e34b31;
+        }
+      }
+
+      .list-contact {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+          a {
+            text-decoration: none;
+            display: block;
+
+            img {
+              display: block;
+              width: 24px;
+              height: 24px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+
+    .bet-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .list-club {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        .club-item {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          .club-name {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: #ffffff;
+          }
+
+          img {
+            display: block;
+            width: 64px;
+            height: 64px;
+            border: none;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .table-bet {
+      color: #fff;
+      .customer-nav-link {
+        border: none;
+        border-radius: 8px 0px 0px 8px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        text-align: left;
+        padding: 24px 20px;
+        margin-bottom: 6px;
+        background: #652079;
+        box-shadow: inset -6px 0px 4px rgba(0, 0, 0, 0.08);
+        border-radius: 8px 0px 0px 8px;
+        min-width: 200px;
+      }
+
+      .active {
+        border-left: 3px solid #e34b31;
+        background-color: #fff;
+        color: #1a202c;
+      }
+      .tab-pane {
+        border: none;
+      }
+
+      .tab-bet-content {
+        min-width: 1000px;
+        height: auto;
+        background-color: #fff;
+        border-radius: 10px !important;
+        display: flex;
+        padding: 24px;
+        gap: 64px;
+
+        .bet-item {
+          width: 50%;
+
+          .step-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1a202c;
+            display: inline-block;
+            margin-bottom: 16px;
+          }
+
+          .list-bet-club {
+            display: flex;
+            gap: 24px;
+
+            .active {
+              border: 1px solid #E34B31;
+            }
+            .bet-club-item {
+              width: 50%;
+              min-width: 230px;
+              background: #ffffff;
+              border: 1px solid #e2e8f0;
+              border-radius: 8px;
+              padding: 16px 0px;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+
+              img {
+                display: block;
+                width: 64px;
+                height: 64px;
+                border: none;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+
+              .club-name {
+                display: inline-block;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #1a202c;
+                margin: 12px 0px 4px;
+              }
+
+              .status {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #718096;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

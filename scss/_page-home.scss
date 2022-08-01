@@ -336,6 +336,9 @@
       width: 100%;
       height: auto;
       margin-bottom: 32px;
+      @include mq(max_md) {
+        margin-bottom: 24px;
+      }
 
       .score-header {
         width: 100%;
@@ -526,16 +529,26 @@
                 .math-report {
                   color: #e34b31;
                   border: 1px solid #e34b31;
+
+                  &:hover {
+                    background-color: rgba(227, 75, 49, 0.04);
+                  }
                 }
 
                 .preview {
                   color: #461a53;
                   border: 1px solid #461a53;
+                  &:hover {
+                    background-color: rgba(70, 26, 83, 0.04);
+                  }
                 }
 
                 .lineup {
                   color: #18b745;
                   border: 1px solid #18b745;
+                  &:hover {
+                    background-color: rgba(24, 183, 69, 0.04);
+                  }
                 }
 
                 .watch-now {
@@ -636,18 +649,27 @@
               .math-report {
                 color: #e34b31;
                 border: 1px solid #e34b31;
+
+                &:hover {
+                  background-color: rgba(227, 75, 49, 0.04);
+                }
               }
 
               .preview {
                 color: #461a53;
                 border: 1px solid #461a53;
+                &:hover {
+                  background-color: rgba(70, 26, 83, 0.04);
+                }
               }
 
               .lineup {
                 color: #18b745;
                 border: 1px solid #18b745;
+                &:hover {
+                  background-color: rgba(24, 183, 69, 0.04);
+                }
               }
-
               .watch-now {
                 color: #fff;
                 background-color: #18b745;

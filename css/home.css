@@ -347,6 +347,11 @@
   height: auto;
   margin-bottom: 32px;
 }
+@media only screen and (max-width: 991px) {
+  .main-wrapper .list-score .score-item {
+    margin-bottom: 24px;
+  }
+}
 .main-wrapper .list-score .score-item .score-header {
   width: 100%;
   padding: 12px 16px;
@@ -526,13 +531,22 @@
   color: #e34b31;
   border: 1px solid #e34b31;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .math-report:hover {
+  background-color: rgba(227, 75, 49, 0.04);
+}
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .preview {
   color: #461a53;
   border: 1px solid #461a53;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .preview:hover {
+  background-color: rgba(70, 26, 83, 0.04);
+}
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .lineup {
   color: #18b745;
   border: 1px solid #18b745;
+}
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .lineup:hover {
+  background-color: rgba(24, 183, 69, 0.04);
 }
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .watch-now {
   color: #fff;
@@ -630,13 +644,22 @@
   color: #e34b31;
   border: 1px solid #e34b31;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .math-report:hover {
+  background-color: rgba(227, 75, 49, 0.04);
+}
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .preview {
   color: #461a53;
   border: 1px solid #461a53;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .preview:hover {
+  background-color: rgba(70, 26, 83, 0.04);
+}
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .lineup {
   color: #18b745;
   border: 1px solid #18b745;
+}
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .lineup:hover {
+  background-color: rgba(24, 183, 69, 0.04);
 }
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .watch-now {
   color: #fff;
@@ -741,4 +764,4 @@
   color: #718096;
 }
 
-/*# sourceMappingURL=test.css.map */
+/*# sourceMappingURL=home.css.map */

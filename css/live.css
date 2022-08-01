@@ -1,0 +1,203 @@
+/* -----------------------------------------------------------
+	font-face
+----------------------------------------------------------- */
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.live-wrapper .header {
+  width: 100%;
+  height: 1000px;
+  background-image: url("../images/background-live-header.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.live-wrapper .header .play-match {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+}
+.live-wrapper .header .player-wrapper {
+  width: 100%;
+  display: flex;
+  height: 695px;
+  justify-content: center;
+}
+.live-wrapper .header .player-wrapper .box-player {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  max-width: 1230px;
+}
+.live-wrapper .header .player-wrapper .box-player iframe {
+  width: 100%;
+  height: 100%;
+}
+.live-wrapper .header .player-wrapper .box-chat {
+  min-width: 370px;
+  max-width: 370px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-header {
+  width: 100%;
+  height: auto;
+  padding: 10px 16px;
+  display: flex;
+  background-color: #652079;
+  justify-content: space-between;
+  align-items: center;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-header .box-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-header .list-dot {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-header .list-dot .dot {
+  width: 4px;
+  height: 4px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 16px;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message {
+  width: 100%;
+  height: auto;
+  border: 1px solid green;
+  padding-right: 5px;
+  overflow: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message::-webkit-scrollbar {
+  width: 5px;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message .message-item {
+  display: flex;
+  gap: 12px;
+  border: 1px solid blue;
+  margin-bottom: 16px;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message .message-item .avatar {
+  display: block;
+  text-decoration: none;
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  border-radius: 50%;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message .message-item .avatar img {
+  display: block;
+  min-width: 40px;
+  object-fit: cover;
+  border: none;
+  border-radius: 50%;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message .message-item .message-detail {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a202c;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-form {
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  background-color: #fff;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper form {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper input {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px 50px 10px 20px;
+  background: #edf2f7;
+  border-radius: 1000px;
+  border: none;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper input:focus {
+  outline: none;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper .btn-send {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e34b31;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper .btn-send:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=live.css.map */
