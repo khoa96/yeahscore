@@ -131,6 +131,7 @@
               <button class="nav-link customer-nav-link" id="v-pills-last-team-tab" data-bs-toggle="pill" data-bs-target="#v-pills-last-team" type="button" role="tab" aria-controls="v-pills-last-team" aria-selected="false">Last team to score</button>
 
             </div>
+            <!-- content tab 2-way -->
             <div class="tab-content" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="v-pills-2-way" role="tabpanel" aria-labelledby="v-pills-2-way-tab">
                 <div class="tab-bet-content">
@@ -143,22 +144,49 @@
                         <span class="status">15% picked</span>
                       </div>
                       <div class="bet-club-item active">
-                      <img src="./images/lei-club.png" alt="">
+                        <img src="./images/lei-club.png" alt="">
                         <span class="club-name">Liverpool</span>
                         <span class="status">51% picked</span>
                       </div>
                     </div>
                   </div>
-                   <div class="bet-item">
-                   <span class="step-title">2. You bet</span>
-                   </div>
+                  <div class="bet-item">
+                    <span class="step-title">2. You bet</span>
+                    <div class="choose-price">
+                      <div class="list-price">
+                        <span class="price-item">$1</span>
+                        <span class="price-item">$2</span>
+                        <span class="price-item">$5</span>
+                        <span class="price-item">$10</span>
+                      </div>
+
+                      <p class="win-message">
+                        If win, you get: <span class="win-price">$50</span>
+                      </p>
+                    </div>
+                    <div class="input-form">
+                      <img src="./images/icon-dollar.png" class="icon-dollar" alt="" />
+                      <form action="#" method="#">
+                        <input type="text" name="" value="3" placeholder="">
+                      </form>
+                    </div>
+
+                    <div class="box-submit">
+                      <p class="intro-message">
+                        <img src="./images/icon-infor.png" alt="" />
+                        <span>Rule of Double Chance</span>
+                      </p>
+                      <button class="btn-confirm">Confirm</button>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- content tab 2-way -->
               <div class="tab-pane fade" id="v-pills-odd-even" role="tabpanel" aria-labelledby="v-pills-odd-even-tab">
-              <div class="tab-bet-content"></div>
+                <div class="tab-bet-content"></div>
               </div>
               <div class="tab-pane fade" id="v-pills-last-team" role="tabpanel" aria-labelledby="v-pills-last-team-tab">
-              <div class="tab-bet-content"></div>
+                <div class="tab-bet-content"></div>
               </div>
             </div>
           </div>

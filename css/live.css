@@ -31,25 +31,32 @@
 }
 .live-wrapper .header {
   width: 100%;
-  height: 1000px;
+  height: auto;
   background-image: url("../images/background-live-header.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding-bottom: 108px;
+  border: 3px solid red;
 }
 .live-wrapper .header .play-match {
   width: 100%;
   height: auto;
   padding: 40px;
-  border: 1px solid green;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .live-wrapper .header .player-wrapper {
   width: 100%;
   display: flex;
   height: 695px;
   justify-content: center;
+}
+@media only screen and (max-width: 1500px) {
+  .live-wrapper .header .player-wrapper {
+    height: 560px;
+  }
 }
 .live-wrapper .header .player-wrapper .box-player {
   display: flex;
@@ -65,7 +72,6 @@
 .live-wrapper .header .player-wrapper .box-chat {
   min-width: 370px;
   max-width: 370px;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -102,32 +108,36 @@
 .live-wrapper .header .player-wrapper .box-chat .chat-content {
   flex-grow: 1;
   background-color: #fff;
-  padding: 16px;
-}
-.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message {
-  width: 100%;
-  height: auto;
-  border: 1px solid green;
-  padding-right: 5px;
+  padding: 16px 12px 12px 16px;
+  max-height: 600px;
   overflow: auto;
   /* width */
   /* Track */
   /* Handle */
 }
-.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message::-webkit-scrollbar {
+@media only screen and (max-width: 1500px) {
+  .live-wrapper .header .player-wrapper .box-chat .chat-content {
+    max-height: 470px;
+  }
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content::-webkit-scrollbar {
   width: 5px;
 }
-.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message::-webkit-scrollbar-track {
+.live-wrapper .header .player-wrapper .box-chat .chat-content::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message::-webkit-scrollbar-thumb {
+.live-wrapper .header .player-wrapper .box-chat .chat-content::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 5px;
+}
+.live-wrapper .header .player-wrapper .box-chat .chat-content .list-message {
+  width: 100%;
+  height: auto;
+  padding-right: 5px;
 }
 .live-wrapper .header .player-wrapper .box-chat .chat-content .list-message .message-item {
   display: flex;
   gap: 12px;
-  border: 1px solid blue;
   margin-bottom: 16px;
 }
 .live-wrapper .header .player-wrapper .box-chat .chat-content .list-message .message-item .avatar {
@@ -155,7 +165,7 @@
 }
 .live-wrapper .header .player-wrapper .box-chat .chat-form {
   width: 100%;
-  height: auto;
+  height: fit-content;
   padding: 16px;
   background-color: #fff;
 }
@@ -198,6 +208,215 @@
 }
 .live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper .btn-send:focus {
   outline: none;
+}
+.live-wrapper .header .control {
+  width: 100%;
+  height: auto;
+  background-color: #31113a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+.live-wrapper .header .control .list-server {
+  display: flex;
+  gap: 12px;
+}
+.live-wrapper .header .control .list-server .btn-server {
+  outline: none;
+  padding: 8px 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  color: #e34b31;
+  border: 1px solid #e34b31;
+  background-color: transparent;
+}
+.live-wrapper .header .control .list-server .btn-server:focus {
+  outline: none;
+}
+.live-wrapper .header .control .list-server .active {
+  color: #fff;
+  background-color: #e34b31;
+}
+.live-wrapper .header .control .list-contact {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.live-wrapper .header .control .list-contact li a {
+  text-decoration: none;
+  display: block;
+}
+.live-wrapper .header .control .list-contact li a img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.live-wrapper .header .bet-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.live-wrapper .header .bet-wrapper .list-club {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.live-wrapper .header .bet-wrapper .list-club .club-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.live-wrapper .header .bet-wrapper .list-club .club-item .club-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.live-wrapper .header .bet-wrapper .list-club .club-item img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.live-wrapper .header .table-bet {
+  color: #fff;
+}
+.live-wrapper .header .table-bet .customer-nav-link {
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-align: left;
+  padding: 24px 20px;
+  margin-bottom: 6px;
+  background: #652079;
+  box-shadow: inset -6px 0px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px 0px 0px 8px;
+  min-width: 200px;
+}
+.live-wrapper .header .table-bet .active {
+  border-left: 3px solid #e34b31;
+  background-color: #fff;
+  color: #1a202c;
+}
+.live-wrapper .header .table-bet .tab-pane {
+  border: none;
+}
+.live-wrapper .header .table-bet .tab-bet-content {
+  min-width: 1000px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px !important;
+  display: flex;
+  padding: 24px;
+  gap: 64px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item {
+  width: 50%;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .step-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a202c;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .list-bet-club {
+  display: flex;
+  gap: 24px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .list-bet-club .active {
+  border: 1px solid #E34B31;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .list-bet-club .bet-club-item {
+  width: 50%;
+  min-width: 230px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .list-bet-club .bet-club-item img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .list-bet-club .bet-club-item .club-name {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a202c;
+  margin: 12px 0px 4px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .list-bet-club .bet-club-item .status {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #718096;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price .list-price {
+  display: flex;
+  gap: 8px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price .list-price .price-item {
+  display: block;
+  background: #EDF2F7;
+  border-radius: 8px;
+  width: 42px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price .win-message {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price .win-message .win-price {
+  color: #18B745;
 }
 
 /*# sourceMappingURL=live.css.map */

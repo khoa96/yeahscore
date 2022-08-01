@@ -31,11 +31,12 @@
 }
 .live-wrapper .header {
   width: 100%;
-  height: 1000px;
+  height: auto;
   background-image: url("../images/background-live-header.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding-bottom: 108px;
 }
 .live-wrapper .header .play-match {
   width: 100%;
@@ -355,6 +356,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 .live-wrapper .header .table-bet .tab-bet-content .bet-item .list-bet-club .bet-club-item img {
   display: block;
@@ -380,5 +382,115 @@
   line-height: 21px;
   color: #718096;
 }
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price .list-price {
+  display: flex;
+  gap: 8px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price .list-price .price-item {
+  display: block;
+  background: #EDF2F7;
+  border-radius: 8px;
+  width: 42px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1A202C;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price .win-message {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .choose-price .win-message .win-price {
+  color: #18B745;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .input-form {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #1A202C;
+  padding: 12px 2px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .input-form .icon-dollar {
+  display: block;
+  min-width: 28px;
+  max-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .input-form input {
+  display: block;
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: #1A202C;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .input-form input:focus {
+  outline: none;
+  border: none;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .box-submit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .box-submit .intro-message {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .box-submit .intro-message img {
+  display: block;
+  min-width: 18px;
+  max-width: 18px;
+  object-fit: cover;
+  margin-right: 4px;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .box-submit .intro-message span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #461A53;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .box-submit .btn-confirm {
+  cursor: pointer;
+  padding: 8px 13px;
+  background: #E34B31;
+  border-radius: 8px;
+  min-width: 93px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+}
+.live-wrapper .header .table-bet .tab-bet-content .bet-item .box-submit .btn-confirm:focus {
+  outline: none;
+}
 
-/*# sourceMappingURL=live-2.css.map */
+/*# sourceMappingURL=live-3.css.map */
