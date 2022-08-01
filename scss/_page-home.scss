@@ -2,7 +2,7 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
-
+@import "common";
 /* -----------------------------------------------------------
 	.con-benefit
 ----------------------------------------------------------- */
@@ -265,6 +265,8 @@
   margin-top: 130px;
   background-color: #fff;
   height: auto;
+  position: relative;
+  z-index: 9999999;
 
   @include mq(max_md) {
     margin-top: 24px;

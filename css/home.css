@@ -30,6 +30,34 @@
   font-display: swap;
 }
 /* -----------------------------------------------------------
+	common
+----------------------------------------------------------- */
+body, html {
+  font-family: "SVN-Poppins";
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button,
+.btn {
+  transition: all 0.4s ease;
+}
+
+.over {
+  transition: all 0.4s ease;
+}
+.over:hover {
+  opacity: 0.7;
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
+/* -----------------------------------------------------------
 	.con-benefit
 ----------------------------------------------------------- */
 .banner-wrapper {
@@ -274,6 +302,8 @@
   margin-top: 130px;
   background-color: #fff;
   height: auto;
+  position: relative;
+  z-index: 9999999;
 }
 @media only screen and (max-width: 991px) {
   .main-wrapper {
@@ -741,4 +771,4 @@
   color: #718096;
 }
 
-/*# sourceMappingURL=test.css.map */
+/*# sourceMappingURL=home.css.map */
