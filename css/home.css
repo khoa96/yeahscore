@@ -144,13 +144,17 @@ button,
 }
 .banner-wrapper .banner-content .banner-slider .box-slider-pc .box-slider {
   overflow: hidden;
+  max-height: 220px;
+  max-width: 1200px;
+}
+.banner-wrapper .banner-content .banner-slider .box-slider-pc .slide-item:not(.slick-active) {
+  opacity: 0.6;
 }
 .banner-wrapper .banner-content .banner-slider .box-slider-pc .slide-item {
-  min-width: 145px;
-  max-width: 145px;
+  min-width: 146px;
+  max-width: 146px;
   height: auto;
   border-radius: 8px;
-  margin-right: 12px;
   background-color: #fff;
   padding: 12px 8px;
   display: flex;
@@ -162,6 +166,10 @@ button,
   border: 1px solid #edf2f7;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  margin-right: 12px;
+}
+.banner-wrapper .banner-content .banner-slider .box-slider-pc .slide-item:last-child {
+  margin-right: 0 !important;
 }
 .banner-wrapper .banner-content .banner-slider .box-slider-pc .slide-item .item-header {
   width: 100%;
@@ -272,7 +280,7 @@ button,
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 25%;
+  top: 50%;
   z-index: 2;
   width: 40px;
   height: 40px;
@@ -283,7 +291,7 @@ button,
   outline: 0;
   padding: 0;
   margin: 0;
-  border: 1px solid #EDF2F7;
+  border: 1px solid #edf2f7;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 @media only screen and (max-width: 991px) {
@@ -292,11 +300,11 @@ button,
   }
 }
 .banner-wrapper .banner-content .banner-slider .slick-prev {
-  left: 0;
+  left: -10px;
   transform: translate(-50%, -50%);
 }
 .banner-wrapper .banner-content .banner-slider .slick-next {
-  right: 0;
+  right: 85px;
   transform: translate(50%, -50%);
 }
 
@@ -762,11 +770,7 @@ button,
   color: #1a202c;
 }
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .timeline-content .timeline-detail .timeline-result .player-info .icon-ball {
-  display: block;
-  width: 24px;
-  height: 24px;
-  border: none;
-  border-radius: 50%;
+  max-width: 20px;
   object-fit: cover;
 }
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .timeline-content .timeline-detail .timeline-result .player-info .type {
