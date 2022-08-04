@@ -89,11 +89,14 @@
         position: relative;
         .box-slider {
           overflow: hidden;
-          max-height: 220px;
-          max-width: 1200px;
+          max-height: 215px;
+          width: 1200px;
         }
+
         .slide-item:not(.slick-active) {
-          opacity: 0.6;
+          opacity: 0.7;
+         // background: linear-gradient(to right, rgba(0,0, 0, 0),rgba(0, 0,0, 0.6));
+          background: linear-gradient(90deg, rgba(0, 0, 0, 1), 0%, rgba(0, 0, 0, 0) 100%) !important;
         }
         .slide-item {
           min-width: 146px;
@@ -405,16 +408,19 @@
             padding: 8px 12px;
             border-bottom: 1px solid #edf2f7;
 
+            &:hover {
+              cursor: pointer;
+              background-color: #EDF2F7 !important;
+            }
+
             @include mq(max_md) {
               padding: 6px 12px;
             }
 
             .icon-arrow {
               display: block;
-              width: 24px;
-              height: 24px;
-              min-width: 24px;
-              min-height: 24px;
+              max-width: 10px;
+              object-fit: cover;
             }
 
             .collapse-icon {

@@ -144,11 +144,12 @@ button,
 }
 .banner-wrapper .banner-content .banner-slider .box-slider-pc .box-slider {
   overflow: hidden;
-  max-height: 220px;
-  max-width: 1200px;
+  max-height: 215px;
+  width: 1200px;
 }
 .banner-wrapper .banner-content .banner-slider .box-slider-pc .slide-item:not(.slick-active) {
-  opacity: 0.6;
+  opacity: 0.7;
+  background: linear-gradient(90deg, rgb(0, 0, 0), 0%, rgba(0, 0, 0, 0) 100%) !important;
 }
 .banner-wrapper .banner-content .banner-slider .box-slider-pc .slide-item {
   min-width: 146px;
@@ -440,6 +441,10 @@ button,
   padding: 8px 12px;
   border-bottom: 1px solid #edf2f7;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible:hover {
+  cursor: pointer;
+  background-color: #EDF2F7 !important;
+}
 @media only screen and (max-width: 991px) {
   .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible {
     padding: 6px 12px;
@@ -447,10 +452,8 @@ button,
 }
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .icon-arrow {
   display: block;
-  width: 24px;
-  height: 24px;
-  min-width: 24px;
-  min-height: 24px;
+  max-width: 10px;
+  object-fit: cover;
 }
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-icon {
   display: inline-block;
