@@ -89,13 +89,17 @@
         position: relative;
         .box-slider {
           overflow: hidden;
+          max-height: 220px;
+          max-width: 1200px;
+        }
+        .slide-item:not(.slick-active) {
+          opacity: 0.6;
         }
         .slide-item {
-          min-width: 145px;
-          max-width: 145px;
+          min-width: 146px;
+          max-width: 146px;
           height: auto;
           border-radius: 8px;
-          margin-right: 12px;
           background-color: #fff;
           padding: 12px 8px;
           display: flex;
@@ -107,6 +111,11 @@
           border: 1px solid #edf2f7;
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
           border-radius: 8px;
+          margin-right: 12px;
+
+          &:last-child {
+            margin-right: 0 !important;
+          }
 
           .item-header {
             width: 100%;
@@ -228,7 +237,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 25%;
+        top: 50%;
         z-index: 2;
         width: 40px;
         height: 40px;
@@ -239,7 +248,7 @@
         outline: 0;
         padding: 0;
         margin: 0;
-        border: 1px solid #EDF2F7;
+        border: 1px solid #edf2f7;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
         @include mq(max_lg) {
           // top: 47%;
@@ -252,11 +261,11 @@
         }
       }
       .slick-prev {
-        left: 0;
+        left: -10px;
         transform: translate(-50%, -50%);
       }
       .slick-next {
-        right: 0;
+        right: 85px;
         transform: translate(50%, -50%);
       }
     }
@@ -752,11 +761,7 @@
                   }
 
                   .icon-ball {
-                    display: block;
-                    width: 24px;
-                    height: 24px;
-                    border: none;
-                    border-radius: 50%;
+                    max-width: 20px;
                     object-fit: cover;
                   }
 

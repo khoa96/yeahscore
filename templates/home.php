@@ -468,15 +468,14 @@
                 </div>
               </div>
               <!-- END collapse title for MOBILE -->
-            </button>
-            <div class="timeline-content">
+            </button> <div class="timeline-content">
               <div class="timeline-detail">
                 <div class="empty"></div>
                 <div class="timeline-result">
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-phan-luoi-nha.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -489,7 +488,98 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-do.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-vang.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-penalty.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-miss-penalty.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-var.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-vang-thu-2.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-thay-nguoi.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -503,7 +593,7 @@
                   <div class="time-result">67'</div>
                   <div class="right-result">
                     <div class="player-info">
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                       <span class="player-name">Messi <span class="type">(Pen.)</span></span>
                     </div>
                   </div>
@@ -674,15 +764,14 @@
                 </div>
               </div>
               <!-- END collapse title for MOBILE -->
-            </button>
-            <div class="timeline-content">
+            </button> <div class="timeline-content">
               <div class="timeline-detail">
                 <div class="empty"></div>
                 <div class="timeline-result">
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-phan-luoi-nha.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -695,7 +784,98 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-do.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-vang.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-penalty.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-miss-penalty.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-var.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-vang-thu-2.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-thay-nguoi.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -709,7 +889,7 @@
                   <div class="time-result">67'</div>
                   <div class="right-result">
                     <div class="player-info">
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                       <span class="player-name">Messi <span class="type">(Pen.)</span></span>
                     </div>
                   </div>
@@ -907,24 +1087,11 @@
               <div class="timeline-detail">
                 <div class="empty"></div>
                 <div class="timeline-result">
-                  <div class="left-result">
-                    <div class="player-info">
-                      <span class="player-name">Messi</span>
-                      <img src="./images/icon-thay-nguoi.png" class="icon-ball" alt="">
-                    </div>
-                  </div>
-                  <div class="time-result">23'</div>
-                  <div class="right-result"></div>
-                </div>
-              </div>
-              <div class="timeline-detail">
-                <div class="empty"></div>
-                <div class="timeline-result">
                   <div class="left-result"></div>
                   <div class="time-result">67'</div>
                   <div class="right-result">
                     <div class="player-info">
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                       <span class="player-name">Messi <span class="type">(Pen.)</span></span>
                     </div>
                   </div>
@@ -1103,7 +1270,7 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1116,7 +1283,7 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1130,7 +1297,7 @@
                   <div class="time-result">67'</div>
                   <div class="right-result">
                     <div class="player-info">
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                       <span class="player-name">Messi <span class="type">(Pen.)</span></span>
                     </div>
                   </div>
@@ -1197,7 +1364,7 @@
                     </div>
                     <div class="club-item">
                       <span class="score default">2</span>
-                      <span class="club-name">Liverpool</span>
+                      <span class="club-name">Live rpool</span>
                     </div>
                   </div>
                 </div>
@@ -1214,7 +1381,7 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-phan-luoi-nha.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1227,7 +1394,98 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-do.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-vang.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-penalty.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-miss-penalty.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-var.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-vang-thu-2.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-thay-nguoi.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1241,7 +1499,7 @@
                   <div class="time-result">67'</div>
                   <div class="right-result">
                     <div class="player-info">
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                       <span class="player-name">Messi <span class="type">(Pen.)</span></span>
                     </div>
                   </div>
@@ -1420,7 +1678,7 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1433,7 +1691,7 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1447,7 +1705,7 @@
                   <div class="time-result">67'</div>
                   <div class="right-result">
                     <div class="player-info">
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                       <span class="player-name">Messi <span class="type">(Pen.)</span></span>
                     </div>
                   </div>
@@ -1515,7 +1773,7 @@
                     </div>
                     <div class="club-item">
                       <span class="score default">2</span>
-                      <span class="club-name">Liverpool</span>
+                      <span class="club-name">Live rpool</span>
                     </div>
                   </div>
                 </div>
@@ -1532,7 +1790,7 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-phan-luoi-nha.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1545,7 +1803,98 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-do.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-vang.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-penalty.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-miss-penalty.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-var.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-the-vang-thu-2.png" class="icon-ball" alt="">
+                    </div>
+                  </div>
+                  <div class="time-result">23'</div>
+                  <div class="right-result"></div>
+                </div>
+              </div>
+              <div class="timeline-detail">
+                <div class="empty"></div>
+                <div class="timeline-result">
+                  <div class="left-result">
+                    <div class="player-info">
+                      <span class="player-name">Messi</span>
+                      <img src="./images/icon-thay-nguoi.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1559,7 +1908,7 @@
                   <div class="time-result">67'</div>
                   <div class="right-result">
                     <div class="player-info">
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                       <span class="player-name">Messi <span class="type">(Pen.)</span></span>
                     </div>
                   </div>
@@ -1706,7 +2055,6 @@
               </div>
               <!-- END collapse title for PC -->
 
-
               <!-- collapse title for MOBILE -->
               <div class="collapse-title-mb">
                 <div class="collapse-title-mb__left">
@@ -1738,7 +2086,7 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1751,7 +2099,7 @@
                   <div class="left-result">
                     <div class="player-info">
                       <span class="player-name">Messi</span>
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                     </div>
                   </div>
                   <div class="time-result">23'</div>
@@ -1765,7 +2113,7 @@
                   <div class="time-result">67'</div>
                   <div class="right-result">
                     <div class="player-info">
-                      <img src="./images/icon-ball.png" class="icon-ball" alt="">
+                      <img src="./images/icon-ghi-ban.png" class="icon-ball" alt="">
                       <span class="player-name">Messi <span class="type">(Pen.)</span></span>
                     </div>
                   </div>
@@ -1798,8 +2146,9 @@
       fade: false,
       dots: false,
       arrows: false,
-      slidesToShow: 9,
-      slidesToScroll: 3,
+      slidesToShow: 7,
+      // slidesToScroll: 3,
+      centerMode: true,
       responsive: [{
           // breakpoint: 1400,
           // settings: {
@@ -1820,6 +2169,7 @@
         }
       ]
     });
+
 
     $('.banner-slider .slick-next').on('click', function() {
       moderatorsPCSlider.slick('next');
