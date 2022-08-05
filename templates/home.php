@@ -2779,8 +2779,8 @@
       dots: false,
       arrows: false,
       slidesToShow: 7,
-      // slidesToScroll: 3,
       centerMode: true,
+      variableWidth: true,
       responsive: [{
           // breakpoint: 1400,
           // settings: {
@@ -2799,13 +2799,10 @@
             speed: 500,
             autoplaySpeed: 2000,
             autoplay: true,
-            infinite: false,
+            infinite: true,
             swipe: true,
-            fade: false,
-            dots: false,
-            arrows: false,
-            slidesToScroll: 4,
-            // centerMode: true,
+            slidesToScroll: 2,
+            centerMode: false
           }
         }
       ]

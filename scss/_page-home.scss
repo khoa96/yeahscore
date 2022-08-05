@@ -90,13 +90,17 @@
         .box-slider {
           overflow: hidden;
           max-height: 215px;
-          width: 1200px;
+          max-width: 1320px;
         }
 
         .slide-item:not(.slick-active) {
           opacity: 0.7;
-         // background: linear-gradient(to right, rgba(0,0, 0, 0),rgba(0, 0,0, 0.6));
-          background: linear-gradient(90deg, rgba(0, 0, 0, 1), 0%, rgba(0, 0, 0, 0) 100%) !important;
+          border: none;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(0, 0, 0, 0) 80%
+          ) !important;
         }
         .slide-item {
           min-width: 146px;
@@ -268,7 +272,7 @@
         transform: translate(-50%, -50%);
       }
       .slick-next {
-        right: 85px;
+        right: 0;
         transform: translate(50%, -50%);
       }
     }
@@ -410,7 +414,7 @@
 
             &:hover {
               cursor: pointer;
-              background-color: #EDF2F7 !important;
+              background-color: #edf2f7 !important;
             }
 
             @include mq(max_md) {
