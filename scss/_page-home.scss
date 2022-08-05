@@ -94,13 +94,13 @@
         }
 
         .slide-item:not(.slick-active) {
-          opacity: 0.7;
-          border: none;
-          background: linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(0, 0, 0, 0) 80%
-          ) !important;
+          // opacity: 0.7;
+          // border: none;
+          // background: linear-gradient(
+          //   90deg,
+          //   rgba(255, 255, 255, 1) 0%,
+          //   rgba(0, 0, 0, 0) 80%
+          // ) !important;
         }
         .slide-item {
           min-width: 146px;

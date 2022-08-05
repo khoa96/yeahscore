@@ -147,11 +147,6 @@ button,
   max-height: 215px;
   max-width: 1320px;
 }
-.banner-wrapper .banner-content .banner-slider .box-slider-pc .slide-item:not(.slick-active) {
-  opacity: 0.7;
-  border: none;
-  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 80%) !important;
-}
 .banner-wrapper .banner-content .banner-slider .box-slider-pc .slide-item {
   min-width: 146px;
   max-width: 146px;
