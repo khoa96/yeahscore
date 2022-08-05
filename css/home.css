@@ -565,13 +565,22 @@ button,
   color: #e34b31;
   border: 1px solid #e34b31;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .math-report:hover {
+  background: rgba(227, 75, 49, 0.1);
+}
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .preview {
   color: #461a53;
   border: 1px solid #461a53;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .preview:hover {
+  background: rgba(70, 26, 83, 0.1);
+}
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .lineup {
   color: #18b745;
   border: 1px solid #18b745;
+}
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .lineup:hover {
+  background: rgba(24, 183, 69, 0.1);
 }
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title-mb__right .watch-now {
   color: #fff;
@@ -669,13 +678,22 @@ button,
   color: #e34b31;
   border: 1px solid #e34b31;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .math-report:hover {
+  background: rgba(227, 75, 49, 0.1);
+}
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .preview {
   color: #461a53;
   border: 1px solid #461a53;
 }
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .preview:hover {
+  background: rgba(70, 26, 83, 0.1);
+}
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .lineup {
   color: #18b745;
   border: 1px solid #18b745;
+}
+.main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .lineup:hover {
+  background: rgba(24, 183, 69, 0.1);
 }
 .main-wrapper .list-score .score-item .list-timeline .timeline-item .collapsible .collapse-title .watch-now {
   color: #fff;
