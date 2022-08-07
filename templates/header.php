@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-auto col-nav">
 				<ul class="main-nav d-none d-lg-block">
-					<li><a href="live.php" class="">Live Scores</a></li>
+					<li><a href="live.html" class="">Live Scores</a></li>
 					<li><a href="#">Statistics</a></li>
 					<li><a href="#">Previews</a></li>
 					<li>
