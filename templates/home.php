@@ -2811,6 +2811,7 @@
 
     $('.banner-slider .slick-next').on('click', function() {
       moderatorsPCSlider.slick('next');
+      $('.banner-slider .slick-prev').css('display', 'flex')
     });
     $('.banner-slider .slick-prev').on('click', function() {
       moderatorsPCSlider.slick('prev');

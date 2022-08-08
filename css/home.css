@@ -297,6 +297,7 @@ button,
   }
 }
 .banner-wrapper .banner-content .banner-slider .slick-prev {
+  display: none;
   left: -10px;
   transform: translate(-50%, -50%);
 }
