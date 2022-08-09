@@ -171,6 +171,7 @@
             display: flex;
             position: relative;
             width: 100%;
+            max-height: 40px;
 
             form {
               display: block;
@@ -184,6 +185,7 @@
               padding: 10px 50px 10px 20px;
               background: #edf2f7;
               border-radius: 1000px;
+              max-height: 40px;
               border: none;
               &:focus {
                 outline: none;
@@ -394,6 +396,7 @@
         border-left: 3px solid #e34b31;
         background-color: #fff;
         color: #1a202c;
+        box-shadow: none !important;
 
         @include mq(max_md) {
           border: none;
@@ -691,6 +694,7 @@
               margin: 0;
               padding: 0;
               margin-right: 15px;
+              gap: 4px;
 
               img {
                 display: block;
@@ -706,6 +710,8 @@
                 font-size: 14px;
                 line-height: 21px;
                 color: #461a53;
+                display: inline-block;
+                margin-top: 4px;
               }
             }
 
@@ -1746,20 +1752,21 @@
 
         .sign-wrapper {
           min-width: 24px;
+          max-height: 24px;
         }
 
         .sign {
           width: 24px;
           height: 24px;
+          max-height: 24px;
           border: none;
           border-radius: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-style: normal;
           font-weight: 400;
           font-size: 14px;
-          line-height: 21px;
+          line-height: 0 !important;
           text-align: center;
           color: #ffffff;
           text-transform: uppercase;

@@ -182,7 +182,11 @@
 
                     <div class="box-submit">
                       <p class="intro-message">
-                        <img src="./images/icon-infor.png" alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path d="M9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75Z" stroke="#461A53" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9 6H9.00667" stroke="#461A53" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.25 9H9V12H9.75" stroke="#461A53" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                         <span>Rule of Double Chance</span>
                       </p>
                       <button class="btn-confirm">Confirm</button>
@@ -247,7 +251,11 @@
 
                     <div class="box-submit">
                       <p class="intro-message">
-                        <img src="./images/icon-infor.png" alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                          <path d="M9 15.75C12.7279 15.75 15.75 12.7279 15.75 9C15.75 5.27208 12.7279 2.25 9 2.25C5.27208 2.25 2.25 5.27208 2.25 9C2.25 12.7279 5.27208 15.75 9 15.75Z" stroke="#461A53" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M9 6H9.00667" stroke="#461A53" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.25 9H9V12H9.75" stroke="#461A53" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                         <span>Rule of Double Chance</span>
                       </p>
                       <button class="btn-confirm">Confirm</button>
@@ -4003,7 +4011,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign grey">W</span>
+                                    <span class="sign green">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -4020,7 +4028,40 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign orange">W</span>
+                                    <span class="sign green">W</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="result-item">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign grey">D</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="result-item">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign orange">L</span>
                                   </div>
                                 </div>
                               </div>
@@ -4080,7 +4121,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign grey">W</span>
+                                    <span class="sign green">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -4097,7 +4138,58 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign orange">W</span>
+                                    <span class="sign green">W</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="result-item">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign grey">D</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="result-item">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign orange">L</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="result-item">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign orange">L</span>
                                   </div>
                                 </div>
                               </div>
@@ -4157,7 +4249,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign grey">W</span>
+                                    <span class="sign green">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -4174,10 +4266,46 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign orange">W</span>
+                                    <span class="sign green">W</span>
                                   </div>
                                 </div>
                               </div>
+
+                              <div class="result-item">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign grey">D</span>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="result-item">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign orange">L</span>
+                                  </div>
+                                </div>
+                              </div>
+
 
                               <!-- incoming match -->
                               <div class="result-item incoming-match">
@@ -4271,7 +4399,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign grey">W</span>
+                                    <span class="sign green">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -4288,7 +4416,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign orange">W</span>
+                                    <span class="sign green">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -4305,7 +4433,41 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign orange">W</span>
+                                    <span class="sign green">W</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="result-item reverse">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign grey">D</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="result-item reverse">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign orange">L</span>
                                   </div>
                                 </div>
                               </div>
