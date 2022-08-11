@@ -221,6 +221,7 @@ button,
   display: flex;
   position: relative;
   width: 100%;
+  max-height: 40px;
 }
 .live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper form {
   display: block;
@@ -234,6 +235,7 @@ button,
   padding: 10px 50px 10px 20px;
   background: #edf2f7;
   border-radius: 1000px;
+  max-height: 40px;
   border: none;
 }
 .live-wrapper .header .player-wrapper .box-chat .chat-form .form-wrapper input:focus {
@@ -434,6 +436,7 @@ button,
   border-left: 3px solid #e34b31;
   background-color: #fff;
   color: #1a202c;
+  box-shadow: none !important;
 }
 @media only screen and (max-width: 991px) {
   .live-wrapper .header .table-bet .active {
@@ -727,6 +730,8 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: #461a53;
+  display: inline-block;
+  margin-top: 4px;
 }
 .live-wrapper .header .table-bet .tab-bet-content .bet-item .box-submit .btn-confirm {
   cursor: pointer;
@@ -777,7 +782,7 @@ button,
 .live-wrapper .header .result-bet-detail .detail-item {
   display: flex;
   padding: 12px 32px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media only screen and (max-width: 991px) {
   .live-wrapper .header .result-bet-detail .detail-item {
@@ -1678,19 +1683,20 @@ button,
 }
 .table-3-wrapper .list-result .result-item .right-box .sign-wrapper {
   min-width: 24px;
+  max-height: 24px;
 }
 .table-3-wrapper .list-result .result-item .right-box .sign {
   width: 24px;
   height: 24px;
+  max-height: 24px;
   border: none;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 0 !important;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;

@@ -768,7 +768,7 @@
       .detail-item {
         display: flex;
         padding: 12px 32px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         @include mq(max_md) {
           padding: 6px 16px;
         }
