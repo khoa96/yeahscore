@@ -1,0 +1,274 @@
+/* -----------------------------------------------------------
+	font-face
+----------------------------------------------------------- */
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* -----------------------------------------------------------
+	common
+----------------------------------------------------------- */
+body, html {
+  font-family: "SVN-Poppins";
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button,
+.btn {
+  transition: all 0.4s ease;
+}
+
+.over {
+  transition: all 0.4s ease;
+}
+.over:hover {
+  opacity: 0.7;
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
+.signup-wraper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/signin-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* Customize the label (the container) */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.signup-wraper .singup-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+}
+.signup-wraper .signup-form {
+  min-width: 530px;
+  max-width: 530px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.45);
+  border-radius: 8px;
+  padding: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .signup-wraper .signup-form {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 24px 16px;
+  }
+}
+.signup-wraper .logo-wrapper {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+.signup-wraper .logo-wrapper img {
+  display: block;
+  min-width: 197px;
+  max-width: 197px;
+  height: auto;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .signup-wraper .logo-wrapper img {
+    max-width: 151px;
+  }
+}
+.signup-wraper .form-title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1a202c;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .signup-wraper .form-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+.signup-wraper .input-item {
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.signup-wraper .input-common {
+  display: block;
+  width: 100%;
+  padding: 12px 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  background: #edf2f7;
+  border-radius: 1000px;
+  cursor: pointer;
+  /* identical to box height */
+  /* Gray:600 */
+  color: #1a202c;
+}
+.signup-wraper .input-common::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  /* Gray:600 */
+  color: #718096;
+}
+.signup-wraper .input-common:focus {
+  outline: none;
+  border: none;
+}
+.signup-wraper .form-submit {
+  margin-bottom: 24px;
+}
+.signup-wraper .btn-submit {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 12px 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
+  cursor: pointer;
+  background: #461a53;
+  border-radius: 1000px;
+  border: none;
+}
+.signup-wraper .btn-submit:focus {
+  outline: none;
+}
+.signup-wraper .dash {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #e2e8f0;
+}
+.signup-wraper .have-account-title {
+  display: block;
+  margin: 16px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  width: 100%;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #1a202c;
+}
+.signup-wraper .btn-signup {
+  background-color: #fff;
+  border: 1px solid #461a53;
+  color: #461a53;
+  text-decoration: none;
+}
+.signup-wraper .submit-signup {
+  margin-bottom: 0;
+}
+.signup-wraper .agree-box {
+  margin-bottom: 16px;
+}
+.signup-wraper .checkbox-wrapper {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  padding-left: 28px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a202c;
+}
+.signup-wraper .checkbox-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.signup-wraper .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #edf2f7;
+  border-radius: 4px;
+}
+.signup-wraper .checkbox-wrapper input:checked ~ .checkmark {
+  background-color: #461a53;
+}
+.signup-wraper .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.signup-wraper .checkbox-wrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+.signup-wraper .checkbox-wrapper .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+/*# sourceMappingURL=signup.css.map */

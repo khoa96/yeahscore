@@ -1,0 +1,246 @@
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "common";
+
+.signin-wraper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/signin-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .singin-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+  }
+
+  .signin-form {
+    min-width: 530px;
+    max-width: 530px;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    padding: 40px;
+
+    @include mq(max_md) {
+      min-width: 100%;
+      max-width: 100%;
+      padding: 24px 16px;
+    }
+  }
+
+  .logo-wrapper {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    img {
+      display: block;
+      min-width: 197px;
+      max-width: 197px;
+      height: auto;
+      object-fit: cover;
+
+      @include mq(max_md) {
+        max-width: 151px;
+      }
+    }
+  }
+
+  .form-title {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1a202c;
+    margin-bottom: 12px;
+
+    @include mq(max_md) {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .input-item {
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .input-common {
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    border: none;
+    background: #edf2f7;
+    border-radius: 1000px;
+    cursor: pointer;
+    /* identical to box height */
+
+    /* Gray:600 */
+
+    color: #1a202c;
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      /* Gray:600 */
+
+      color: #718096;
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  .input-password {
+    display: flex;
+    padding: 12px 24px;
+    background: #edf2f7;
+    border-radius: 1000px;
+
+    input {
+      display: flex;
+      flex-grow: 1;
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      background-color: #edf2f7;
+      border: none;
+      cursor: pointer;
+      outline: none;
+
+      color: #1a202c;
+      &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #718096;
+      }
+    }
+
+    .btn-forgot {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+
+      /* Primary 1 */
+
+      color: #461a53;
+      text-decoration: none;
+      display: block;
+      padding: 2px 0px 2px 12px;
+      border-left: 1px solid #cbd5e0;
+      min-width: max-content;
+    }
+  }
+
+  .form-submit {
+    margin-bottom: 24px;
+  }
+  .btn-submit {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 12px 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #ffffff;
+    cursor: pointer;
+    background: #461a53;
+    border-radius: 1000px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .login-on-via {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .via-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #1a202c;
+      margin-bottom: 16px;
+    }
+
+    .list-via {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .via-item {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .dash {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #E2E8F0;
+  }
+
+  .have-account-title {
+    display: block;
+    margin: 16px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    width: 100%;
+    /* identical to box height */
+
+
+    /* Gray:900 */
+
+    color: #1A202C;
+  }
+
+  .btn-signup {
+    background-color: #fff;
+    border: 1px solid #461A53;
+    color: #461A53;
+    text-decoration: none;
+  }
+  .submit-signup {
+    margin-bottom: 0;
+  }
+}

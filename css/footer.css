@@ -30,6 +30,7 @@
   font-display: swap;
 }
 .footer {
+  margin-top: 180px;
   width: 100%;
   height: auto;
   background-image: url("../images/background-footer.png");
