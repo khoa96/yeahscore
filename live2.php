@@ -303,35 +303,47 @@
 
   <div class="live-main-content">
     <div class="container wrapper-content">
-      <div id="live-main-tabs">
-        <ul class="live-main-nav">
-          <li class="nav-item"><a href="#live-head-to-head">Head to Head</a></li>
-          <li class="nav-item"><a href="#live-betting">Betting</a></li>
-          <li class="nav-item"><a href="#live-match-centre">Match Centre</a></li>
-        </ul>
-        <div id="live-head-to-head">
-          <!-- HEAD TO HEAD TAB CONTENT -->
-          <div id="head-to-head-tabs">
-            <ul class="live-sub-nav">
-              <li class="sub-nav-item"><a href="#sub-tab-1">Summary</a></li>
-              <li class="sub-nav-item"><a href="#sub-tab-2">Team Statistics</a></li>
-              <li class="sub-nav-item"><a href="#sub-tab-3">Player Statistics</a></li>
-            </ul>
-            <div id="sub-tab-1">
-              <!-- PREVIOUS MEETING TABLE -->
+      <!-- MAIN TAB -->
+      <nav>
+        <div class="nav nav-tabs" id="live-main-tab" role="tablist">
+          <button class="nav-link active nav-link-customer" data-bs-toggle="tab" data-bs-target="#nav-head-to-head" type="button" role="tab" aria-selected="true">Head to Head</button>
+          <button class="nav-link nav-link-customer" data-bs-toggle="tab" data-bs-target="#nav-betting" type="button" role="tab" aria-selected="false">Betting</button>
+          <button class="nav-link nav-link-customer" data-bs-toggle="tab" data-bs-target="#nav-match-centre" type="button" role="tab" aria-selected="false">Match Centre</button>
+        </div>
+      </nav>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="nav-head-to-head" role="tabpanel" aria-labelledby="nav-home-tab">
+          <!-- ================HEAD TO HEAD ================-->
+          <nav>
+            <div class="nav nav-tabs nav-sub-tab" role="tablist">
+              <button class="nav-link active sub-tab-customer" data-bs-toggle="tab" data-bs-target="#nav-summary" type="button" role="tab" aria-selected="true">Summary</button>
+              <button class="nav-link sub-tab-customer" data-bs-toggle="tab" data-bs-target="#nav-team" type="button" role="tab" aria-selected="false">Team Statistics</button>
+              <button class="nav-link sub-tab-customer" data-bs-toggle="tab" data-bs-target="#nav-player" type="button" role="tab" aria-selected="false">Player Statistics</button>
+            </div>
+          </nav>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="nav-summary" role="tabpanel">
+              <!-- =================SUMMARY TAB CONTENT ============= -->
               <div class="table-1-wrapper">
                 <h3 class="table-title">
                   Previous Meetings
                   <span class="sub-title">(Last 6 matches)</span>
                 </h3>
                 <div class="table-content">
-                  <div id="previous-meeting-tabs">
-                    <ul class="previous-meeting-nav">
-                      <li><a href="#tabs-1">All</a></li>
-                      <li><a href="#tabs-2">Home vs Away</a></li>
-                      <li><a href="#tabs-3">Away vs Home</a></li>
-                    </ul>
-                    <div id="tabs-1">
+                  <ul class="nav nav-tabs table-1-nav" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active nav-link-table-1-customer" data-bs-toggle="pill" data-bs-target="#tab-all" type="button" role="tab" aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link  nav-link-table-1-customer" data-bs-toggle="pill" data-bs-target="#tab-home-as-away" type="button" role="tab" aria-selected="false">Home vs Away</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link  nav-link-table-1-customer" data-bs-toggle="pill" data-bs-target="#tab-away-as-home" type="button" role="tab" aria-selected="false">Away as Home</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="tab-all" role="tabpanel">
                       <!-- ==============ALL TAB IN TABLES ============= -->
                       <div class="table-content">
                         <!-- start table header for pc -->
@@ -1316,8 +1328,9 @@
                       </div>
                       <!-- ==============ALL TAB IN TABLES ============= -->
                     </div>
-                    <div id="tabs-2">
-                      <!-- ============== HOME AS AWAY TABLE ============= -->
+
+                    <div class="tab-pane fade" id="tab-home-as-away" role="tabpanel">
+                      <!-- ==============HOME AS AWAY TAB IN TABLES ============= -->
                       <div class="table-content">
                         <!-- start table header for pc -->
                         <div class="table-header-pc">
@@ -2299,10 +2312,11 @@
 
                         </div>
                       </div>
-                      <!-- ==============HOME AS AWAY TABLE============= -->
+                      <!-- ==============AWAY AS HOME TAB IN TABLES ============= -->
                     </div>
-                    <div id="tabs-3">
-                      <!-- ============== HOME AS AWAY TABLE ============= -->
+
+                    <div class="tab-pane fade" id="tab-away-as-home" role="tabpanel">
+                      <!-- ==============ALL TAB IN TABLES ============= -->
                       <div class="table-content">
                         <!-- start table header for pc -->
                         <div class="table-header-pc">
@@ -3280,737 +3294,694 @@
 
                             </div>
                           </div>
+
+
                         </div>
                       </div>
-                      <!-- ==============HOME AS AWAY TABLE============= -->
+                      <!-- ==============AWAY AS HOME TAB IN TABLES ============= -->
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- PREVIOUS MEETING TABLE -->
 
-              <!-- TABLES -->
               <div class="table-2-wrapper">
                 <h3 class="table-title">Tables</h3>
                 <div class="table-content">
-                  <div id="tables-main-tabs">
-                    <ul class="tables-main-nav">
-                      <li><a href="#tables-main-1">Standings</a></li>
-                      <li><a href="#tables-main-2">Form</a></li>
-                      <li><a href="#tables-main-3">Streaks</a></li>
-                    </ul>
-                    <div id="tables-main-1">
-                      <div id="tables-standings-tabs">
-                        <ul class="tables-sub-nav">
-                          <li><a href="#tabs-1">Overall</a></li>
-                          <li><a href="#tabs-2">Home</a></li>
-                          <li><a href="#tabs-3">Away</a></li>
-                          <li><a href="#tabs-4">Wide</a></li>
+                  <nav>
+                    <div class="nav nav-tabs table-2-navs" role="tablist">
+                      <button class="nav-link active nav-link-customer" data-bs-toggle="tab" data-bs-target="#nav-standing" type="button" role="tab" aria-selected="true">Standings</button>
+                      <button class="nav-link nav-link-customer" data-bs-toggle="tab" data-bs-target="#nav-form" type="button" role="tab" aria-selected="false">Form</button>
+                      <button class="nav-link nav-link-customer" data-bs-toggle="tab" data-bs-target="#nav-streak" type="button" role="tab" aria-selected="false">Streaks</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="nav-standing" role="tabpanel">
+                      <!-- ==========STADINGS CONTENT TAB ================ -->
+                      <div class="table-content">
+                        <ul class="nav nav-tabs standing-navs" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active nav-link-table-2-customer" data-bs-toggle="pill" data-bs-target="#tab-overall" type="button" role="tab" aria-selected="true">Overall</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link  nav-link-table-2-customer" data-bs-toggle="pill" data-bs-target="#tab-home" type="button" role="tab" aria-selected="false">Home</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link  nav-link-table-2-customer" data-bs-toggle="pill" data-bs-target="#tab-away" type="button" role="tab" aria-selected="false">Away</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link  nav-link-table-2-customer" data-bs-toggle="pill" data-bs-target="#tab-wide" type="button" role="tab" aria-selected="false">Wide</button>
+                          </li>
                         </ul>
-                        <div id="tabs-1">
-                          <!-- standing-overrall -->
-                          <div class="table-result">
-                            <div class="row-item table-heading">
-                              <div class="team-info">
-                                <div class="team-id">Team</div>
-                                <div class="team-name"></div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">P</div>
-                                  <div class="detail-item">W</div>
-                                  <div class="detail-item">D</div>
-                                  <div class="detail-item">L</div>
-                                  <div class="detail-item">GF</div>
-                                  <div class="detail-item">GA</div>
-                                  <div class="detail-item">GD</div>
-                                  <div class="detail-item">Pts</div>
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="tab-overall" role="tabpanel">
+                            <!-- start content standing-overrall tab -->
+                            <div class="table-result">
+                              <div class="row-item table-heading">
+                                <div class="team-info">
+                                  <div class="team-id">Team</div>
+                                  <div class="team-name"></div>
                                 </div>
-                                <div class="list-player">Form</div>
-                              </div>
-                            </div>
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number champion">1</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">P</div>
+                                    <div class="detail-item">W</div>
+                                    <div class="detail-item">D</div>
+                                    <div class="detail-item">L</div>
+                                    <div class="detail-item">GF</div>
+                                    <div class="detail-item">GA</div>
+                                    <div class="detail-item">GD</div>
+                                    <div class="detail-item">Pts</div>
+                                  </div>
+                                  <div class="list-player">Form</div>
                                 </div>
                               </div>
-                            </div>
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number champion">1</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
 
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number europa">2</span>
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number europa">2</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
                                 </div>
-                                <div class="team-name">Manchester United</div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
+
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number relegation">3</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
                                 </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
                                 </div>
+                              </div>
+
+
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number">4</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="list-suggest">
+                              <div class="suggest-item">
+                                <span class="color-league champion"></span>
+                                <span class="name-league">Champions League</span>
+                              </div>
+                              <div class="suggest-item">
+                                <span class="color-league europa"></span>
+                                <span class="name-league">Europa League</span>
+                              </div>
+                              <div class="suggest-item">
+                                <span class="color-league relegation"></span>
+                                <span class="name-league">Relegation</span>
                               </div>
                             </div>
-
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number relegation">3</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number">4</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
+                            <!-- end content stading overrall tab -->
                           </div>
-                          <div class="list-suggest">
-                            <div class="suggest-item">
-                              <span class="color-league champion"></span>
-                              <span class="name-league">Champions League</span>
+                          <div class="tab-pane fade" id="tab-home" role="tabpanel">
+                            <!-- start content standing-home tab -->
+                            <div class="table-result">
+                              <div class="row-item table-heading">
+                                <div class="team-info">
+                                  <div class="team-id">Team</div>
+                                  <div class="team-name"></div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">P</div>
+                                    <div class="detail-item">W</div>
+                                    <div class="detail-item">D</div>
+                                    <div class="detail-item">L</div>
+                                    <div class="detail-item">GF</div>
+                                    <div class="detail-item">GA</div>
+                                    <div class="detail-item">GD</div>
+                                    <div class="detail-item">Pts</div>
+                                  </div>
+                                  <div class="list-player">Form</div>
+                                </div>
+                              </div>
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number champion">1</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number europa">2</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number relegation">3</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number">4</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
                             </div>
-                            <div class="suggest-item">
-                              <span class="color-league europa"></span>
-                              <span class="name-league">Europa League</span>
+                            <div class="list-suggest">
+                              <div class="suggest-item">
+                                <span class="color-league champion"></span>
+                                <span class="name-league">Champions League</span>
+                              </div>
+                              <div class="suggest-item">
+                                <span class="color-league europa"></span>
+                                <span class="name-league">Europa League</span>
+                              </div>
+                              <div class="suggest-item">
+                                <span class="color-league relegation"></span>
+                                <span class="name-league">Relegation</span>
+                              </div>
                             </div>
-                            <div class="suggest-item">
-                              <span class="color-league relegation"></span>
-                              <span class="name-league">Relegation</span>
-                            </div>
+                            <!--end content standing-home tab -->
                           </div>
-                          <!-- standing-overrall -->
-                        </div>
-                        <div id="tabs-2">
-                          <!-- standing-home-->
-                          <div class="table-result">
-                            <div class="row-item table-heading">
-                              <div class="team-info">
-                                <div class="team-id">Team</div>
-                                <div class="team-name"></div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">P</div>
-                                  <div class="detail-item">W</div>
-                                  <div class="detail-item">D</div>
-                                  <div class="detail-item">L</div>
-                                  <div class="detail-item">GF</div>
-                                  <div class="detail-item">GA</div>
-                                  <div class="detail-item">GD</div>
-                                  <div class="detail-item">Pts</div>
+                          <div class="tab-pane fade" id="tab-away" role="tabpanel">
+                            <!-- start content standing-away tab -->
+                            <div class="table-result">
+                              <div class="row-item table-heading">
+                                <div class="team-info">
+                                  <div class="team-id">Team</div>
+                                  <div class="team-name"></div>
                                 </div>
-                                <div class="list-player">Form</div>
-                              </div>
-                            </div>
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number champion">1</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">P</div>
+                                    <div class="detail-item">W</div>
+                                    <div class="detail-item">D</div>
+                                    <div class="detail-item">L</div>
+                                    <div class="detail-item">GF</div>
+                                    <div class="detail-item">GA</div>
+                                    <div class="detail-item">GD</div>
+                                    <div class="detail-item">Pts</div>
+                                  </div>
+                                  <div class="list-player">Form</div>
                                 </div>
                               </div>
-                            </div>
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number champion">1</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
 
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number europa">2</span>
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number europa">2</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
                                 </div>
-                                <div class="team-name">Manchester United</div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
 
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number relegation">3</span>
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number relegation">3</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
                                 </div>
-                                <div class="team-name">Manchester United</div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
 
 
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number">4</span>
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number">4</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
                                 </div>
-                                <div class="team-name">Manchester United</div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
+
+                            </div>
+                            <div class="list-suggest">
+                              <div class="suggest-item">
+                                <span class="color-league champion"></span>
+                                <span class="name-league">Champions League</span>
+                              </div>
+                              <div class="suggest-item">
+                                <span class="color-league europa"></span>
+                                <span class="name-league">Europa League</span>
+                              </div>
+                              <div class="suggest-item">
+                                <span class="color-league relegation"></span>
+                                <span class="name-league">Relegation</span>
                               </div>
                             </div>
-
+                            <!--end content standing-away tab -->
                           </div>
-                          <div class="list-suggest">
-                            <div class="suggest-item">
-                              <span class="color-league champion"></span>
-                              <span class="name-league">Champions League</span>
+                          <div class="tab-pane fade" id="tab-wide" role="tabpanel">
+                            <!-- start content standing-wide tab -->
+                            <div class="table-result">
+                              <div class="row-item table-heading">
+                                <div class="team-info">
+                                  <div class="team-id">Team</div>
+                                  <div class="team-name"></div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">P</div>
+                                    <div class="detail-item">W</div>
+                                    <div class="detail-item">D</div>
+                                    <div class="detail-item">L</div>
+                                    <div class="detail-item">GF</div>
+                                    <div class="detail-item">GA</div>
+                                    <div class="detail-item">GD</div>
+                                    <div class="detail-item">Pts</div>
+                                  </div>
+                                  <div class="list-player">Form</div>
+                                </div>
+                              </div>
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number champion">1</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number europa">2</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number relegation">3</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <div class="row-item table-row">
+                                <div class="team-info">
+                                  <div class="team-id">
+                                    <span class="number">4</span>
+                                  </div>
+                                  <div class="team-name">Manchester United</div>
+                                </div>
+                                <div class="team-result">
+                                  <div class="result-detail">
+                                    <div class="detail-item">1</div>
+                                    <div class="detail-item">2</div>
+                                    <div class="detail-item">33</div>
+                                    <div class="detail-item">45</div>
+                                    <div class="detail-item">8</div>
+                                    <div class="detail-item">9</div>
+                                    <div class="detail-item">+34</div>
+                                    <div class="detail-item">+12</div>
+                                  </div>
+                                  <div class="list-player">
+                                    <div class="player-item green">W</div>
+                                    <div class="player-item grey">D</div>
+                                    <div class="player-item orange">L</div>
+                                    <div class="player-item green">L</div>
+                                    <div class="player-item green">W</div>
+                                  </div>
+                                </div>
+                              </div>
+
                             </div>
-                            <div class="suggest-item">
-                              <span class="color-league europa"></span>
-                              <span class="name-league">Europa League</span>
+                            <div class="list-suggest">
+                              <div class="suggest-item">
+                                <span class="color-league champion"></span>
+                                <span class="name-league">Champions League</span>
+                              </div>
+                              <div class="suggest-item">
+                                <span class="color-league europa"></span>
+                                <span class="name-league">Europa League</span>
+                              </div>
+                              <div class="suggest-item">
+                                <span class="color-league relegation"></span>
+                                <span class="name-league">Relegation</span>
+                              </div>
                             </div>
-                            <div class="suggest-item">
-                              <span class="color-league relegation"></span>
-                              <span class="name-league">Relegation</span>
-                            </div>
+                            <!--end content standing-wide tab -->
                           </div>
-                          <!-- standing-home- -->
-                        </div>
-                        <div id="tabs-3">
-                          <!-- standing-away -->
-                          <div class="table-result">
-                            <div class="row-item table-heading">
-                              <div class="team-info">
-                                <div class="team-id">Team</div>
-                                <div class="team-name"></div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">P</div>
-                                  <div class="detail-item">W</div>
-                                  <div class="detail-item">D</div>
-                                  <div class="detail-item">L</div>
-                                  <div class="detail-item">GF</div>
-                                  <div class="detail-item">GA</div>
-                                  <div class="detail-item">GD</div>
-                                  <div class="detail-item">Pts</div>
-                                </div>
-                                <div class="list-player">Form</div>
-                              </div>
-                            </div>
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number champion">1</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number europa">2</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number relegation">3</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number">4</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number"></span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
-                          <div class="list-suggest">
-                            <div class="suggest-item">
-                              <span class="color-league champion"></span>
-                              <span class="name-league">Champions League</span>
-                            </div>
-                            <div class="suggest-item">
-                              <span class="color-league europa"></span>
-                              <span class="name-league">Europa League</span>
-                            </div>
-                            <div class="suggest-item">
-                              <span class="color-league relegation"></span>
-                              <span class="name-league">Relegation</span>
-                            </div>
-                          </div>
-                          <!-- standing-away -->
-                        </div>
-                        <div id="tabs-4">
-                          <!-- standing-wide-->
-                          <div class="table-result">
-                            <div class="row-item table-heading">
-                              <div class="team-info">
-                                <div class="team-id">Team</div>
-                                <div class="team-name"></div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">P</div>
-                                  <div class="detail-item">W</div>
-                                  <div class="detail-item">D</div>
-                                  <div class="detail-item">L</div>
-                                  <div class="detail-item">GF</div>
-                                  <div class="detail-item">GA</div>
-                                  <div class="detail-item">GD</div>
-                                  <div class="detail-item">Pts</div>
-                                </div>
-                                <div class="list-player">Form</div>
-                              </div>
-                            </div>
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number champion">1</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number europa">2</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number relegation">3</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-
-                            <div class="row-item table-row">
-                              <div class="team-info">
-                                <div class="team-id">
-                                  <span class="number">4</span>
-                                </div>
-                                <div class="team-name">Manchester United</div>
-                              </div>
-                              <div class="team-result">
-                                <div class="result-detail">
-                                  <div class="detail-item">1</div>
-                                  <div class="detail-item">2</div>
-                                  <div class="detail-item">33</div>
-                                  <div class="detail-item">45</div>
-                                  <div class="detail-item">8</div>
-                                  <div class="detail-item">9</div>
-                                  <div class="detail-item">+34</div>
-                                  <div class="detail-item">+12</div>
-                                </div>
-                                <div class="list-player">
-                                  <div class="player-item green">W</div>
-                                  <div class="player-item grey">D</div>
-                                  <div class="player-item orange">L</div>
-                                  <div class="player-item green">L</div>
-                                  <div class="player-item green">W</div>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
-                          <div class="list-suggest">
-                            <div class="suggest-item">
-                              <span class="color-league champion"></span>
-                              <span class="name-league">Champions League</span>
-                            </div>
-                            <div class="suggest-item">
-                              <span class="color-league europa"></span>
-                              <span class="name-league">Europa League</span>
-                            </div>
-                            <div class="suggest-item">
-                              <span class="color-league relegation"></span>
-                              <span class="name-league">Relegation</span>
-                            </div>
-                          </div>
-                          <!-- stading-wide-->
                         </div>
                       </div>
+                      <!-- ==========STADINGS CONTENT TAB ================ -->
                     </div>
-                    <div id="tables-main-2">
-                      <div id="tables-form-tabs">
-                        <ul class="tables-sub-nav">
-                          <li><a href="#tabs-1">Overall</a></li>
-                          <li><a href="#tabs-2">Home</a></li>
-                          <li><a href="#tabs-3">Away</a></li>
-                          <li><a href="#tabs-4">Wide</a></li>
-                        </ul>
-                        <div id="tabs-1">tab21</div>
-                        <div id="tabs-2">tab22</div>
-                        <div id="tabs-3">tab23</div>
-                        <div id="tabs-4">tab24</div>
-                      </div>
-                    </div>
-                    <div id="tables-main-3">
-                      <div id="tables-streaks-tabs">
-                        <ul class="tables-sub-nav">
-                          <li><a href="#tabs-1">Overall</a></li>
-                          <li><a href="#tabs-2">Home</a></li>
-                          <li><a href="#tabs-3">Away</a></li>
-                          <li><a href="#tabs-4">Wide</a></li>
-                        </ul>
-                        <div id="tabs-1">tab21</div>
-                        <div id="tabs-2">tab22</div>
-                        <div id="tabs-3">tab23</div>
-                        <div id="tabs-4">tab24</div>
-                      </div>
-                    </div>
+                    <div class="tab-pane fade" id="nav-form" role="tabpanel">Form content</div>
+                    <div class="tab-pane fade" id="nav-streak" role="tabpanel">streak content</div>
                   </div>
                 </div>
               </div>
-              <!-- TABLES -->
 
-              <!-------- FIXTURES-------->
               <div class="table-3-wrapper">
                 <h3 class="table-title">Fixtures</h3>
-
-                <!-- tab show mobile only -->
-                <ul class="fixture-tabs-mobile">
-                  <li class="tabs-mobile-item tab-active" id="fixture-mobile-tab-1">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="team-name">Man United</span>
-                  </li>
-                  <li class="tabs-mobile-item" id="fixture-mobile-tab-2">
-                    <img src="./images/inter-club.png" alt="">
-                    <span class="team-name">Liverpool</span>
-                  </li>
-                </ul>
-                <!-- tab show mobile only -->
-
                 <!-- start table content for pc -->
                 <div class="table-content-pc">
                   <!--  start left column -->
                   <div class="compare-item">
-                    <div id="fixture-left-tabs">
-                      <ul class="fixture-tabs">
-                        <li><a href="#fixture-main-1">All</a></li>
-                        <li><a href="#fixture-main-2">Premier League</a></li>
-                      </ul>
-                      <div id="fixture-main-1">
-                        <div id="fixture-all-left-tabs">
-                          <ul class="fixture-tabs">
-                            <li><a href="#tabs-1">Overrall</a></li>
-                            <li><a href="#tabs-2">Home</a></li>
-                            <li><a href="#tabs-3">Away</a></li>
-                          </ul>
-                          <div id="tabs-1">
-                            <!-- all-overrall -->
+                    <ul class="nav nav-tabs fixture-tabs" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-all-tab-1" type="button" role="tab">All</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-premier-tab-1" type="button" role="tab">Premier League</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="fixture-all-tab-1" role="tabpanel">
+                        <!-- start content fixture all tab -->
+                        <ul class="nav nav-tabs fixture-tabs" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-overrall-tab-1" type="button" role="tab">Overrall</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-home-tab-1" type="button" role="tab">Home</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-away-tab-1" type="button" role="tab">Away</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="fixture-overrall-tab-1" role="tabpanel">
+                            <!--  start content fixture overrall tab -->
                             <div class="list-result">
                               <div class="result-item">
                                 <div class="team-info">
@@ -4117,10 +4088,10 @@
                               <span class="status"></span>
                               <span class="description">Upcoming Match</span>
                             </div>
-                            <!--all-overrall-->
+                            <!-- end content fixture overrall tab -->
                           </div>
-                          <div id="tabs-2">
-                            <!--  all-home -->
+                          <div class="tab-pane fade" id="fixture-home-tab-1" role="tabpanel">
+                            <!-- start content fixtute home tab -->
                             <div class="list-result">
                               <div class="result-item">
                                 <div class="team-info">
@@ -4188,6 +4159,7 @@
                                   </div>
                                 </div>
                               </div>
+
                               <div class="result-item">
                                 <div class="team-info">
                                   <span class="team-id">WCQ</span>
@@ -4200,26 +4172,11 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
+                                    <span class="sign orange">L</span>
                                   </div>
                                 </div>
                               </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
+
                               <div class="result-item">
                                 <div class="team-info">
                                   <span class="team-id">WCQ</span>
@@ -4259,10 +4216,10 @@
                               <span class="status"></span>
                               <span class="description">Upcoming Match</span>
                             </div>
-                            <!--all-home -->
+                            <!-- end content  fixture home tab -->
                           </div>
-                          <div id="tabs-3">
-                            <!--  all-away -->
+                          <div class="tab-pane fade" id="fixture-away-tab-1" role="tabpanel">
+                            <!-- start content fixtute away tab -->
                             <div class="list-result">
                               <div class="result-item">
                                 <div class="team-info">
@@ -4330,86 +4287,8 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
+
+
                               <div class="result-item">
                                 <div class="team-info">
                                   <span class="team-id">WCQ</span>
@@ -4426,6 +4305,7 @@
                                   </div>
                                 </div>
                               </div>
+
 
                               <!-- incoming match -->
                               <div class="result-item incoming-match">
@@ -4449,392 +4329,15 @@
                               <span class="status"></span>
                               <span class="description">Upcoming Match</span>
                             </div>
-                            <!--  all-away -->
+                            <!-- end content  fixture away tab -->
                           </div>
                         </div>
+                        <!-- end content fixture all tab -->
                       </div>
-                      <div id="fixture-main-2">
-                        <div id="fixture-premier-left-tabs">
-                          <ul class="fixture-tabs">
-                            <li><a href="#tabs-1">Overrall</a></li>
-                            <li><a href="#tabs-2">Home</a></li>
-                            <li><a href="#tabs-3">Away</a></li>
-                          </ul>
-                          <div id="tabs-1">
-                            <!-- all-overrall -->
-                            <div class="list-result">
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign orange">L</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- incoming match -->
-                              <div class="result-item incoming-match">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">vs</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- incoming match -->
-                            </div>
-                            <div class="suggesst">
-                              <span class="status"></span>
-                              <span class="description">Upcoming Match</span>
-                            </div>
-                            <!--all-overrall-->
-                          </div>
-                          <div id="tabs-2">
-                            <!--  all-home -->
-                            <div class="list-result">
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign orange">L</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- incoming match -->
-                              <div class="result-item incoming-match">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">vs</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- incoming match -->
-                            </div>
-                            <div class="suggesst">
-                              <span class="status"></span>
-                              <span class="description">Upcoming Match</span>
-                            </div>
-                            <!--all-home -->
-                          </div>
-                          <div id="tabs-3">
-                            <!--  all-away -->
-                            <div class="list-result">
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign orange">L</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- incoming match -->
-                              <div class="result-item incoming-match">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">vs</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- incoming match -->
-                            </div>
-                            <div class="suggesst">
-                              <span class="status"></span>
-                              <span class="description">Upcoming Match</span>
-                            </div>
-                            <!--  all-away -->
-                          </div>
-                        </div>
+                      <div class="tab-pane fade" id="fixture-premier-tab-1" role="tabpanel">
+                        <!-- START PREMIER TAB -->
+                        PREMIER TAB
+                        <!-- END PREMIER TAB -->
                       </div>
                     </div>
                   </div>
@@ -4842,20 +4345,31 @@
 
                   <!-- start right column -->
                   <div class="compare-item">
-                    <div id="fixture-right-tabs">
-                      <ul class="fixture-tabs">
-                        <li><a href="#fixture-main-1">All</a></li>
-                        <li><a href="#fixture-main-2">Premier League</a></li>
-                      </ul>
-                      <div id="fixture-main-1">
-                        <div id="fixture-all-right-tabs">
-                          <ul class="fixture-tabs">
-                            <li><a href="#tabs-1">Overrall</a></li>
-                            <li><a href="#tabs-2">Home</a></li>
-                            <li><a href="#tabs-3">Away</a></li>
-                          </ul>
-                          <div id="tabs-1">
-                            <!-- all-overral -->
+                    <ul class="nav nav-tabs fixture-tabs" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-all-tab-2" type="button" role="tab">All</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-premier-tab-2" type="button" role="tab">Premier League</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="fixture-all-tab-2" role="tabpanel">
+                        <!-- start content fixture all tab -->
+                        <ul class="nav nav-tabs fixture-tabs" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-overrall-tab-2" type="button" role="tab">Overrall</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-home-tab-2" type="button" role="tab">Home</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-away-tab-2" type="button" role="tab">Away</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="fixture-overrall-tab-2" role="tabpanel">
+                            <!--  start content fixture overrall tab -->
                             <div class="list-result">
                               <div class="result-item reverse">
                                 <div class="team-info">
@@ -4976,10 +4490,10 @@
                               </div>
                               <!-- incoming match -->
                             </div>
-                            <!-- all-overral -->
+                            <!-- end content fixture overrall tab -->
                           </div>
-                          <div id="tabs-2">
-                            <!-- all-home -->
+                          <div class="tab-pane fade" id="fixture-home-tab-2" role="tabpanel">
+                            <!-- start content home (right) tab -->
                             <div class="list-result">
                               <div class="result-item reverse">
                                 <div class="team-info">
@@ -5009,7 +4523,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
+                                    <span class="sign grey">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -5026,7 +4540,24 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign orange">L</span>
+                                    <span class="sign orange">W</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="result-item reverse">
+                                <div class="team-info">
+                                  <span class="team-id">WCQ</span>
+                                  <span class="team-name">Manchester United</span>
+                                </div>
+                                <span class="score">2:1</span>
+                                <div class="right-box">
+                                  <div class="time-and-address">
+                                    <span class="time">12-11-21</span>
+                                    <span class="address">Manchester United</span>
+                                  </div>
+                                  <div class="sign-wrapper">
+                                    <span class="sign orange">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -5049,10 +4580,10 @@
                               </div>
                               <!-- incoming match -->
                             </div>
-                            <!-- all-home -->
+                            <!-- end content home (right) tab -->
                           </div>
-                          <div id="tabs-3">
-                            <!-- all-away -->
+                          <div class="tab-pane fade" id="fixture-away-tab-2" role="tabpanel">
+                            <!-- start content away(right) tab -->
                             <div class="list-result">
                               <div class="result-item reverse">
                                 <div class="team-info">
@@ -5070,7 +4601,6 @@
                                   </div>
                                 </div>
                               </div>
-
                               <div class="result-item reverse">
                                 <div class="team-info">
                                   <span class="team-id">WCQ</span>
@@ -5083,7 +4613,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
+                                    <span class="sign grey">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -5100,7 +4630,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
+                                    <span class="sign orange">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -5117,7 +4647,7 @@
                                     <span class="address">Manchester United</span>
                                   </div>
                                   <div class="sign-wrapper">
-                                    <span class="sign orange">L</span>
+                                    <span class="sign orange">W</span>
                                   </div>
                                 </div>
                               </div>
@@ -5140,2352 +4670,286 @@
                               </div>
                               <!-- incoming match -->
                             </div>
-                            <!-- all-waya -->
+                            <!-- end contemt away(right) tab -->
                           </div>
                         </div>
+                        <!-- end content fixture all tab -->
                       </div>
-                      <div id="fixture-main-2">
-                        <div id="fixture-premier-right-tabs">
-                          <ul class="fixture-tabs">
-                            <li><a href="#tabs-1">Overrall</a></li>
-                            <li><a href="#tabs-2">Home</a></li>
-                            <li><a href="#tabs-3">Away</a></li>
-                          </ul>
-                          <div id="tabs-1">
-                            <!-- all-overral -->
-                            <div class="list-result">
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign orange">L</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- incoming match -->
-                              <div class="result-item incoming-match reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">vs</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- incoming match -->
-                            </div>
-                            <!-- all-overral -->
-                          </div>
-                          <div id="tabs-2">
-                            <!-- all-home -->
-                            <div class="list-result">
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign orange">L</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- incoming match -->
-                              <div class="result-item incoming-match reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">vs</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- incoming match -->
-                            </div>
-                            <!-- all-home -->
-                          </div>
-                          <div id="tabs-3">
-                            <!-- all-away -->
-                            <div class="list-result">
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign green">W</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="result-item reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">2:1</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                    <span class="sign grey">D</span>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- incoming match -->
-                              <div class="result-item incoming-match reverse">
-                                <div class="team-info">
-                                  <span class="team-id">WCQ</span>
-                                  <span class="team-name">Manchester United</span>
-                                </div>
-                                <span class="score">vs</span>
-                                <div class="right-box">
-                                  <div class="time-and-address">
-                                    <span class="time">12-11-21</span>
-                                    <span class="address">Manchester United</span>
-                                  </div>
-                                  <div class="sign-wrapper">
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- incoming match -->
-                            </div>
-                            <!-- all-waya -->
-                          </div>
-                        </div>
-                      </div>
+                      <div class="tab-pane fade" id="fixture-premier-tab-2" role="tabpanel">fixture premier tab</div>
                     </div>
                   </div>
                   <!-- end right column  -->
                 </div>
                 <!-- end table content for pc -->
-              </div>
-              <!-- FIXTURE -->
-            </div>
-            <div id="sub-tab-2">
-              Team Statistics content
-            </div>
-            <div id="sub-tab-3">
-              Player Statistics content
-            </div>
-          </div>
-          <!-- END HEAH TO HEAD CONTENT -->
-        </div>
-        <div id="live-betting">
-          live betting content
-        </div>
-        <div id="live-match-centre">
-          <div id="match-centre-tabs">
-            <ul class="live-sub-nav">
-              <li class="sub-nav-item"><a href="#sub-tab-1">Summary</a></li>
-              <li class="sub-nav-item"><a href="#sub-tab-2">Player Statistics</a></li>
-            </ul>
-            <div id="sub-tab-1">
-              summary tab content
-            </div>
-            <div id="sub-tab-2">
-              <!-- club-1 -->
-              <div class="table-4-wrapper">
-                <div class="table-title">
-                  <img src="./images/mc-club.png" alt="" />
-                  <span class="club-name">Manchester United</span>
-                </div>
-                <div id="match-centre-tab-1">
-                  <ul class="match-center-nav">
-                    <li><a href="#tabs-1">Standings</a></li>
-                    <li><a href="#tabs-2">Offensive</a></li>
-                    <li><a href="#tabs-3">Defensive</a></li>
-                    <li><a href="#tabs-4">Passing</a></li>
+
+
+                <!-- start table content for mobile -->
+                <div class="table-content-mb">
+                  <ul class="nav nav-tabs fixture-tabs-mb" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active nav-link-fixture-tab-customer" data-bs-toggle="tab" data-bs-target="#team-1">
+                        <img src="./images/mu-club.png" alt="">
+                        <span class="team-name">Man United</span>
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link nav-link-fixture-tab-customer" data-bs-toggle="tab" data-bs-target="#team-2" type="button" role="tab">
+                        <img src="./images/inter-club.png" alt="">
+                        <span class="team-name">Man United</span>
+                      </button>
+                    </li>
                   </ul>
-                  <div id="tabs-1">
-                    <div class="table-content">
-                      <div class="table-heading">
-                        <div class="player-info">Player</div>
-                        <div class="match-value">
-                          <div class="table-column">Shots</div>
-                          <div class="table-column">ShotsOT</div>
-                          <div class="table-column">Keypasses</div>
-                          <div class="table-column">PA%</div>
-                          <div class="table-column">AerialsWon</div>
-                          <div class="table-column">Touchers</div>
-                          <div class="table-column text-danger">Rating</div>
-                          <div class="table-column">Key Events</div>
-                        </div>
-                      </div>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="team-1" role="tabpanel">
+                      <div class="compare-item">
+                        <ul class="nav nav-tabs fixture-tabs" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-all-tab-1-mb" type="button" role="tab">All</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-premier-tab-1-mb" type="button" role="tab">Premier League</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="fixture-all-tab-1-mb" role="tabpanel">
+                            <!-- start content fixture all tab -->
+                            <ul class="nav nav-tabs fixture-tabs" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-overrall-tab-1-mb" type="button" role="tab">Overrall</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-home-tab-1-mb" type="button" role="tab">Home</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-away-tab-1-mb" type="button" role="tab">Away</button>
+                              </li>
+                            </ul>
+                            <div class="tab-content">
+                              <div class="tab-pane fade show active" id="fixture-overrall-tab-1-mb" role="tabpanel">
+                                <!--  start content fixture overrall tab -->
+                                <div class="list-result">
+                                  <div class="result-item">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">2:1</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                        <span class="sign green">W</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="result-item">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">2:1</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                        <span class="sign grey">W</span>
+                                      </div>
+                                    </div>
+                                  </div>
 
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                                  <div class="result-item">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">2:1</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                        <span class="sign orange">W</span>
+                                      </div>
+                                    </div>
+                                  </div>
 
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                                  <!-- incoming match -->
+                                  <div class="result-item incoming-match">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">vs</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- incoming match -->
+                                </div>
+                                <div class="suggesst">
+                                  <span class="status"></span>
+                                  <span class="description">Upcoming Match</span>
+                                </div>
 
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
+                                <!-- end content fixture overrall tab -->
+                              </div>
+                              <div class="tab-pane fade" id="fixture-home-tab-1-mb" role="tabpanel">fixture home</div>
+                              <div class="tab-pane fade" id="fixture-away-tab-1-mb" role="tabpanel">fixture away</div>
                             </div>
+                            <!-- end content fixture all tab -->
                           </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
+                          <div class="tab-pane fade" id="fixture-premier-tab-1-mb" role="tabpanel">fixture premier tab</div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div id="tabs-2">
-                    <div class="table-content">
-                      <div class="table-heading">
-                        <div class="player-info">Player</div>
-                        <div class="match-value">
-                          <div class="table-column">Shots</div>
-                          <div class="table-column">ShotsOT</div>
-                          <div class="table-column">Keypasses</div>
-                          <div class="table-column">PA%</div>
-                          <div class="table-column">AerialsWon</div>
-                          <div class="table-column">Touchers</div>
-                          <div class="table-column text-danger">Rating</div>
-                          <div class="table-column">Key Events</div>
-                        </div>
-                      </div>
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="tab-pane fade" id="team-2" role="tabpanel">
+                      <div class="compare-item">
+                        <ul class="nav nav-tabs fixture-tabs" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-all-tab-2-mb" type="button" role="tab">All</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-premier-tab-2-mb" type="button" role="tab">Premier League</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane fade show active" id="fixture-all-tab-2-mb" role="tabpanel">
+                            <!-- start content fixture all tab -->
+                            <ul class="nav nav-tabs fixture-tabs" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-overrall-tab-2-mb" type="button" role="tab">Overrall</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-home-tab-2-mb" type="button" role="tab">Home</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link nav-link-fixture-customer" data-bs-toggle="tab" data-bs-target="#fixture-away-tab-2-mb" type="button" role="tab">Away</button>
+                              </li>
+                            </ul>
+                            <div class="tab-content">
+                              <div class="tab-pane fade show active" id="fixture-overrall-tab-2-mb" role="tabpanel">
+                                <!--  start content fixture overrall tab -->
+                                <div class="list-result">
+                                  <div class="result-item reverse">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">2:1</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                        <span class="sign green">W</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="result-item reverse">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">2:1</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                        <span class="sign grey">W</span>
+                                      </div>
+                                    </div>
+                                  </div>
 
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                                  <div class="result-item reverse">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">2:1</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                        <span class="sign orange">W</span>
+                                      </div>
+                                    </div>
+                                  </div>
 
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                                  <div class="result-item reverse">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">2:1</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                        <span class="sign orange">W</span>
+                                      </div>
+                                    </div>
+                                  </div>
 
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
+                                  <!-- incoming match -->
+                                  <div class="result-item incoming-match reverse">
+                                    <div class="team-info">
+                                      <span class="team-id">WCQ</span>
+                                      <span class="team-name">Manchester United</span>
+                                    </div>
+                                    <span class="score">vs</span>
+                                    <div class="right-box">
+                                      <div class="time-and-address">
+                                        <span class="time">12-11-21</span>
+                                        <span class="address">Manchester United</span>
+                                      </div>
+                                      <div class="sign-wrapper">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- incoming match -->
+                                </div>
+                                <!-- end content fixture overrall tab -->
+                              </div>
+                              <div class="tab-pane fade" id="fixture-home-tab-2-mb" role="tabpanel">fixture home</div>
+                              <div class="tab-pane fade" id="fixture-away-tab-2-mb" role="tabpanel">fixture away</div>
                             </div>
+                            <!-- end content fixture all tab -->
                           </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="tabs-3">
-                    <div class="table-content">
-                      <div class="table-heading">
-                        <div class="player-info">Player</div>
-                        <div class="match-value">
-                          <div class="table-column">Shots</div>
-                          <div class="table-column">ShotsOT</div>
-                          <div class="table-column">Keypasses</div>
-                          <div class="table-column">PA%</div>
-                          <div class="table-column">AerialsWon</div>
-                          <div class="table-column">Touchers</div>
-                          <div class="table-column text-danger">Rating</div>
-                          <div class="table-column">Key Events</div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="tabs-4">
-                    <div class="table-content">
-                      <div class="table-heading">
-                        <div class="player-info">Player</div>
-                        <div class="match-value">
-                          <div class="table-column">Shots</div>
-                          <div class="table-column">ShotsOT</div>
-                          <div class="table-column">Keypasses</div>
-                          <div class="table-column">PA%</div>
-                          <div class="table-column">AerialsWon</div>
-                          <div class="table-column">Touchers</div>
-                          <div class="table-column text-danger">Rating</div>
-                          <div class="table-column">Key Events</div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
+                          <div class="tab-pane fade" id="fixture-premier-tab-2-mb" role="tabpanel">fixture premier tab</div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- end table content for mobile -->
               </div>
-              <!-- club-1 -->
 
-              <!-- club-2 -->
-              <div class="table-4-wrapper">
-                <div class="table-title">
-                  <img src="./images/lei-club.png" alt="" />
-                  <span class="club-name">Liverpool</span>
-                </div>
-                <div id="match-centre-tab-2">
-                  <ul class="match-center-nav">
-                    <li><a href="#tabs-1">Standings</a></li>
-                    <li><a href="#tabs-2">Offensive</a></li>
-                    <li><a href="#tabs-3">Defensive</a></li>
-                    <li><a href="#tabs-4">Passing</a></li>
-                  </ul>
-                  <div id="tabs-1">
-                    <div class="table-content">
-                      <div class="table-heading">
-                        <div class="player-info">Player</div>
-                        <div class="match-value">
-                          <div class="table-column">Shots</div>
-                          <div class="table-column">ShotsOT</div>
-                          <div class="table-column">Keypasses</div>
-                          <div class="table-column">PA%</div>
-                          <div class="table-column">AerialsWon</div>
-                          <div class="table-column">Touchers</div>
-                          <div class="table-column text-danger">Rating</div>
-                          <div class="table-column">Key Events</div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="tabs-2">
-                    <div class="table-content">
-                      <div class="table-heading">
-                        <div class="player-info">Player</div>
-                        <div class="match-value">
-                          <div class="table-column">Shots</div>
-                          <div class="table-column">ShotsOT</div>
-                          <div class="table-column">Keypasses</div>
-                          <div class="table-column">PA%</div>
-                          <div class="table-column">AerialsWon</div>
-                          <div class="table-column">Touchers</div>
-                          <div class="table-column text-danger">Rating</div>
-                          <div class="table-column">Key Events</div>
-                        </div>
-                      </div>
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="tabs-3">
-                    <div class="table-content">
-                      <div class="table-heading">
-                        <div class="player-info">Player</div>
-                        <div class="match-value">
-                          <div class="table-column">Shots</div>
-                          <div class="table-column">ShotsOT</div>
-                          <div class="table-column">Keypasses</div>
-                          <div class="table-column">PA%</div>
-                          <div class="table-column">AerialsWon</div>
-                          <div class="table-column">Touchers</div>
-                          <div class="table-column text-danger">Rating</div>
-                          <div class="table-column">Key Events</div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="tabs-4">
-                    <div class="table-content">
-                      <div class="table-heading">
-                        <div class="player-info">Player</div>
-                        <div class="match-value">
-                          <div class="table-column">Shots</div>
-                          <div class="table-column">ShotsOT</div>
-                          <div class="table-column">Keypasses</div>
-                          <div class="table-column">PA%</div>
-                          <div class="table-column">AerialsWon</div>
-                          <div class="table-column">Touchers</div>
-                          <div class="table-column text-danger">Rating</div>
-                          <div class="table-column">Key Events</div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-row">
-                        <div class="player-info">
-                          <span class="number">1</span>
-                          <div class="player-detail">
-                            <img class="flag" src="./images/flag.png" />
-                            <div>
-                              <p class="player-name">Kevin De Bruyne</p>
-                              <p class="player-history">30, M(CLR),FW</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="match-value">
-                          <div class="table-column">3</div>
-                          <div class="table-column">0</div>
-                          <div class="table-column">2</div>
-                          <div class="table-column">86.5</div>
-                          <div class="table-column">1</div>
-                          <div class="table-column">28</div>
-                          <div class="table-column text-danger">7.67</div>
-                          <div class="table-column">
-                            <div class="key-events">
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4ZM16.7 15.8H14.7L14.1 17.7C12.7 18.2 11.2 18.2 9.8 17.7L9.2 15.8H7.2C6.4 14.7 5.9 13.3 6 11.7L7.6 10.6L7 8.7C7.8 7.5 9 6.6 10.5 6.2L12 7.4L13.6 6.2C15 6.6 16.2 7.5 17 8.7L16.4 10.6L18 11.7C18.1 13.3 17.6 14.7 16.7 15.8Z" fill="#1A202C" />
-                                <path d="M9.5 11.4L10.7 13.9H13.3L14.5 11.4L12 9.5L9.5 11.4Z" fill="#1A202C" />
-                              </svg>
-                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect opacity="0.2" x="4" y="4" width="16" height="16" rx="8" fill="#461A53" />
-                                <path d="M13.8724 14.1401H10.2244L9.55239 16.0001H8.40039L11.4244 7.68408H12.6844L15.6964 16.0001H14.5444L13.8724 14.1401ZM13.5604 13.2521L12.0484 9.02808L10.5364 13.2521H13.5604Z" fill="#461A53" />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- club-2 -->
-
+              <!-- =================SUMMARY TAB CONTENT ============= -->
             </div>
+            <div class="tab-pane fade" id="nav-team" role="tabpanel">team</div>
+            <div class="tab-pane fade" id="nav-player" role="tabpanel">Player</div>
           </div>
+          <!-- ================HEAD TO HEAD ================-->
         </div>
+        <div class="tab-pane fade" id="nav-betting" role="tabpanel">beeting content</div>
+        <div class="tab-pane fade" id="nav-match-centre" role="tabpanel">Match centre content</div>
       </div>
     </div>
   </div>
@@ -7518,92 +4982,22 @@
     });
   }
 
-  // handle choose one checkbox.
+  // the selector will match all input controls of type :checkbox
+  // and attach a click event handler
   $("input:checkbox").on('click', function() {
+    // in the handler, 'this' refers to the box clicked on
     var $box = $(this);
     if ($box.is(":checked")) {
+      // the name of the box is retrieved using the .attr() method
+      // as it is assumed and expected to be immutable
       var group = "input:checkbox[name='" + $box.attr("name") + "']";
+      // the checked state of the group/box on the other hand will change
+      // and the current value is retrieved using .prop() method
       $(group).prop("checked", false);
       $box.prop("checked", true);
     } else {
       $box.prop("checked", false);
     }
-  });
-
-  // handle toggle show tab fixture in mobile
-  $("#fixture-mobile-tab-1").on('click', function() {
-    $(".tabs-mobile-item").removeClass("tab-active")
-    $(".compare-item").first().css("display", "block")
-    $(".compare-item").last().css("display", "none")
-    $(this).addClass('tab-active')
-  })
-
-  $("#fixture-mobile-tab-2").on('click', function() {
-    $(".tabs-mobile-item").removeClass("tab-active")
-    $(".compare-item").first().css("display", "none")
-    $(".compare-item").last().css("display", "block")
-    $(this).addClass('tab-active')
-  })
-</script>
-<script>
-  $(function() {
-    //head to head tabs
-    $("#live-main-tabs").tabs({
-      active: 0
-    });
-    $("#head-to-head-tabs").tabs({
-      active: 0
-    });
-    $("#betting-tabs").tabs({
-      active: 0
-    });
-    $("#match-centre-tabs").tabs({
-      active: 0
-    });
-    $("#previous-meeting-tabs").tabs({
-      active: 0
-    })
-    $("#tables-main-tabs").tabs({
-      active: 0
-    })
-    $("#tables-standings-tabs").tabs({
-      active: 0
-    })
-    $("#tables-form-tabs").tabs({
-      active: 0
-    })
-    $("#tables-streaks-tabs").tabs({
-      active: 0
-    })
-    $("#fixture-left-tabs").tabs({
-      active: 0
-    })
-    $("#fixture-right-tabs").tabs({
-      active: 0
-    })
-
-    $("#fixture-all-left-tabs").tabs({
-      active: 0
-    })
-    $("#fixture-all-right-tabs").tabs({
-      active: 0
-    })
-    $("#fixture-premier-left-tabs").tabs({
-      active: 0
-    })
-
-    $("#fixture-premier-right-tabs").tabs({
-      active: 0
-    })
-
-
-    // match centre tabs
-    $("#match-centre-tab-1").tabs({
-      active: 0
-    })
-    $("#match-centre-tab-2").tabs({
-      active: 0
-    })
   });
 </script>
 
