@@ -86,6 +86,7 @@
     background: #edf2f7;
     border-radius: 1000px;
     cursor: pointer;
+    max-height: 48px;
     /* identical to box height */
 
     /* Gray:600 */
@@ -115,6 +116,7 @@
     padding: 12px 24px;
     background: #edf2f7;
     border-radius: 1000px;
+    max-height: 48px;
 
     input {
       display: flex;
@@ -239,6 +241,7 @@
     border: 1px solid #461A53;
     color: #461A53;
     text-decoration: none;
+    max-height: 48px;
   }
   .submit-signup {
     margin-bottom: 0;

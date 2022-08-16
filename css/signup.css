@@ -145,6 +145,7 @@ button,
   background: #edf2f7;
   border-radius: 1000px;
   cursor: pointer;
+  max-height: 48px;
   /* identical to box height */
   /* Gray:600 */
   color: #1a202c;
@@ -208,6 +209,7 @@ button,
   border: 1px solid #461a53;
   color: #461a53;
   text-decoration: none;
+  max-height: 48px;
 }
 .signup-wraper .submit-signup {
   margin-bottom: 0;

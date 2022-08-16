@@ -137,6 +137,7 @@ button,
   background: #edf2f7;
   border-radius: 1000px;
   cursor: pointer;
+  max-height: 48px;
   /* identical to box height */
   /* Gray:600 */
   color: #1a202c;
@@ -159,6 +160,7 @@ button,
   padding: 12px 24px;
   background: #edf2f7;
   border-radius: 1000px;
+  max-height: 48px;
 }
 .signin-wraper .input-password input {
   display: flex;
@@ -266,6 +268,7 @@ button,
   border: 1px solid #461A53;
   color: #461A53;
   text-decoration: none;
+  max-height: 48px;
 }
 .signin-wraper .submit-signup {
   margin-bottom: 0;
