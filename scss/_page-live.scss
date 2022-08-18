@@ -2215,8 +2215,12 @@
 .table-4-wrapper {
   width: 100%;
   height: auto;
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-bottom: 40px;
+
+  @include mq(max_md) {
+    overflow-x: scroll;
+  }
   .table-title {
     display: flex;
     align-items: center;
