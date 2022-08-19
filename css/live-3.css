@@ -2023,8 +2023,13 @@ button,
 .table-4-wrapper {
   width: 100%;
   height: auto;
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .table-4-wrapper {
+    overflow-x: scroll;
+  }
 }
 .table-4-wrapper .table-title {
   display: flex;
