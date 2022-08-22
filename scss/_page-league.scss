@@ -1,0 +1,2113 @@
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.league-wrapper {
+  width: 100%;
+  height: auto;
+
+
+  .banner {
+    width: 100%;
+    height: auto;
+    background-image: url("../images/banner-background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 16px 0px 80px 0px;
+    color: #fff;
+    position: relative;
+
+    @include mq(max_md) {
+      margin-top: 40px;
+    }
+  }
+
+  .list-category {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    gap: 6px;
+
+    @include mq(max_md) {
+      position: absolute;
+      top: -32px;
+      left: 0;
+      margin-left: 16px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      /* identical to box height */
+
+
+      color: #FFFFFF;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @include mq(max_md) {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #1A202C;
+      }
+    }
+
+    .category-item {
+      img {
+        display: block;
+        width: 16px;
+        height: auto;
+        min-width: 16px;
+        object-fit: cover;
+        border: none;
+        border-radius: 50%;
+      }
+
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .arrow {
+      svg {
+        @include mq(max_md) {
+          fill: #1A202C !important;
+        }
+      }
+    }
+  }
+
+  .league-info {
+    width: fit-content;
+    height: auto;
+    margin: 32px 0px;
+    display: flex;
+    gap: 24px;
+
+    @include mq(max_md) {
+      margin: 0px 0px 16px 0px;
+      gap: 16px;
+    }
+
+    .league-image {
+      width: 107px;
+      height: 107px;
+      display: block;
+      min-width: 107px;
+      border: none;
+      border-radius: 50%;
+
+      @include mq(max_md) {
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
+      }
+    }
+
+    .info-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .league-name {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        color: #ffffff;
+        min-width: max-content;
+
+        @include mq(max_md) {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+
+      .count-clubs {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+
+        @include mq(max_md) {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  .league-content {
+    &__wrapper {
+      width: 100%;
+      height: auto;
+      height: auto;
+      position: relative;
+      top: -56px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+
+      @include mq(max_md) {
+        top: -59px;
+      }
+
+      .league-main-nav {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+
+        @include mq(max_md) {
+          gap: 6px;
+          overflow-x: auto;
+        }
+
+        li {
+          cursor: pointer;
+          display: block;
+          width: 164px !important;
+          height: 48px !important;
+          display: flex !important;
+          justify-content: center;
+          align-items: center;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          color: #1a202c;
+          background: #e2e8f0;
+          box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.02);
+          border-radius: 6px 6px 0px 0px;
+          border: none;
+          min-width: fit-content;
+
+          &:focus {
+            outline: none;
+          }
+
+          a {
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            color: #1a202c;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          @include mq(max_md) {
+            width: fit-content;
+            height: auto;
+            padding: 8px 16px;
+          }
+        }
+
+        .ui-tabs-active {
+          background: #ffffff;
+          border-radius: 6px 6px 0px 0px;
+        }
+      }
+
+      .table-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+
+        @include mq(max_md) {
+          flex-direction: column;
+          gap: 8px;
+          align-items: flex-start;
+        }
+
+        .title {
+          margin: 0;
+          padding: 0;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+          color: #1a202c;
+
+          @include mq(max_md) {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #1A202C;
+          }
+        }
+
+        .date-picker {
+          padding: 6px 6px 6px 12px;
+          border: none;
+          background: #edf2f7;
+          border-radius: 8px;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          min-width: 218px;
+
+          .time {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            span {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              color: #1a202c;
+            }
+          }
+        }
+      }
+
+      // ============TABLE  premier-league-fixtures-table  STYLE==========
+      .premier-league-fixtures-table {
+        margin-bottom: 40px;
+
+        .table-content {
+
+          // list scores
+          .list-score {
+            width: 100%;
+            height: auto;
+
+            .score-item {
+              width: 100%;
+              height: auto;
+              margin-bottom: 32px;
+
+              .score-header {
+                width: 100%;
+                padding: 12px 16px;
+                background-color: rgba(70, 26, 83, 0.04);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                @include mq(max_md) {
+                  padding: 6px 16px;
+                }
+
+                img {
+                  display: block;
+                  min-width: 16px;
+                  max-width: 16px;
+                  height: 16px;
+                  object-fit: cover;
+                  border: none;
+                  border-radius: 50%;
+                  margin-right: 16px;
+                }
+
+                h3 {
+                  margin: 0;
+                  padding: 0;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: #1a202c;
+                }
+              }
+
+              .list-timeline {
+                width: 100%;
+
+                .timeline-item {
+                  .collapsible {
+                    margin: 0;
+                    padding: 0;
+                    background-color: #fff;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #1a202c;
+                    cursor: pointer;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 12px;
+                    border-bottom: 1px solid #edf2f7;
+
+                    &:hover {
+                      cursor: pointer;
+                      background-color: #edf2f7 !important;
+                    }
+
+                    @include mq(max_md) {
+                      padding: 6px 12px;
+                    }
+
+                    .icon-arrow {
+                      display: block;
+                      max-width: 10px;
+                      object-fit: cover;
+                    }
+
+                    .collapse-icon {
+                      display: inline-block;
+                      width: 30px;
+                      height: 30px;
+                      border: none;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin-right: 24px;
+
+                      @include mq(max_md) {
+                        margin-right: 2px;
+                      }
+
+                      &:hover {
+                        background-color: #edf2f7;
+                        border-radius: 50%;
+                        cursor: pointer;
+                      }
+
+                      .icon-arrow-up {
+                        display: none;
+                      }
+                    }
+
+                    .collapse-title-mb {
+                      display: none;
+                      // display: flex;
+                      flex-grow: 1;
+                      justify-content: space-between;
+                      align-items: center;
+
+                      &__left {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .with-status {
+                          margin-right: 6px;
+                        }
+
+                        .time-info {
+                          margin-right: 16px;
+                          display: flex;
+                          flex-direction: column;
+
+                          .time {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #1a202c;
+                          }
+
+                          .live-status {
+                            width: 34px;
+                            height: 18px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #ffffff;
+                            background-color: #e53e3e;
+                            text-transform: uppercase;
+                            border-radius: 4px;
+                          }
+                        }
+
+                        .list-club {
+                          .club-item {
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+                          }
+
+                          .club-name {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #1a202c;
+                          }
+
+                          .score {
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 4px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #ffffff;
+                          }
+
+                          .default {
+                            background-color: #461a53;
+                          }
+
+                          .live {
+                            background: #fff;
+                            color: #18b745;
+                          }
+                        }
+                      }
+
+                      &__right {
+                        .btn-timeline {
+                          display: inline-block;
+                          padding: 3px 8px;
+                          text-align: center;
+                          min-width: 90px;
+                          cursor: pointer;
+                          background-color: #fff;
+                          border-radius: 6px;
+                          font-style: normal;
+                          font-weight: 500;
+                          font-size: 12px;
+                          line-height: 18px;
+                          text-align: center;
+                        }
+
+                        .math-report {
+                          color: #e34b31;
+                          border: 1px solid #e34b31;
+
+                          &:hover {
+                            background: rgba(227, 75, 49, 0.1);
+                          }
+                        }
+
+                        .preview {
+                          color: #461a53;
+                          border: 1px solid #461a53;
+
+                          &:hover {
+                            background: rgba(70, 26, 83, 0.1);
+                          }
+                        }
+
+                        .lineup {
+                          color: #18b745;
+                          border: 1px solid #18b745;
+
+                          &:hover {
+                            background: rgba(24, 183, 69, 0.1);
+                          }
+                        }
+
+                        .watch-now {
+                          color: #fff;
+                          background-color: #18b745;
+                        }
+                      }
+
+                      @include mq(max_md) {
+                        display: flex;
+                      }
+                    }
+
+                    .collapse-title {
+                      flex-grow: 1;
+                      width: 100%;
+                      height: auto;
+                      display: flex;
+
+                      @include mq(max_md) {
+                        display: none;
+                      }
+
+                      .left-column,
+                      .right-column {
+                        width: 45%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      }
+
+                      .time {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #1a202c;
+                      }
+
+                      .time-info {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+
+                        .live-status {
+                          text-transform: uppercase;
+                          background: #e53e3e;
+                          border-radius: 4px;
+                          color: #fff;
+                          width: 34px;
+                          height: 18px;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          font-style: normal;
+                          font-weight: 500;
+                          font-size: 12px;
+                          line-height: 18px;
+                          color: #ffffff;
+                        }
+                      }
+
+                      .club-info {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        .name-club {
+                          text-decoration: none;
+                          font-style: normal;
+                          font-weight: 400;
+                          font-size: 14px;
+                          line-height: 21px;
+                          color: #1a202c;
+
+                          &:hover {
+                            text-decoration: underline;
+                          }
+                        }
+
+                        img {
+                          display: block;
+                          width: 24px;
+                          height: 24px;
+                          border: none;
+                          border-radius: 50%;
+                        }
+                      }
+
+                      .btn-timeline {
+                        padding: 3px 0px;
+                        text-align: center;
+                        min-width: 90px;
+                        cursor: pointer;
+                        background-color: #fff;
+                        border: 1px solid;
+                        border-radius: 6px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-align: center;
+                      }
+
+                      .math-report {
+                        color: #e34b31;
+                        border: 1px solid #e34b31;
+
+                        &:hover {
+                          background: rgba(227, 75, 49, 0.1);
+                        }
+                      }
+
+                      .preview {
+                        color: #461a53;
+                        border: 1px solid #461a53;
+
+                        &:hover {
+                          background: rgba(70, 26, 83, 0.1);
+                        }
+                      }
+
+                      .lineup {
+                        color: #18b745;
+                        border: 1px solid #18b745;
+
+                        &:hover {
+                          background: rgba(24, 183, 69, 0.1);
+                        }
+                      }
+
+                      .watch-now {
+                        color: #fff;
+                        background-color: #18b745;
+                      }
+
+                      .middle-column {
+                        display: flex;
+                        width: 10%;
+                        display: flex;
+                        justify-content: center;
+
+                        .score {
+                          width: 24px;
+                          height: 24px;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          border: none;
+                          border-radius: 6px;
+                          font-style: normal;
+                          font-weight: 400;
+                          font-size: 14px;
+                          line-height: 21px;
+                          text-align: center;
+                          color: #ffffff;
+                          margin: 0px 2px;
+                        }
+
+                        .default {
+                          background-color: #461a53;
+                        }
+
+                        .live {
+                          background-color: #18b745;
+                        }
+                      }
+                    }
+
+                    @include mq(max_sm) {
+                      padding: 16px 0px;
+                    }
+                  }
+
+                  .timeline-content {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f7fafc;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #1a202c;
+                    max-height: 0;
+                    overflow: hidden;
+                    padding: 0px 12px;
+                    transition: all 0.3s ease;
+
+                    .timeline-detail {
+                      display: flex;
+                      align-items: center;
+
+                      .empty {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 24px;
+                      }
+
+                      .timeline-result {
+                        flex-grow: 1;
+                        display: flex;
+
+                        .left-result {
+                          width: 45%;
+                          display: flex;
+                          justify-content: flex-end;
+                        }
+
+                        .time-result {
+                          width: 10%;
+                          display: flex;
+                          justify-content: center;
+                        }
+
+                        .right-result {
+                          display: flex;
+                          justify-content: flex-start;
+                          width: 45%;
+                        }
+
+                        .player-info {
+                          display: flex;
+                          align-items: center;
+                          gap: 12px;
+
+                          .player-name {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: #1a202c;
+                          }
+
+                          .icon-ball {
+                            max-width: 20px;
+                            object-fit: cover;
+                          }
+
+                          .type {
+                            color: #718096;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  .active {
+                    // border: none;
+                    // padding-bottom: 0;
+                  }
+
+                  .active,
+                  .collapsible:hover {}
+
+                  .collapsible:after {}
+
+                  .active:after {}
+
+                  // .timeline-content {
+                  //   max-height: 0;
+                  //   overflow: hidden;
+                  //   width: 100%;
+                  // }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // ============TABLE  premier-league-fixtures-table  STYLE==========
+
+      // ==========TABLE premier-laegue-table  STYLE ==========
+      .premier-laegue-table {
+        margin-bottom: 40px;
+
+        .table-result {
+          max-width: 100%;
+          height: auto;
+          overflow: auto;
+
+          .row-item {
+            padding: 10px 24px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #1a202c;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+
+            .team-info {
+              min-width: 450px;
+              max-width: 450px;
+              display: flex;
+              align-items: center;
+
+              .team-id {
+                display: flex;
+                justify-content: center;
+                margin-right: 32px;
+
+                .number {
+                  width: 24px;
+                  height: 24px;
+                  border: none;
+                  border-radius: 6px;
+                  background-color: transparent;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: #1a202c;
+                }
+              }
+
+              .team-name {
+                flex-grow: 1;
+              }
+            }
+
+            .team-result {
+              display: flex;
+              align-items: center;
+              gap: 50px;
+              flex-grow: 1;
+
+              .result-detail {
+                flex-grow: 1;
+                display: flex;
+
+                .detail-item {
+                  min-width: 50px;
+                  width: calc(100% / 8);
+                  height: auto;
+                  text-transform: capitalize;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 21px;
+                  text-align: center;
+                }
+              }
+
+              .list-player {
+                display: flex;
+                gap: 2px;
+                min-width: 200px;
+                max-width: 200px;
+
+                .player-item {
+                  width: 24px;
+                  height: 24px;
+                  border: none;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 21px;
+                  text-align: center;
+                  color: #ffffff;
+                  text-transform: uppercase;
+                }
+
+                .green {
+                  background-color: #18b745;
+                }
+
+                .grey {
+                  background-color: #4a5568;
+                }
+
+                .orange {
+                  background-color: #e34b31;
+                }
+              }
+            }
+          }
+
+          .table-heading {
+            background-color: #4a5568;
+            color: #fff;
+            min-width: max-content;
+          }
+
+          .table-row {
+            min-width: max-content;
+
+            &:nth-child(odd) {
+              background-color: #edf2f7;
+            }
+
+            &:hover {
+              cursor: pointer;
+              background-color: #edf2f7;
+            }
+          }
+        }
+
+        .list-suggest {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          margin-top: 12px;
+
+          .suggest-item {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            min-width: fit-content;
+
+            .color-league {
+              display: block;
+              width: 16px;
+              height: 16px;
+              border: none;
+              border-radius: 4px;
+            }
+
+            .name-league {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 18px;
+              color: #1a202c;
+            }
+          }
+        }
+
+        .champion {
+          background-color: #461a53 !important;
+          color: #fff !important;
+        }
+
+        .europa {
+          background-color: #e34b31 !important;
+          color: #fff !important;
+        }
+
+        .relegation {
+          background-color: #fac712 !important;
+          color: #fff !important;
+        }
+      }
+
+      // ==========TABLE premier-laegue-table  STYLE ==========
+
+      //  ===========STYLE COMMON FOR TABLE 3,4,5 =========
+      .tables-main-nav {
+        width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start !important;
+        gap: 8px;
+        border: none !important;
+        margin-bottom: 0 !important;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @include mq(max_md) {
+          overflow-x: auto;
+        }
+
+        li {
+          margin: 0;
+          padding: 0;
+          min-width: 103px;
+          max-width: max-content;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #CBD5E0;
+          border-radius: 8px 8px 0px 0px;
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          background-color: transparent;
+          padding: 10px 0px;
+          border-radius: 8px 8px 0px 0px;
+          text-align: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #1A202C;
+        }
+
+        .ui-tabs-active {
+          background-color: #edf2f7 !important;
+        }
+      }
+
+      .tables-sub-nav {
+        width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start !important;
+        gap: 24px !important;
+        padding: 10px 24px 0px 10px;
+        background-color: #edf2f7;
+        margin-bottom: 0px !important;
+        border: none !important;
+        list-style: none;
+
+        li {
+          margin: 0;
+          padding: 0;
+          padding-bottom: 8px;
+          background-color: transparent;
+          ;
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: none;
+          text-decoration: none;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #1A202C;
+          background-color: transparent;
+        }
+
+        .ui-tabs-active {
+          border-bottom: 2px solid #e34b31;
+          background-color: transparent !important;
+
+          a {
+            color: #e34b31 !important;
+          }
+        }
+      }
+
+      .club-name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+      }
+
+      .progress {
+        min-width: 125px;
+        max-width: 125px;
+        border-radius: 4px !important;
+        height: 24px !important;
+        position: relative;
+      }
+
+      .progess-max {
+        min-width: 100% !important;
+      }
+
+      .maxw-200 {
+        max-width: 200px;
+      }
+
+      .progess-label {
+        position: absolute;
+        right: 8px;
+        top: 2px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+      }
+
+      .progress-bar {
+        border-radius: 4px;
+        padding: 2px 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      .green-process {
+        .progress {
+          background-color: rgba(24, 183, 69, 0.4);
+        }
+
+        .progress-bar {
+          background-color: #18B745;
+        }
+      }
+
+      .blue-process {
+        .progress {
+          background-color: #fff !important;
+        }
+
+        .progress-bar {
+          background-color: #5A67D8;
+        }
+      }
+
+      .rating {
+        min-width: fit-content;
+        // max-width: fit-content;
+        padding: 2px 6px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        background: #E34B31;
+        border-radius: 4px;
+        border: none;
+      }
+
+      .column-33 {
+        width: calc(100% / 3);
+
+        @include mq (max_md) {
+          min-width: 400px;
+        }
+      }
+
+      .column-30 {
+        width: 30%;
+
+        @include mq (max_md) {
+          min-width: 400px;
+        }
+      }
+      .column-6 {
+        width:  calc(100% / 11);
+
+        @include mq (max_md) {
+          min-width: 76px;
+        }
+      }
+
+      .column-20 {
+        width: 20%;
+
+        @include mq (max_md) {
+          min-width: 240px;
+        }
+      }
+      .column-25 {
+        width: 25%;
+      }
+
+      .column-10 {
+        width: 10%;
+
+        @include mq (max_md) {
+          min-width: 120px;
+        }
+      }
+
+      .column-55 {
+        width: 55%;
+
+        @include mq (max_md) {
+          min-width: 660px;
+        }
+      }
+
+      .column-50 {
+        width: 50%;
+
+        @include mq (max_md) {
+          min-width: 600px;
+        }
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      .column-70 {
+        width: 70%;
+
+        @include mq (max_md) {
+          min-width: 840px;
+        }
+      }
+
+      .column-15 {
+        width: 15%;
+
+        @include mq (max_md) {
+          min-width: 180px;
+        }
+      }
+
+      .column-60 {
+        width: 60%;
+
+        @include mq (max_md) {
+          min-width: 720px;
+        }
+      }
+
+      .column-7 {
+        width: 7%;
+
+        @include mq (max_md) {
+          min-width: 84px;
+        }
+      }
+
+      .column-40 {
+        width: 40%;
+
+        @include mq (max_md) {
+          min-width: 480px;
+        }
+      }
+
+      .column-35 {
+        width: 35%;
+
+        @include mq (max_md) {
+          min-width: 420px;
+        }
+      }
+
+      .column-5 {
+        width: 5%;
+
+        @include mq (max_md) {
+          min-width: 60px;
+        }
+      }
+
+      .column-8 {
+        width: calc(100% / 8);
+
+        @include mq (max_md) {
+          min-width: 105px;
+        }
+      }
+
+
+      .column-45 {
+        width: 45%;
+
+        @include mq (max_md) {
+          min-width: 540px;
+        }
+      }
+
+      .column-57 {
+        width: 57%;
+
+        @include mq (max_md) {
+          min-width: 684px;
+        }
+      }
+
+      .column-23 {
+        width: calc(100% / 3);
+
+        @include mq (max_md) {
+          min-width: 280px;
+        }
+      }
+
+      .column-27 {
+        width: calc(80% / 3);
+
+        @include mq (max_md) {
+          min-width: 320px;
+        }
+      }
+
+      .column-14 {
+        width: calc(100% / 5);
+
+        @include mq (max_md) {
+          min-width: 168px;
+        }
+      }
+
+      .text-left {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .text-center {
+        text-align: center;
+        justify-content: center;
+      }
+
+      .text-right {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .flex-grow {
+        flex-grow: 1;
+      }
+
+      .text-apps,
+      .contribution {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+      }
+
+      .text-rating {
+        color: #E34B31;
+      }
+
+      .tables-nav {
+        width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start !important;
+        gap: 24px !important;
+        padding: 10px 24px 0px 10px;
+        background-color: #edf2f7;
+        margin-bottom: 0px !important;
+        border: none !important;
+        list-style: none;
+
+        li {
+          margin: 0;
+          padding: 0;
+          padding-bottom: 8px;
+          background-color: transparent;
+          ;
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: none;
+          text-decoration: none;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #1A202C;
+          background-color: transparent;
+        }
+
+        .ui-tabs-active {
+          border-bottom: 2px solid #e34b31;
+          background-color: transparent !important;
+
+          a {
+            color: #e34b31 !important;
+          }
+        }
+      }
+
+      .pill-nav {
+        width: 100%;
+        margin-bottom: 0 !important;
+        background-color: #edf2f7;
+        display: flex;
+        justify-content: flex-start !important;
+        padding: 0px 20px;
+        padding-bottom: 8px;
+        gap: 10px;
+        border: none !important;
+        list-style: none;
+
+        &:first-child {
+          padding-top: 8px !important;
+        }
+
+        li {
+          list-style: none;
+          background-color: transparent;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            border: none;
+            padding: 4px 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #1a202c;
+            border-radius: 4px !important;
+            background-color: transparent;
+
+            &:focus,
+            &:visited {
+              outline: none;
+              border: none;
+            }
+          }
+        }
+
+        .ui-tabs-active {
+          border-radius: 4px !important;
+
+          a {
+            background-color: #fff;
+          }
+        }
+      }
+
+      .suggestion-wrapper {
+        margin-top: 16px;
+        display: flex;
+
+        @include mq (max_md) {
+          margin-top: 8px;
+          flex-direction: column;
+          gap: 2px;
+        }
+
+        .list-suggestion {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: 4px;
+          flex-direction: column;
+
+          li {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #718096;
+          }
+        }
+      }
+
+      .table-footer{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end !important;
+        padding: 10px 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+        align-items: center;
+        background: #E2E8F0;
+        gap: 24px;
+
+        @include mq(max_md) {
+          gap: 8px;
+          flex-direction: column;
+          padding: 8px 16px;
+          align-items: flex-end;
+        }
+
+        .controls {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+
+        .pagination {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          @include mq(max_md) {
+            gap: 4px;
+          }
+
+        }
+
+        .btn-pagination  {
+          cursor: pointer;
+          padding: 2px 5px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #1A202C;
+        }
+
+        .active {
+          color: #fff;
+          background: #461A53;
+          border-radius: 4px;
+        }
+      }
+
+      // ==========TABLE premier-league-top-team-table, premier-league-top-players  STYLE ==========
+
+      .premier-league-top-team-table,
+      .premier-league-team-statistics-summary-table,
+      .premier-league-top-players {
+
+        .list-score {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          .score-item {
+            display: block;
+            min-width: 28px;
+            padding: 2px 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: normal;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            border: none;
+            border-radius: 4px;
+          }
+
+          .yellow {
+            background-color: #FAC712;
+            color: #1A202C;
+          }
+
+          .red {
+            background-color: #E53E3E;
+            color: #fff;
+          }
+        }
+      }
+
+      .premier-league-top-team-table {
+        margin-bottom: 40px;
+        width: 100%;
+        height: auto;
+
+        .table-item {
+          @include mq (max_md) {
+            max-width: 100%;
+            overflow: auto;
+          }
+
+          .table-row {
+            padding: 10px 24px;
+            display: flex;
+            align-items: center;
+
+            @include mq (max_md) {
+              padding: 5px 12px;
+            }
+          }
+
+          .table-heading {
+            background-color: #4A5568;
+            border-bottom: none;
+            color: #ffff;
+            min-width: max-content;
+            width: 100%;
+
+            .table-column {
+              color: #fff !important;
+
+              @include mq (max_md) {
+                min-width: 400px;
+              }
+            }
+          }
+
+          .table-row {
+            border-bottom: 1px solid #EDF2F7;
+          }
+
+          .table-column {
+            width: calc(100% / 3);
+            padding-right: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: max-content;
+
+
+            @include mq (max_md) {
+              min-width: 400px;
+            }
+
+            &:last-child {
+              padding-right: 0 !important;
+            }
+          }
+        }
+      }
+
+      // ==========TABLE premier-league-top-team-table, premier-league-top-players  STYLE ========== ==========
+
+      // ==============TABLE premier-league-top-players  STYLE ==================
+      .premier-league-top-players {
+        .table-item {
+
+          @include mq(max_md) {
+            max-width: 100%;
+            overflow: auto;
+          }
+
+          .table-row {
+            padding: 10px 24px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @include mq(max_md) {
+              padding: 5px 12px;
+            }
+          }
+
+          .table-heading {
+            background-color: #4A5568;
+            border-bottom: none;
+            color: #fff;
+            min-width: max-content;
+            width: 100%;
+
+            .table-column {
+              color: #fff !important;
+            }
+          }
+
+          .table-row {
+            border-bottom: 1px solid #EDF2F7;
+          }
+
+          .table-column {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+
+      // ============= TABLE premier-league-top-players  STYLE ===================
+
+      //=========MATRIC MATCH STYLE ==========
+      .premier-league-best-xi {
+        margin-top: 40px;
+
+        .tab-content {
+          width: 100%;
+          height: auto;
+        }
+
+        .match-matric-wrapper {
+          min-width: 880px;
+          max-width: 880px;
+          height: 460px;
+          margin: 40px auto 24px;
+          background-image: url('../images/matric-background.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          position: relative;
+
+          @include mq(max_md) {
+            min-width: 100%;
+            max-width: 100%;
+            height: 250px;
+            margin: 12px 0px;
+          }
+
+          .matric-row {
+            width: 100%;
+            height: auto;
+            position: absolute;
+
+
+            &:first-child {
+              top: 35px;
+              left: 0;
+              display: flex;
+              justify-content: center;
+
+              @include mq (max_md) {
+                top: 18px;
+              }
+            }
+
+            &:nth-child(2) {
+              top: 120px;
+              left: 0;
+              padding: 0px 120px;
+              display: flex;
+              justify-content: space-between;
+
+              @include mq (max_md) {
+                padding: 0px 16px;
+                top: 60px
+              }
+
+            }
+
+            &:nth-child(3) {
+              bottom: 162px;
+              padding: 0px 120px;
+              display: flex;
+              justify-content: space-between;
+              left: 0;
+
+              @include mq (max_md) {
+                padding: 0px 16px;
+                bottom: 80px;
+              }
+
+            }
+
+            &:nth-child(4) {
+              bottom: 60px;
+              left: 0;
+              display: flex;
+              justify-content: center;
+              gap: 62px;
+
+              @include mq (max_md) {
+                bottom: 30px;
+                gap: 30px;
+              }
+            }
+
+            .player {
+              min-width: 110px;
+              max-width: fit-content;
+              height: auto;
+              display: flex;
+              align-items: center;
+              gap: 7px;
+
+              @include mq (max_md) {
+                min-width: 58px;
+                gap: 3px;
+              }
+
+              .club-image {
+                img {
+                  display: block;
+                  width: 48px;
+                  height: 48px;
+                  object-fit: cover;
+                  border-radius: 50%;
+
+                  @include mq (max_md) {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+              }
+
+              .player-info {
+                display: flex;
+                flex-direction: column;
+
+                .club-name {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 18px;
+                  color: rgba(255, 255, 255, 0.8);
+
+                  @include mq (max_md) {
+                    font-size: 7px;
+                    line-height: 10px;
+                  }
+                }
+
+                .player-name {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 21px;
+                  /* identical to box height */
+                  color: #FFFFFF;
+
+                  @include mq (max_md) {
+                    font-size: 8px;
+                    line-height: 12px;
+                  }
+
+                }
+              }
+            }
+          }
+
+          .rating {
+            width: 28px;
+            height: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            font-size: 14px !important;
+            max-width: 28px !important;
+            line-height: 0 !important;
+
+            @include mq(max_md) {
+              width: 15px !important;
+              height: 12px;
+              font-size: 7px !important;
+              max-width: 15px !important;
+              padding: 0 !important;
+              border-radius: 2px !important;
+            }
+          }
+        }
+
+        .list-suggest {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+
+            /* Gray:600 */
+
+            color: #718096;
+          }
+        }
+      }
+
+      //=========MATRIC MATCH STYLE ==========
+
+
+
+      // ======= TABLE premier-league-team-statistics STYLE ==========
+      .premier-league-team-statistics,
+      .premier-league-situational-statistics,
+      .premier-league-player-statistics,
+      .premier-league-referee-statistics {
+        margin-bottom: 40px;
+
+        @include mq (max_md) {
+          margin-bottom: 20px;
+        }
+      }
+
+      .premier-league-team-statistics-summary-table,
+      .premier-league-team-statistics-table,
+      .premier-league-situational-statistics-table,
+      .premier-league-assist-to-goal-scorer-table,
+      .premier-league-player-statistics-table {
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        @include mq (max_md) {
+          max-width: 100%;
+          overflow: auto;
+        }
+
+        .table-row {
+          display: flex;
+          padding: 10px 24px;
+          min-width: max-content;
+
+          @include mq (max_md) {
+            padding: 5px 12px;
+          }
+
+          &:nth-child(odd) {
+            background-color: #EDF2F7;
+          }
+
+          &:hover {
+            background-color: #EDF2F7;
+          }
+        }
+
+        .table-heading {
+          color: #fff;
+          background-color: #4A5568 !important;
+          border-bottom: none;
+
+          &:hover {
+            background-color: #4A5568 !important;
+          }
+        }
+
+        .team-info {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+
+          .number-team {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: #461A53;
+            border-radius: 6px;
+            ;
+          }
+
+          @include mq (max_md) {
+            gap: 16px;
+          }
+        }
+      }
+
+      // ======= TABLE premier-league-team-statistics STYLE ==========
+
+      // =======TABLE premier-league-player-statistics STYLE ===============
+      .premier-league-player-statistics-table {
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        @include mq (max_md) {
+          max-width: 100%;
+          overflow: auto;
+        }
+
+        .table-row {
+          display: flex;
+          padding: 10px 24px;
+          min-width: max-content;
+          align-items: center;
+
+          border-bottom: 1px solid #EDF2F7;
+
+          @include mq (max_md) {
+            padding: 5px 12px;
+          }
+        }
+
+        .table-heading {
+          color: #fff;
+          background-color: #4A5568 !important;
+          border-bottom: none;
+        }
+        .player-info {
+          display: flex;
+          gap: 24px;
+          .number {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #1A202C;
+          }
+          .player-detail {
+            display: flex;
+            gap: 8px;
+
+            .flag {
+              display: block;
+              min-width: 16px;
+              height: auto;
+              max-width: 16px;
+              max-height: 16px;
+              object-fit: cover;
+              margin-top: 2px;
+            }
+
+            .player-name {
+              margin:0;
+              padding: 0;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              color: #1A202C;
+            }
+
+            .player-history {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 18px;
+              color: #718096;
+              margin: 0;
+              padding: 0;;
+            }
+          }
+        }
+      }
+
+      // =======TABLE premier-league-player-statistics STYLE ===============
+
+      // =======TABLE premier-league-assist-to-goal-scorer-table =======
+      .premier-league-assist-to-goal-scorer-table  {
+        .player-info {
+
+          img {
+            display: block;
+            min-width: 16px;
+            height: auto;
+            max-width: 16px;
+            object-fit: cover;
+          }
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+      }
+
+      // ==========TABLE premier-league-referee-statistics =======
+      .premier-league-referee-statistics {
+        .player-info {
+          display: flex;
+          align-items: center;
+          gap:  12px;
+
+          .player-number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            border: none;
+            background: #461A53;
+            border-radius: 6px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+          }
+        }
+        .yellow-label {
+          min-width: 28px;
+          padding: 2px 3px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #1A202C;
+          border: none;
+          background: #FAC712;
+          border-radius: 4px;
+          display: inline-block;
+        }
+
+        .red-label {
+          display: inline-block;
+          min-width: 28px;
+          padding: 2px 3px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #fff;
+          border: none;
+          background: #E53E3E;
+          border-radius: 4px;
+
+        }
+
+        .column-25 {
+          @include mq(max_md) {
+            width: 100% !important;
+          }
+        }
+      }
+      // ==========TABLE premier-league-referee-statistics =======
+    }
+  }
+}
