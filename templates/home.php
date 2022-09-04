@@ -412,7 +412,6 @@
           <h3 class="name">England - Premier League</h3>
         </div>
         <div class="list-timeline">
-
           <!-- START MATCH REPORT -->
           <div class="timeline-item">
             <button type="button" class="collapsible">
