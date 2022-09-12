@@ -7433,8 +7433,8 @@
                         <li><a href="#sub-tabs-3">Away</a></li>
                       </ul>
                       <div id="sub-tabs-1">
-                        <div class="premier-league-player-statistics-table">
-                          <div class="table-content-wrapper">
+                        <div class="tab-content-wrapper">
+                          <div class="premier-league-player-statistics-table">
                             <div class="table-row table-heading">
                               <div class="column-30 text-left">Referee</div>
                               <div class="column-70 d-flex">

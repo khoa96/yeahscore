@@ -1,0 +1,249 @@
+/* -----------------------------------------------------------
+	font-face
+----------------------------------------------------------- */
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/SVN-Poppins-SemiBold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.account-page-wrapper {
+  width: 100%;
+  height: auto;
+  padding-top: 12px;
+}
+.account-page-wrapper .list-category {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .list-category {
+    margin-bottom: 30px;
+  }
+}
+.account-page-wrapper .list-category li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.account-page-wrapper .list-category li a:hover {
+  text-decoration: underline;
+}
+.account-page-wrapper .account-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .account-info-wrapper {
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+.account-page-wrapper .account-info-wrapper .account-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .account-info-wrapper .account-info {
+    gap: 12px;
+  }
+}
+.account-page-wrapper .account-info-wrapper .account-info .account-image {
+  display: block;
+  min-width: 80px;
+  max-width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .account-info-wrapper .account-info .account-image {
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+  }
+}
+.account-page-wrapper .account-info-wrapper .account-info .account-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.account-page-wrapper .account-info-wrapper .account-info .account-description .account-name {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .account-info-wrapper .account-info .account-description .account-name {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.account-page-wrapper .account-info-wrapper .account-info .account-description .email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.account-page-wrapper .account-info-wrapper .list-control {
+  display: flex;
+  gap: 16px;
+}
+.account-page-wrapper .account-info-wrapper .list-control .btn {
+  cursor: pointer;
+  padding: 6px 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #461A53;
+  background-color: #fff;
+  border: 1px solid #461A53;
+  border-radius: 8px;
+}
+.account-page-wrapper .account-info-wrapper .list-control .btn:focus {
+  outline: none;
+}
+.account-page-wrapper .account-title {
+  font-style: normal;
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .account-title {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+}
+.account-page-wrapper .table-content {
+  width: 100%;
+}
+.account-page-wrapper .table-content .column-30 {
+  width: 33.3333333333%;
+}
+.account-page-wrapper .table-content .column-50 {
+  width: 50%;
+}
+.account-page-wrapper .table-content .text-left {
+  text-align: left;
+}
+.account-page-wrapper .table-content .text-center {
+  text-align: center;
+}
+.account-page-wrapper .table-content .text-right {
+  text-align: right;
+}
+.account-page-wrapper .table-content .text-strong {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+}
+.account-page-wrapper .table-content .table-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 12px 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  border-bottom: 1px solid #EDF2F7;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .table-content .table-row {
+    padding: 6px 16px;
+  }
+}
+.account-page-wrapper .pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  align-items: center;
+  margin-top: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .pagination {
+    margin-top: 12px;
+  }
+}
+.account-page-wrapper .pagination .pagination-item {
+  min-width: 32px;
+  max-width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.account-page-wrapper .pagination .pagination-item:focus {
+  outline: none;
+}
+.account-page-wrapper .pagination .active {
+  background: #461A53;
+  color: #fff;
+}
+.account-page-wrapper .pagination .disabled {
+  opacity: 0.65;
+}
+.account-page-wrapper .pagination .btn-prev {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=account.css.map */
