@@ -1,0 +1,951 @@
+.page-price-wrapper {
+  padding-top: 24px;
+}
+.page-price-wrapper .list-category {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .list-category {
+    margin-bottom: 16px;
+  }
+}
+.page-price-wrapper .list-category li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.page-price-wrapper .list-category li a:hover {
+  text-decoration: underline;
+}
+.page-price-wrapper .step-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .step-wrapper {
+    gap: 8px;
+  }
+}
+.page-price-wrapper .step-wrapper .step-number {
+  display: block;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #461A53;
+  border-radius: 50%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .step-wrapper .step-number {
+    width: 32px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.page-price-wrapper .step-wrapper .step-detail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .step-wrapper .step-detail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.page-price-wrapper .step-wrapper .step-highlight {
+  color: #E34B31;
+}
+.page-price-wrapper .page-price-header-wrapper {
+  width: 100%;
+}
+.page-price-wrapper .page-price-header-wrapper .price-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #1A202C;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .page-price-header-wrapper .price-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.page-price-wrapper .page-price-header-wrapper .highlight {
+  color: #18B745;
+}
+.page-price-wrapper .page-price-header-wrapper .price-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #1A202C;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .page-price-header-wrapper .price-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper {
+  background-color: #FBFAF5;
+  padding: 35px 0px 24px 0px;
+}
+.page-price-wrapper .seclect-plan-wrapper .plan-tabs-nav {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin-bottom: 24px;
+}
+.page-price-wrapper .seclect-plan-wrapper .plan-tabs-nav li {
+  width: max-content;
+}
+.page-price-wrapper .seclect-plan-wrapper .plan-tabs-nav li a {
+  min-width: max-content;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  /* Gray:900 */
+  color: #1A202C;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+.page-price-wrapper .seclect-plan-wrapper .plan-tabs-nav li a:hover {
+  text-decoration: none;
+}
+.page-price-wrapper .seclect-plan-wrapper .plan-tabs-nav .ui-tabs-active a {
+  color: #E34B31;
+  border-bottom: 4px solid #E34B31;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .plan-tabs-nav {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .active {
+  border: 2px solid #18B745 !important;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .icon-checked {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .icon-checked {
+    display: none;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item {
+  min-width: 282px;
+  max-width: 282px;
+  height: auto;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E0;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item:first-of-type {
+  padding: 24px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item:first-of-type {
+    padding: 16px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item:nth-of-type(2) {
+  padding: 0px 0px 55px 0px;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item:nth-of-type(2) .save-label {
+  top: 40px !important;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item:nth-of-type(2) {
+    padding: 0px 16px 16px 16px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item:last-of-type {
+  padding: 24px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item:last-of-type {
+    padding: 16px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .highlight {
+  color: #18B745;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .recomend-label {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 4px 12px;
+  background: #18B745;
+  border-radius: 0px 0px 8px 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .recomend-label {
+    margin-bottom: 12px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .plan-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .plan-title {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .price-wrapper {
+    margin-top: 0;
+    margin-bottom: 8px;
+    flex-direction: row-reverse;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .prev-price {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration-line: line-through;
+  display: block;
+  color: #718096;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .primary-price {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .primary-price .sign {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #E34B31;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .primary-price .price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 84px;
+  /* identical to box height */
+  text-align: center;
+  /* Primary 2 */
+  color: #E34B31;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .primary-price .month {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  /* Gray:900 */
+  color: #1A202C;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .save-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #18B745;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .save-label {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .btn-select-plan {
+  min-width: 200px;
+  font-family: "Poppins";
+  max-width: 200px;
+  padding: 10px 0px;
+  text-align: center;
+  border: none;
+  background: #461A53;
+  border-radius: 8px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  margin: 16px auto 12px;
+  display: inline-block;
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .btn-select-plan:focus {
+  outline: none;
+  border: none;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .btn-select-plan {
+    margin-top: 0;
+  }
+}
+.page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .plan-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #718096;
+  text-align: center;
+}
+.page-price-wrapper .seclect-plan-wrapper .step-description {
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .seclect-plan-wrapper .step-description {
+    display: none;
+  }
+}
+.page-price-wrapper .select-your-payment-wrapper {
+  background-color: #fff;
+  padding: 50px 0px 177px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .select-your-payment-wrapper {
+    padding: 40px 0px 30px 0px;
+  }
+}
+.page-price-wrapper .select-your-payment-wrapper .select-your-payment-content {
+  display: flex;
+  gap: 102px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .select-your-payment-wrapper .select-your-payment-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.page-price-wrapper .select-your-payment-wrapper .left-content {
+  min-width: 690px;
+  max-width: 690px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .select-your-payment-wrapper .left-content {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.page-price-wrapper .select-your-payment-wrapper .step-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-price-wrapper .select-your-payment-wrapper .step-header-wrapper .image-scure {
+  display: block;
+  min-width: 94px;
+  max-width: 94px;
+  height: 34px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .select-your-payment-wrapper .step-header-wrapper .step-2-detail {
+    max-width: 173px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* Gray:900 */
+    color: #1A202C;
+  }
+}
+.page-price-wrapper .select-your-payment-wrapper .payment-description {
+  background: rgba(24, 183, 69, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  margin: 30px 0px 20px 0px;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .select-your-payment-wrapper .payment-description {
+    padding: 10px 12px;
+    margin: 20px 0px;
+  }
+}
+.page-price-wrapper .select-your-payment-wrapper .description-detail {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .select-your-payment-wrapper .description-detail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #1A202C;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+}
+.page-price-wrapper .select-your-payment-wrapper .description-detail .txt-bold {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #18B745;
+}
+.page-price-wrapper .select-your-payment-wrapper .description-detail .dash {
+  display: block;
+  width: 1px;
+  height: 24px;
+  background-color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .select-your-payment-wrapper .description-detail .dash {
+    display: none;
+  }
+}
+.page-price-wrapper .icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.page-price-wrapper .btn-payment {
+  display: flex;
+  width: 100%;
+  background: #18B745;
+  border-radius: 8px;
+  font-family: "Poppins";
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.page-price-wrapper .btn-payment:focus {
+  outline: none;
+}
+.page-price-wrapper .list-description {
+  margin: 0;
+  padding: 0;
+  margin: 24px 0px;
+}
+.page-price-wrapper .list-description li {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  /* Gray:600 */
+  color: #718096;
+  gap: 6px;
+}
+.page-price-wrapper .txt-privacy {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.page-price-wrapper .txt-privacy .txt-highlight {
+  color: #E34B31;
+}
+.page-price-wrapper .right-content .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #000000;
+  margin-bottom: 12px;
+}
+.page-price-wrapper .right-content .list-feature {
+  margin: 0;
+  padding: 0;
+}
+.page-price-wrapper .right-content .list-feature li {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  margin-bottom: 12px;
+}
+.page-price-wrapper .trust-by-wrapper {
+  width: 100%;
+  background-color: #FBFAF5;
+  padding: 40px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .trust-by-wrapper {
+    padding: 20px 0px;
+  }
+}
+.page-price-wrapper .trust-by-wrapper .trust-by-content {
+  display: flex;
+  gap: 55px;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .trust-by-wrapper .trust-by-content {
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+.page-price-wrapper .trust-by-wrapper .label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  line-height: 24px;
+}
+.page-price-wrapper .trust-by-wrapper .list-image {
+  display: flex;
+  gap: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .trust-by-wrapper .list-image {
+    flex-wrap: wrap;
+  }
+}
+.page-price-wrapper .trust-by-wrapper .trust-image {
+  object-fit: contain;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .trust-by-wrapper .trust-image:nth-child(2) {
+    margin-right: 0 !important;
+  }
+}
+.page-price-wrapper .sports-league-tournaments-wrapper {
+  background-color: rgba(227, 75, 49, 0.1);
+  padding: 65px 0px 45px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .sports-league-tournaments-wrapper {
+    padding: 40px 0px 8px 0px;
+  }
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1A202C;
+  text-align: center;
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  text-align: center;
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .list-sport-wrapper {
+  margin-top: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .sports-league-tournaments-wrapper .list-sport-wrapper {
+    margin-top: 24px;
+    padding: 0;
+    justify-content: center;
+    overflow-x: auto;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .list-sport {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 0px 80px;
+  margin-bottom: 32px;
+  min-width: max-content;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .sports-league-tournaments-wrapper .list-sport {
+    margin-bottom: 16px;
+    padding: 0;
+  }
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .list-sport li {
+  width: 80px;
+  height: 80px;
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .list-sport li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .list-sport li a img {
+  display: block;
+  min-width: 80px;
+  max-width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .btn-see-more {
+  display: block;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-family: "Poppins";
+  text-align: center;
+  min-width: 200px;
+  max-width: 200px;
+  background: rgba(249, 30, 78, 0.1);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  margin: 0 auto;
+  /* #E34B31 */
+  color: #E34B31;
+  border: none;
+}
+.page-price-wrapper .sports-league-tournaments-wrapper .btn-see-more:focus {
+  outline: none;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .sports-league-tournaments-wrapper .btn-see-more {
+    display: none;
+  }
+}
+.page-price-wrapper .money-back-wrapper {
+  background-color: #fff;
+  padding: 84px 0px 114px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .money-back-wrapper {
+    padding: 40px 0px 40px 0px;
+  }
+}
+.page-price-wrapper .money-back-wrapper .money-back-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 132px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .money-back-wrapper .money-back-content {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.page-price-wrapper .money-back-wrapper .money-back-content .money-back-image {
+  display: block;
+  min-width: 256px;
+  max-width: 256px;
+  height: 271px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .money-back-wrapper .money-back-content .money-back-image {
+    min-width: 158px;
+    max-width: 158px;
+    height: 167px;
+    margin-bottom: 24px !important;
+  }
+}
+.page-price-wrapper .money-back-wrapper .money-back-content .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 486px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .money-back-wrapper .money-back-content .detail {
+    gap: 0;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.page-price-wrapper .money-back-wrapper .money-back-content .detail .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1A202C;
+  text-align: left;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .money-back-wrapper .money-back-content .detail .title {
+    text-align: center;
+    margin-bottom: 12px !important;
+  }
+}
+.page-price-wrapper .money-back-wrapper .money-back-content .detail .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1A202C;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .money-back-wrapper .money-back-content .detail .description {
+    text-align: center;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper {
+  background-color: #fff;
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content {
+  display: flex;
+  gap: 100px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content {
+  max-width: 500px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1A202C;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .title {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1A202C;
+  margin-bottom: 34px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .description {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .list-item {
+  width: 100%;
+  display: flex;
+  gap: 76px;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .list-item {
+    gap: 16px;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .list-item .item {
+  min-width: 160px;
+  max-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .list-item .item {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .list-item .item .icon {
+  display: block;
+  margin-top: 14px;
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .list-item .item .item-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .list-item .item .item-title {
+    text-align: center;
+    display: block;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .left-content .list-item .item .item-value {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 66px;
+  color: #E34B31;
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .right-content .vpn-image {
+  display: block;
+  min-width: 526px;
+  max-width: 526px;
+  height: 340px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .vpn-internaltiona-server-content .right-content .vpn-image {
+    min-width: 100%;
+    max-width: 100%;
+    height: 230px;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .btn-get-plan {
+  background: #E34B31;
+  border-radius: 8px;
+  font-family: "Poppins";
+  cursor: pointer;
+  padding: 10px 0px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  min-width: 200px;
+  display: block;
+  margin: 84px auto 0;
+}
+@media only screen and (max-width: 991px) {
+  .page-price-wrapper .vpn-internaltiona-server-wrapper .btn-get-plan {
+    margin: 40px auto 0;
+  }
+}
+.page-price-wrapper .vpn-internaltiona-server-wrapper .btn-get-plan:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=price.css.map */

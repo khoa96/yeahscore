@@ -2,7 +2,7 @@
 	common
 ----------------------------------------------------------- */
 body, html {
-  font-family: "SVN-Poppins";
+  font-family: "Poppins";
 }
 
 img {
@@ -26,37 +26,6 @@ button,
   list-style: none !important;
 }
 
-/* -----------------------------------------------------------
-	font-face
------------------------------------------------------------ */
-@font-face {
-  font-family: "SVN-Poppins";
-  src: url("../fonts/SVN-Poppins-Regular.otf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SVN-Poppins";
-  src: url("../fonts/SVN-Poppins-Regular.otf");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SVN-Poppins";
-  src: url("../fonts/SVN-Poppins-SemiBold.otf");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/SVN-Poppins-SemiBold.otf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 .footballer-page-wrapper {
   width: 100%;
   height: auto;
