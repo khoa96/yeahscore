@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import "variables";
 @import "mixins";
-@import "fonts";
 
 .footer {
   margin-top: 180px;
@@ -11,6 +10,10 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  @include mq(max_md) {
+    margin-top: 90px;
+  }
 
   .footer-content {
     padding: 40px 0px;
