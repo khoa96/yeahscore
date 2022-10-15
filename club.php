@@ -2178,7 +2178,8 @@
                             </div>
                           </div>
                         </div>
-                        <div class="table-suggesstion">
+                      </div>
+                      <div class="table-suggesstion">
                           <div class="suggestion-wrapper">
                             <div class="column-33">
                               <ul class="list-suggestion">
@@ -2207,7 +2208,6 @@
                             </div>
                           </div>
                         </div>
-                      </div>
                     </div>
                     <div id="sub-tabs-2">
                       tab2
@@ -3591,12 +3591,302 @@
           </div>
           <div id="main-tabs-3">
             <!-- ============TAB3(Team Statistics) ========== -->
-            tab3
+            <div class="team-statistics-wrapper">
+              <h3 class="club-title">Manchester United Situational Statistics</h3>
+              <div id="club-team-statistics-tabs">
+                <ul class="tables-main-nav">
+                  <li><a href="#tabs-1">Goal Types</a></li>
+                  <li><a href="#tabs-2">Pass Types</a></li>
+                  <li><a href="#tabs-3">Card Situations</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <!-- TAB Defensive -->
+                  <div id="club-team-statistics-goal-types-tabs">
+                    <ul class="tables-sub-nav">
+                      <li><a href="#sub-tabs-1">Overall</a></li>
+                      <li><a href="#sub-tabs-2">Home</a></li>
+                      <li><a href="#sub-tabs-3">Away</a></li>
+                    </ul>
+                    <div id="sub-tabs-1">
+                      <div id="club-team-statistics-goal-types-overall-tabs">
+                        <ul class="pill-nav">
+                          <li><a href="#tabs-1">For</a></li>
+                          <li><a href="#tabs-2">Against</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                          <div class="club-team-statistics-table">
+                            <div class="table-row table-heading d-flex">
+                              <div class="column-20">Type</div>
+                              <div class="column-70">Goals</div>
+                              <div class="column-10 text-center">Effects</div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-20">Open Play</div>
+                              <div class="column-70">
+                                <div class="green-process">
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: calc((100 / 100) * 100%)" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="column-10 text-center">100%</div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-20">Set Piece</div>
+                              <div class="column-70">
+                                <div class="green-process">
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: calc((80 / 100) * 100%)" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="column-10 text-center">80%</div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-20">Penalty</div>
+                              <div class="column-70">
+                                <div class="green-process">
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: calc((60 / 100) * 100%)" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="column-10 text-center">60%</div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-20">Own Goal</div>
+                              <div class="column-70">
+                                <div class="green-process">
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: calc((50 / 100) * 100%)" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="column-10 text-center">50%</div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-20">Counter Attack</div>
+                              <div class="column-70">
+                                <div class="green-process">
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: calc((10 / 100) * 100%)" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="column-10 text-center">10%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="tabs-2">
+                          Against tabs
+                        </div>
+                      </div>
+                    </div>
+                    <div id="sub-tabs-2">
+                      sub tab 2
+                    </div>
+                    <div id="sub-tabs-3">
+                      sub tab 3
+                    </div>
+                  </div>
+                  <!-- TAB Defensive -->
+                </div>
+                <div id="tabs-2">
+                  <!-- TAB Pass Types-->
+                  tab2 - Pass Types
+                  <!-- TAB Pass Types-->
+                </div>
+                <div id="tabs-3">
+                  <!-- Card Situations -->
+                  tab3 - Card Situations
+                  <!-- Card Situations -->
+                </div>
+              </div>
+
+              <h3 class="club-title">Manchester United Positional Statistics</h3>
+              <div class="club-team-positional-statistics-wrapper">
+                <div id="club-team-positional-statistics-tabs">
+                  <ul class="tables-main-nav">
+                    <li><a href="#tabs-1">Touches</a></li>
+                    <li><a href="#tabs-2">Shots</a></li>
+                  </ul>
+                  <div id="tabs-1">
+                    <!-- TAB Summary -->
+                    <div id="club-team-positional-statistics-touches-tabs">
+                      <ul class="tables-sub-nav">
+                        <li><a href="#sub-tabs-1">Overall</a></li>
+                        <li><a href="#sub-tabs-2">Home</a></li>
+                        <li><a href="#sub-tabs-3">Away</a></li>
+                      </ul>
+                      <div id="sub-tabs-1">
+                        <div class="club-team-positional-statistics-content">
+                          <div class="club-team-positional-visual">
+                            <div class="positional-visual-item">
+                              <h4 class="positional-visual-item-title">Attack Sides</h4>
+                              <div class="positional-visual-box">
+                                <img src="./images/position-club-visual-1.png" alt="">
+                              </div>
+                            </div>
+                            <div class="positional-visual-item">
+                            <h4 class="positional-visual-item-title">Attack Sides</h4>
+                            <div class="positional-visual-box">
+                            <img src="./images/position-club-visual-2.png" alt="">
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="sub-tabs-2">
+                        tab2
+                      </div>
+                      <div id="sub-tabs-3">
+                        tab2
+                      </div>
+                    </div>
+                    <!-- TAB Summary -->
+                  </div>
+                  <div id="tabs-2">
+                    <!-- TAB Shots -->
+                    tab2 - Shots
+                    <!-- TAB Shots -->
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
             <!-- ============TAB3(Team Statistics) ========== -->
           </div>
           <div id="main-tabs-4">
             <!-- ============TAB3(Referee Statistics) ========== -->
-            tab4
+             <div class="club-referee-statistics-wrapper">
+               <h3 class="club-title">Manchester United Referee Statistics</h3>
+                <div id="club-referee-statistics-tabs">
+                  <ul class="tables-main-nav">
+                    <li><a href="#tabs-1">Discipline</a></li>
+                    <li><a href="#tabs-2">Results</a></li>
+                  </ul>
+                  <div id="tabs-1">
+                    <div class="filter-box">
+                      <div class="filter-line">
+                        <div class="left-filter">
+                          <span class="filter-item active">Overrall</span>
+                          <span class="filter-item">Home</span>
+                          <span class="filter-item">Away</span>
+                        </div>
+                        <div class="right-filter">
+                          <span class="right-filter-label">Season(s):</span>
+                          <span class="filter-item active">Current</span>
+                          <span class="filter-item">All</span>
+                        </div>
+                      </div>
+                      <div class="filter-line">
+                        <div class="left-filter">
+                          <span class="filter-item active">Premier League</span>
+                          <span class="filter-item">Europa League</span>
+                        </div>
+                        <div class="right-filter">
+                          <span class="right-filter-label">Offences committed:</span>
+                          <span class="filter-item active">By</span>
+                          <span class="filter-item">Against</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="club-referee-statistics-content-wrapper">
+                          <div class="club-referee-statistics-statistics-table">
+                            <div class="table-row table-heading">
+                              <div class="column-30 text-left">Referee</div>
+                              <div class="column-70 d-flex">
+                                <div class="column-8 text-center">Apps</div>
+                                <div class="column-8 text-center">Fouls pg</div>
+                                <div class="column-8 text-center">Fouls/Tackles</div>
+                                <div class="column-8 text-center">Pen pg</div>
+                                <div class="column-8 text-center">Yel pg</div>
+                                <div class="column-8 text-center">Yel</div>
+                                <div class="column-8 text-center">Red pg</div>
+                                <div class="column-8 text-center">Red</div>
+                              </div>
+                            </div>
+                            <div class="table-row">
+                              <div class="column-30 text-left">
+                                <div class="player-info">
+                                  <span>1</span>
+                                  <span class="player-name">David Coote</span>
+                                </div>
+                              </div>
+                              <div class="column-70 d-flex">
+                                <div class="column-8 text-center">99</div>
+                                <div class="column-8 text-center">18.1</div>
+                                <div class="column-8 text-center">0.74</div>
+                                <div class="column-8 text-center">0.15</div>
+                                <div class="column-8 text-center">4.60</div>
+                                <div class="column-8 text-center">
+                                  <span class="yellow-label">105</span>
+                                </div>
+                                <div class="column-8 text-center">
+                                 0.15
+                                </div>
+                                <div class="column-8 text-center">
+                                  <span class="red-label">3</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="table-row">
+                              <div class="column-30 text-left">
+                                <div class="player-info">
+                                  <span></span>
+                                  <span class="player-name">Total / Average</span>
+                                </div>
+                              </div>
+                              <div class="column-70 d-flex">
+                                <div class="column-8 text-center">99</div>
+                                <div class="column-8 text-center">18.1</div>
+                                <div class="column-8 text-center">0.74</div>
+                                <div class="column-8 text-center">0.15</div>
+                                <div class="column-8 text-center">4.60</div>
+                                <div class="column-8 text-center">
+                                  <span class="yellow-label">105</span>
+                                </div>
+                                <div class="column-8 text-center">
+                                 0.15
+                                </div>
+                                <div class="column-8 text-center">
+                                  <span class="red-label">3</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="suggestion-wrapper">
+                            <div class="column-33">
+                              <ul class="list-suggestion">
+                                <li class="suggestion-item">Fouls pg: Fouls per game</li>
+                                <li class="suggestion-item">Yel: Total yellow cards</li>
+                                <li class="suggestion-item">Red pg: Red cards per game</li>
+                              </ul>
+                            </div>
+                            <div class="column-33">
+                              <ul class="list-suggestion">
+                                <li class="suggestion-item">Fouls/Tackles: Fouls per tackle</li>
+                                <li class="suggestion-item">Yel: Total yellow cards</li>
+                                <li class="suggestion-item">Season(s) - All: Uses data from all recent seasons</li>
+                              </ul>
+                            </div>
+                            <div class="column-33">
+                              <ul class="list-suggestion">
+                                <li class="suggestion-item">Pen pg: Penalties per game</li>
+                                <li class="suggestion-item">Red: Total red cards</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div id="tabs-2">tab2</div>
+                </div>
+             </div>
             <!-- ============TAB3(Referee Statistics) ========== -->
           </div>
         </div>
@@ -3641,6 +3931,28 @@
       active: 0
     })
     $("#club-fixture-premier-league-tabs").tabs({
+      active: 0
+    })
+    $("#club-team-statistics-tabs").tabs({
+      active: 0
+    })
+
+    $("#club-team-statistics-goal-types-tabs").tabs({
+      active: 0
+    })
+
+    $("#club-team-statistics-goal-types-overall-tabs").tabs({
+      active: 0
+    })
+
+    $("#club-team-positional-statistics-tabs").tabs({
+      active: 0
+    })
+    $("#club-team-positional-statistics-touches-tabs").tabs({
+      active: 0
+    })
+
+    $("#club-referee-statistics-tabs").tabs({
       active: 0
     })
   });
