@@ -455,6 +455,11 @@
   margin: 30px 0px 20px 0px;
   align-items: center;
 }
+.page-price-wrapper .select-your-payment-wrapper .payment-description .icon-success {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
 @media only screen and (max-width: 991px) {
   .page-price-wrapper .select-your-payment-wrapper .payment-description {
     padding: 10px 12px;

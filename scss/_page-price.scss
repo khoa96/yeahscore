@@ -514,6 +514,13 @@
       margin: 30px 0px 20px 0px;
       align-items: center;
 
+      .icon-success {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+
+
       @include mq(max_md) {
         padding: 10px 12px;
         margin: 20px 0px;
