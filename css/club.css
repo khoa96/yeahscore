@@ -1605,6 +1605,9 @@
 .club-page-wrapper .team-statistics-wrapper .club-team-statistics-table .table-row:hover {
   background-color: transparent !important;
 }
+.club-page-wrapper .team-statistics-wrapper .club-team-statistics-table .table-heading:hover {
+  background-color: #4A5568 !important;
+}
 .club-page-wrapper .team-statistics-wrapper .club-team-positional-statistics-content {
   width: 100%;
   padding: 20px 0px 45px 0px;
@@ -1647,6 +1650,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .club-referee-statistics-content-wrapper {
+  margin-top: 0;
 }
 .club-page-wrapper .club-referee-statistics-wrapper .filter-box {
   width: 100%;

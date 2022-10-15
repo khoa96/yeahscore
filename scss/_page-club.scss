@@ -1620,6 +1620,12 @@
           background-color: transparent !important;;
         }
       }
+
+      .table-heading {
+        &:hover {
+          background-color: #4A5568 !important;
+        }
+      }
     }
 
     .club-team-positional-statistics-content {
@@ -1674,6 +1680,10 @@
 
   // =========STYLE ATB 4 ==========
   .club-referee-statistics-wrapper {
+
+    .club-referee-statistics-content-wrapper {
+      margin-top: 0;
+    }
 
     .filter-box {
       width: 100%;
