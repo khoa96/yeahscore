@@ -89,6 +89,46 @@
 .club-page-wrapper .column-25 {
   width: 25%;
 }
+.club-page-wrapper .column-20 {
+  width: 20%;
+}
+.club-page-wrapper .column-10 {
+  width: 10%;
+}
+@media only screen and (max-width: 991px) {
+  .club-page-wrapper .column-10 {
+    min-width: 120px;
+  }
+}
+.club-page-wrapper .suggestion-wrapper {
+  margin-top: 16px;
+  display: flex;
+}
+@media only screen and (max-width: 991px) {
+  .club-page-wrapper .suggestion-wrapper {
+    margin-top: 8px;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+.club-page-wrapper .suggestion-wrapper .list-suggestion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.club-page-wrapper .suggestion-wrapper .list-suggestion li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #718096;
+}
+.club-page-wrapper .column-70 {
+  width: 70%;
+}
 .club-page-wrapper .column-33 {
   width: 33.3333333333%;
 }
@@ -194,7 +234,7 @@
   display: flex;
   justify-content: flex-start !important;
   gap: 24px !important;
-  padding: 10px 24px 0px 10px;
+  padding: 10px 24px 0px 24px;
   background-color: #edf2f7;
   margin-bottom: 0px !important;
   border: none !important;
@@ -319,6 +359,14 @@
   border-radius: 4px !important;
   background-color: transparent;
 }
+@media only screen and (max-width: 991px) {
+  .club-page-wrapper .pill-nav li a {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 2px 4px;
+    min-width: max-content;
+  }
+}
 .club-page-wrapper .pill-nav li a:hover {
   text-decoration: none;
 }
@@ -354,6 +402,17 @@
 }
 .club-page-wrapper .blue-process .progress-bar {
   background-color: #5A67D8;
+}
+.club-page-wrapper .green-process {
+  width: 100%;
+}
+.club-page-wrapper .green-process .progress {
+  background-color: #fff !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+.club-page-wrapper .green-process .progress-bar {
+  background-color: #18B745;
 }
 .club-page-wrapper .club-banner {
   width: 100%;
@@ -897,127 +956,185 @@
 }
 .club-page-wrapper .fixtures-table-wrapper,
 .club-page-wrapper .club-squad-wrapper,
-.club-page-wrapper .club-top-player-wrapper {
+.club-page-wrapper .club-top-player-wrapper,
+.club-page-wrapper .team-statistics-wrapper,
+.club-page-wrapper .club-referee-statistics-content-wrapper {
   margin-top: 40px;
 }
 .club-page-wrapper .fixtures-table-wrapper .column-30,
 .club-page-wrapper .club-squad-wrapper .column-30,
-.club-page-wrapper .club-top-player-wrapper .column-30 {
+.club-page-wrapper .club-top-player-wrapper .column-30,
+.club-page-wrapper .team-statistics-wrapper .column-30,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-30 {
   width: 30%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-30,
 .club-page-wrapper .club-squad-wrapper .column-30,
-.club-page-wrapper .club-top-player-wrapper .column-30 {
+.club-page-wrapper .club-top-player-wrapper .column-30,
+.club-page-wrapper .team-statistics-wrapper .column-30,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-30 {
     min-width: 360px;
   }
 }
 .club-page-wrapper .fixtures-table-wrapper .column-70,
 .club-page-wrapper .club-squad-wrapper .column-70,
-.club-page-wrapper .club-top-player-wrapper .column-70 {
+.club-page-wrapper .club-top-player-wrapper .column-70,
+.club-page-wrapper .team-statistics-wrapper .column-70,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-70 {
   width: 70%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-70,
 .club-page-wrapper .club-squad-wrapper .column-70,
-.club-page-wrapper .club-top-player-wrapper .column-70 {
+.club-page-wrapper .club-top-player-wrapper .column-70,
+.club-page-wrapper .team-statistics-wrapper .column-70,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-70 {
     min-width: 840px;
   }
 }
 .club-page-wrapper .fixtures-table-wrapper .column-25,
 .club-page-wrapper .club-squad-wrapper .column-25,
-.club-page-wrapper .club-top-player-wrapper .column-25 {
+.club-page-wrapper .club-top-player-wrapper .column-25,
+.club-page-wrapper .team-statistics-wrapper .column-25,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-25 {
   width: 25%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-25,
 .club-page-wrapper .club-squad-wrapper .column-25,
-.club-page-wrapper .club-top-player-wrapper .column-25 {
+.club-page-wrapper .club-top-player-wrapper .column-25,
+.club-page-wrapper .team-statistics-wrapper .column-25,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-25 {
     min-width: 300px;
   }
 }
 .club-page-wrapper .fixtures-table-wrapper .column-20,
 .club-page-wrapper .club-squad-wrapper .column-20,
-.club-page-wrapper .club-top-player-wrapper .column-20 {
+.club-page-wrapper .club-top-player-wrapper .column-20,
+.club-page-wrapper .team-statistics-wrapper .column-20,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-20 {
   width: 20%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-20,
 .club-page-wrapper .club-squad-wrapper .column-20,
-.club-page-wrapper .club-top-player-wrapper .column-20 {
+.club-page-wrapper .club-top-player-wrapper .column-20,
+.club-page-wrapper .team-statistics-wrapper .column-20,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-20 {
     min-width: 240px;
   }
 }
 .club-page-wrapper .fixtures-table-wrapper .column-33,
 .club-page-wrapper .club-squad-wrapper .column-33,
-.club-page-wrapper .club-top-player-wrapper .column-33 {
+.club-page-wrapper .club-top-player-wrapper .column-33,
+.club-page-wrapper .team-statistics-wrapper .column-33,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-33 {
   width: 33.3333333333%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-33,
 .club-page-wrapper .club-squad-wrapper .column-33,
-.club-page-wrapper .club-top-player-wrapper .column-33 {
+.club-page-wrapper .club-top-player-wrapper .column-33,
+.club-page-wrapper .team-statistics-wrapper .column-33,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-33 {
     min-width: 400px;
   }
 }
 .club-page-wrapper .fixtures-table-wrapper .column-80,
 .club-page-wrapper .club-squad-wrapper .column-80,
-.club-page-wrapper .club-top-player-wrapper .column-80 {
+.club-page-wrapper .club-top-player-wrapper .column-80,
+.club-page-wrapper .team-statistics-wrapper .column-80,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-80 {
   width: 80%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-80,
 .club-page-wrapper .club-squad-wrapper .column-80,
-.club-page-wrapper .club-top-player-wrapper .column-80 {
+.club-page-wrapper .club-top-player-wrapper .column-80,
+.club-page-wrapper .team-statistics-wrapper .column-80,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-80 {
     min-width: 960px;
   }
 }
 .club-page-wrapper .fixtures-table-wrapper .column-75,
 .club-page-wrapper .club-squad-wrapper .column-75,
-.club-page-wrapper .club-top-player-wrapper .column-75 {
+.club-page-wrapper .club-top-player-wrapper .column-75,
+.club-page-wrapper .team-statistics-wrapper .column-75,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-75 {
   width: 75%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-75,
 .club-page-wrapper .club-squad-wrapper .column-75,
-.club-page-wrapper .club-top-player-wrapper .column-75 {
+.club-page-wrapper .club-top-player-wrapper .column-75,
+.club-page-wrapper .team-statistics-wrapper .column-75,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-75 {
     min-width: 900px;
   }
 }
 .club-page-wrapper .fixtures-table-wrapper .column-8,
 .club-page-wrapper .club-squad-wrapper .column-8,
-.club-page-wrapper .club-top-player-wrapper .column-8 {
+.club-page-wrapper .club-top-player-wrapper .column-8,
+.club-page-wrapper .team-statistics-wrapper .column-8,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-8 {
   width: 12.5%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-8,
 .club-page-wrapper .club-squad-wrapper .column-8,
-.club-page-wrapper .club-top-player-wrapper .column-8 {
+.club-page-wrapper .club-top-player-wrapper .column-8,
+.club-page-wrapper .team-statistics-wrapper .column-8,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-8 {
     min-width: 112px;
   }
 }
 .club-page-wrapper .fixtures-table-wrapper .column-6,
 .club-page-wrapper .club-squad-wrapper .column-6,
-.club-page-wrapper .club-top-player-wrapper .column-6 {
+.club-page-wrapper .club-top-player-wrapper .column-6,
+.club-page-wrapper .team-statistics-wrapper .column-6,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-6 {
   width: 7.6923076923%;
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper .column-6,
 .club-page-wrapper .club-squad-wrapper .column-6,
-.club-page-wrapper .club-top-player-wrapper .column-6 {
+.club-page-wrapper .club-top-player-wrapper .column-6,
+.club-page-wrapper .team-statistics-wrapper .column-6,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-6 {
     min-width: 74px;
+  }
+}
+.club-page-wrapper .fixtures-table-wrapper .column-8,
+.club-page-wrapper .club-squad-wrapper .column-8,
+.club-page-wrapper .club-top-player-wrapper .column-8,
+.club-page-wrapper .team-statistics-wrapper .column-8,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-8 {
+  width: 12.5%;
+}
+@media only screen and (max-width: 991px) {
+  .club-page-wrapper .fixtures-table-wrapper .column-8,
+.club-page-wrapper .club-squad-wrapper .column-8,
+.club-page-wrapper .club-top-player-wrapper .column-8,
+.club-page-wrapper .team-statistics-wrapper .column-8,
+.club-page-wrapper .club-referee-statistics-content-wrapper .column-8 {
+    min-width: 105px;
   }
 }
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .fixtures-table-wrapper,
 .club-page-wrapper .club-squad-wrapper,
-.club-page-wrapper .club-top-player-wrapper {
+.club-page-wrapper .club-top-player-wrapper,
+.club-page-wrapper .team-statistics-wrapper,
+.club-page-wrapper .club-referee-statistics-content-wrapper {
     margin-top: 20px;
   }
 }
 .club-page-wrapper .club-fixtures-table,
 .club-page-wrapper .club-squad-table,
-.club-page-wrapper .club-top-player-table {
+.club-page-wrapper .club-top-player-table,
+.club-page-wrapper .club-team-statistics-table,
+.club-page-wrapper .club-referee-statistics-statistics-table {
   width: 100%;
   height: auto;
   width: 100%;
@@ -1029,14 +1146,18 @@
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .club-fixtures-table,
 .club-page-wrapper .club-squad-table,
-.club-page-wrapper .club-top-player-table {
+.club-page-wrapper .club-top-player-table,
+.club-page-wrapper .club-team-statistics-table,
+.club-page-wrapper .club-referee-statistics-statistics-table {
     max-width: 100%;
     overflow: auto;
   }
 }
 .club-page-wrapper .club-fixtures-table .table-row,
 .club-page-wrapper .club-squad-table .table-row,
-.club-page-wrapper .club-top-player-table .table-row {
+.club-page-wrapper .club-top-player-table .table-row,
+.club-page-wrapper .club-team-statistics-table .table-row,
+.club-page-wrapper .club-referee-statistics-statistics-table .table-row {
   display: flex;
   padding: 10px 24px;
   align-items: center;
@@ -1052,18 +1173,24 @@
 @media only screen and (max-width: 991px) {
   .club-page-wrapper .club-fixtures-table .table-row,
 .club-page-wrapper .club-squad-table .table-row,
-.club-page-wrapper .club-top-player-table .table-row {
+.club-page-wrapper .club-top-player-table .table-row,
+.club-page-wrapper .club-team-statistics-table .table-row,
+.club-page-wrapper .club-referee-statistics-statistics-table .table-row {
     padding: 5px 12px;
   }
 }
 .club-page-wrapper .club-fixtures-table .table-row:hover,
 .club-page-wrapper .club-squad-table .table-row:hover,
-.club-page-wrapper .club-top-player-table .table-row:hover {
+.club-page-wrapper .club-top-player-table .table-row:hover,
+.club-page-wrapper .club-team-statistics-table .table-row:hover,
+.club-page-wrapper .club-referee-statistics-statistics-table .table-row:hover {
   background-color: #EDF2F7;
 }
 .club-page-wrapper .club-fixtures-table .table-heading,
 .club-page-wrapper .club-squad-table .table-heading,
-.club-page-wrapper .club-top-player-table .table-heading {
+.club-page-wrapper .club-top-player-table .table-heading,
+.club-page-wrapper .club-team-statistics-table .table-heading,
+.club-page-wrapper .club-referee-statistics-statistics-table .table-heading {
   color: #fff;
   background-color: #4A5568 !important;
   border-bottom: none;
@@ -1078,19 +1205,25 @@
 }
 .club-page-wrapper .club-fixtures-table .table-heading:hover,
 .club-page-wrapper .club-squad-table .table-heading:hover,
-.club-page-wrapper .club-top-player-table .table-heading:hover {
+.club-page-wrapper .club-top-player-table .table-heading:hover,
+.club-page-wrapper .club-team-statistics-table .table-heading:hover,
+.club-page-wrapper .club-referee-statistics-statistics-table .table-heading:hover {
   background-color: #4A5568 !important;
 }
 .club-page-wrapper .club-fixtures-table .tournament-info,
 .club-page-wrapper .club-squad-table .tournament-info,
-.club-page-wrapper .club-top-player-table .tournament-info {
+.club-page-wrapper .club-top-player-table .tournament-info,
+.club-page-wrapper .club-team-statistics-table .tournament-info,
+.club-page-wrapper .club-referee-statistics-statistics-table .tournament-info {
   display: flex;
   gap: 8px;
   align-items: center;
 }
 .club-page-wrapper .club-fixtures-table .tournament-info .tournament-image,
 .club-page-wrapper .club-squad-table .tournament-info .tournament-image,
-.club-page-wrapper .club-top-player-table .tournament-info .tournament-image {
+.club-page-wrapper .club-top-player-table .tournament-info .tournament-image,
+.club-page-wrapper .club-team-statistics-table .tournament-info .tournament-image,
+.club-page-wrapper .club-referee-statistics-statistics-table .tournament-info .tournament-image {
   min-width: 16px;
   max-width: 16px;
   height: 16px;
@@ -1100,7 +1233,9 @@
 }
 .club-page-wrapper .club-fixtures-table .tournament-info .tournament-name,
 .club-page-wrapper .club-squad-table .tournament-info .tournament-name,
-.club-page-wrapper .club-top-player-table .tournament-info .tournament-name {
+.club-page-wrapper .club-top-player-table .tournament-info .tournament-name,
+.club-page-wrapper .club-team-statistics-table .tournament-info .tournament-name,
+.club-page-wrapper .club-referee-statistics-statistics-table .tournament-info .tournament-name {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1109,14 +1244,18 @@
 }
 .club-page-wrapper .club-fixtures-table .list-score,
 .club-page-wrapper .club-squad-table .list-score,
-.club-page-wrapper .club-top-player-table .list-score {
+.club-page-wrapper .club-top-player-table .list-score,
+.club-page-wrapper .club-team-statistics-table .list-score,
+.club-page-wrapper .club-referee-statistics-statistics-table .list-score {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 .club-page-wrapper .club-fixtures-table .list-score .score-item,
 .club-page-wrapper .club-squad-table .list-score .score-item,
-.club-page-wrapper .club-top-player-table .list-score .score-item {
+.club-page-wrapper .club-top-player-table .list-score .score-item,
+.club-page-wrapper .club-team-statistics-table .list-score .score-item,
+.club-page-wrapper .club-referee-statistics-statistics-table .list-score .score-item {
   min-width: 28px;
   max-width: 28px;
   height: 24px;
@@ -1132,25 +1271,33 @@
 }
 .club-page-wrapper .club-fixtures-table .list-score .yellow-score,
 .club-page-wrapper .club-squad-table .list-score .yellow-score,
-.club-page-wrapper .club-top-player-table .list-score .yellow-score {
+.club-page-wrapper .club-top-player-table .list-score .yellow-score,
+.club-page-wrapper .club-team-statistics-table .list-score .yellow-score,
+.club-page-wrapper .club-referee-statistics-statistics-table .list-score .yellow-score {
   color: #000;
   background-color: #FAC712;
 }
 .club-page-wrapper .club-fixtures-table .list-score .red-score,
 .club-page-wrapper .club-squad-table .list-score .red-score,
-.club-page-wrapper .club-top-player-table .list-score .red-score {
+.club-page-wrapper .club-top-player-table .list-score .red-score,
+.club-page-wrapper .club-team-statistics-table .list-score .red-score,
+.club-page-wrapper .club-referee-statistics-statistics-table .list-score .red-score {
   color: #fff;
   background-color: #E53E3E;
 }
 .club-page-wrapper .club-fixtures-table .player-info,
 .club-page-wrapper .club-squad-table .player-info,
-.club-page-wrapper .club-top-player-table .player-info {
+.club-page-wrapper .club-top-player-table .player-info,
+.club-page-wrapper .club-team-statistics-table .player-info,
+.club-page-wrapper .club-referee-statistics-statistics-table .player-info {
   display: flex;
   gap: 24px;
 }
 .club-page-wrapper .club-fixtures-table .player-info .number,
 .club-page-wrapper .club-squad-table .player-info .number,
-.club-page-wrapper .club-top-player-table .player-info .number {
+.club-page-wrapper .club-top-player-table .player-info .number,
+.club-page-wrapper .club-team-statistics-table .player-info .number,
+.club-page-wrapper .club-referee-statistics-statistics-table .player-info .number {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1159,13 +1306,17 @@
 }
 .club-page-wrapper .club-fixtures-table .player-info .player-detail,
 .club-page-wrapper .club-squad-table .player-info .player-detail,
-.club-page-wrapper .club-top-player-table .player-info .player-detail {
+.club-page-wrapper .club-top-player-table .player-info .player-detail,
+.club-page-wrapper .club-team-statistics-table .player-info .player-detail,
+.club-page-wrapper .club-referee-statistics-statistics-table .player-info .player-detail {
   display: flex;
   gap: 8px;
 }
 .club-page-wrapper .club-fixtures-table .player-info .player-detail .flag,
 .club-page-wrapper .club-squad-table .player-info .player-detail .flag,
-.club-page-wrapper .club-top-player-table .player-info .player-detail .flag {
+.club-page-wrapper .club-top-player-table .player-info .player-detail .flag,
+.club-page-wrapper .club-team-statistics-table .player-info .player-detail .flag,
+.club-page-wrapper .club-referee-statistics-statistics-table .player-info .player-detail .flag {
   display: block;
   min-width: 16px;
   height: auto;
@@ -1176,18 +1327,24 @@
 }
 .club-page-wrapper .club-fixtures-table .player-info .player-detail a,
 .club-page-wrapper .club-squad-table .player-info .player-detail a,
-.club-page-wrapper .club-top-player-table .player-info .player-detail a {
+.club-page-wrapper .club-top-player-table .player-info .player-detail a,
+.club-page-wrapper .club-team-statistics-table .player-info .player-detail a,
+.club-page-wrapper .club-referee-statistics-statistics-table .player-info .player-detail a {
   text-decoration: none;
   color: #1A202C;
 }
 .club-page-wrapper .club-fixtures-table .player-info .player-detail a:hover,
 .club-page-wrapper .club-squad-table .player-info .player-detail a:hover,
-.club-page-wrapper .club-top-player-table .player-info .player-detail a:hover {
+.club-page-wrapper .club-top-player-table .player-info .player-detail a:hover,
+.club-page-wrapper .club-team-statistics-table .player-info .player-detail a:hover,
+.club-page-wrapper .club-referee-statistics-statistics-table .player-info .player-detail a:hover {
   text-decoration: underline;
 }
 .club-page-wrapper .club-fixtures-table .player-info .player-detail .player-name,
 .club-page-wrapper .club-squad-table .player-info .player-detail .player-name,
-.club-page-wrapper .club-top-player-table .player-info .player-detail .player-name {
+.club-page-wrapper .club-top-player-table .player-info .player-detail .player-name,
+.club-page-wrapper .club-team-statistics-table .player-info .player-detail .player-name,
+.club-page-wrapper .club-referee-statistics-statistics-table .player-info .player-detail .player-name {
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -1198,7 +1355,9 @@
 }
 .club-page-wrapper .club-fixtures-table .player-info .player-detail .player-history,
 .club-page-wrapper .club-squad-table .player-info .player-detail .player-history,
-.club-page-wrapper .club-top-player-table .player-info .player-detail .player-history {
+.club-page-wrapper .club-top-player-table .player-info .player-detail .player-history,
+.club-page-wrapper .club-team-statistics-table .player-info .player-detail .player-history,
+.club-page-wrapper .club-referee-statistics-statistics-table .player-info .player-detail .player-history {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1439,6 +1598,147 @@
   font-size: 12px;
   line-height: 18px;
   color: #718096;
+}
+.club-page-wrapper #club-team-statistics-tabs .tables-sub-nav {
+  padding-left: 24px !important;
+}
+.club-page-wrapper .team-statistics-wrapper .club-team-statistics-table .table-row:hover {
+  background-color: transparent !important;
+}
+.club-page-wrapper .team-statistics-wrapper .club-team-positional-statistics-content {
+  width: 100%;
+  padding: 20px 0px 45px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #EDF2F7;
+}
+.club-page-wrapper .team-statistics-wrapper .club-team-positional-statistics-content .club-team-positional-visual {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+@media only screen and (max-width: 991px) {
+  .club-page-wrapper .team-statistics-wrapper .club-team-positional-statistics-content .club-team-positional-visual {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.club-page-wrapper .team-statistics-wrapper .club-team-positional-statistics-content .positional-visual-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  flex-direction: column;
+}
+.club-page-wrapper .team-statistics-wrapper .club-team-positional-statistics-content .positional-visual-item .positional-visual-item-title {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+.club-page-wrapper .team-statistics-wrapper .club-team-positional-statistics-content .positional-visual-item .positional-visual-box {
+  width: 300px;
+  height: 200px;
+}
+.club-page-wrapper .team-statistics-wrapper .club-team-positional-statistics-content .positional-visual-item .positional-visual-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .filter-box {
+  width: 100%;
+  background-color: #EDF2F7;
+  padding: 8px 24px;
+}
+@media only screen and (max-width: 991px) {
+  .club-page-wrapper .club-referee-statistics-wrapper .filter-box {
+    max-width: 100vw;
+    overflow-x: scroll;
+  }
+}
+.club-page-wrapper .club-referee-statistics-wrapper .filter-box .filter-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .club-page-wrapper .club-referee-statistics-wrapper .filter-box .filter-line {
+    min-width: 1200px;
+  }
+}
+.club-page-wrapper .club-referee-statistics-wrapper .filter-box .filter-line:last-of-type {
+  margin-bottom: 0px;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .filter-box .filter-line .left-filter, .club-page-wrapper .club-referee-statistics-wrapper .filter-box .filter-line .right-filter {
+  display: flex;
+  align-items: center;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .filter-box .filter-line .filter-item {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  cursor: pointer;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .filter-box .filter-line .active {
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .filter-box .filter-line .right-filter-label {
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  margin-right: 10px;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .player-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .player-info .player-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #461A53;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .yellow-label {
+  min-width: 28px;
+  padding: 2px 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  border: none;
+  background: #FAC712;
+  border-radius: 4px;
+  display: inline-block;
+}
+.club-page-wrapper .club-referee-statistics-wrapper .red-label {
+  display: inline-block;
+  min-width: 28px;
+  padding: 2px 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  border: none;
+  background: #E53E3E;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=club.css.map */

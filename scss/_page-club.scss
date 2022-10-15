@@ -74,6 +74,49 @@
     width: 25%;
   }
 
+  .column-20 {
+    width: 20%;
+  }
+
+  .column-10 {
+    width: 10%;
+    @include mq(max_md) {
+      min-width: 120px;
+    }
+  }
+
+
+  .suggestion-wrapper {
+    margin-top: 16px;
+    display: flex;
+
+    @include mq (max_md) {
+      margin-top: 8px;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .list-suggestion {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 4px;
+      flex-direction: column;
+
+      li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #718096;
+      }
+    }
+  }
+  .column-70 {
+    width: 70%;
+  }
+
   .column-33 {
     width: calc(100% / 3);
   }
@@ -189,7 +232,7 @@
     display: flex;
     justify-content: flex-start !important;
     gap: 24px !important;
-    padding: 10px 24px 0px 10px;
+    padding: 10px 24px 0px 24px;
     background-color: #edf2f7;
     margin-bottom: 0px !important;
     border: none !important;
@@ -324,6 +367,13 @@
         border-radius: 4px !important;
         background-color: transparent;
 
+        @include mq(max_md) {
+          font-size: 12px;
+          line-height: 18px;
+          padding: 2px 4px;
+          min-width: max-content;
+        }
+
         &:hover {
           text-decoration: none;
         }
@@ -371,6 +421,19 @@
 
     .progress-bar {
       background-color: #5A67D8;
+    }
+  }
+
+  .green-process {
+    width: 100%;
+    .progress {
+      background-color: #fff !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .progress-bar {
+      background-color: #18B745;
     }
   }
 
@@ -1003,7 +1066,9 @@
 
   .fixtures-table-wrapper,
   .club-squad-wrapper,
-  .club-top-player-wrapper {
+  .club-top-player-wrapper,
+  .team-statistics-wrapper,
+  .club-referee-statistics-content-wrapper {
     margin-top: 40px;
 
     .column-30 {
@@ -1079,6 +1144,14 @@
       }
     }
 
+    .column-8 {
+      width: calc(100% / 8);
+
+      @include mq (max_md){
+        min-width: 105px;
+      }
+    }
+
     @include mq (max_md) {
       margin-top: 20px;
     }
@@ -1086,7 +1159,9 @@
 
   .club-fixtures-table,
   .club-squad-table,
-  .club-top-player-table {
+  .club-top-player-table,
+  .club-team-statistics-table,
+  .club-referee-statistics-statistics-table {
     width: 100%;
     height: auto;
 
@@ -1528,4 +1603,177 @@
   }
 
   //===========STYLE TAB 1 =========
+
+
+
+  // =========STYLE TAB 3 =========
+  #club-team-statistics-tabs {
+    .tables-sub-nav {
+      padding-left: 24px !important;
+    }
+  }
+
+  .team-statistics-wrapper {
+    .club-team-statistics-table {
+      .table-row {
+        &:hover {
+          background-color: transparent !important;;
+        }
+      }
+    }
+
+    .club-team-positional-statistics-content {
+      width: 100%;
+      padding: 20px 0px 45px 0px;
+      display: flex;
+      justify-content: center;
+      background-color: #EDF2F7;
+
+      .club-team-positional-visual {
+        display: flex;
+        align-items: center;
+        gap: 44px;
+
+        @include mq(max_md) {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+
+      .positional-visual-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        flex-direction: column;
+
+        .positional-visual-item-title {
+          font-size: 14px;
+          line-height: 21px;
+          color: #000000;
+          margin: 0;
+          padding: 0;
+        }
+        .positional-visual-box {
+          width: 300px;
+          height: 200px;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  // =========STYLE TAB 3 =========
+
+
+  // =========STYLE ATB 4 ==========
+  .club-referee-statistics-wrapper {
+
+    .filter-box {
+      width: 100%;
+      background-color: #EDF2F7;
+      padding: 8px 24px;
+
+      @include mq(max_md) {
+        max-width: 100vw;
+        overflow-x: scroll;
+      }
+      .filter-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        @include mq(max_md) {
+          min-width: 1200px;
+        }
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+
+        .left-filter, .right-filter {
+          display: flex;
+          align-items: center;
+        }
+
+        .filter-item {
+          display: inline-block;
+          padding: 4px 10px;
+          font-size: 14px;
+          line-height: 21px;
+          color: #1A202C;
+          cursor: pointer;
+        }
+
+        .active {
+          background: #FFFFFF;
+          border-radius: 4px;
+        }
+
+        .right-filter-label {
+          font-size: 14px;
+          line-height: 21px;
+          color: #1A202C;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .player-info {
+      display: flex;
+      align-items: center;
+      gap:  12px;
+
+      .player-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border: none;
+        background: #461A53;
+        border-radius: 6px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+      }
+    }
+    .yellow-label {
+      min-width: 28px;
+      padding: 2px 3px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #1A202C;
+      border: none;
+      background: #FAC712;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .red-label {
+      display: inline-block;
+      min-width: 28px;
+      padding: 2px 3px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #fff;
+      border: none;
+      background: #E53E3E;
+      border-radius: 4px;
+
+    }
+  }
+
+   // =========STYLE ATB 4 ==========
 }
