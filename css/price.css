@@ -414,8 +414,8 @@
   }
 }
 .page-price-wrapper .select-your-payment-wrapper .left-content {
-  min-width: 690px;
-  max-width: 690px;
+  min-width: 750px;
+  max-width: 750px;
 }
 @media only screen and (max-width: 991px) {
   .page-price-wrapper .select-your-payment-wrapper .left-content {
@@ -951,6 +951,427 @@
 }
 .page-price-wrapper .vpn-internaltiona-server-wrapper .btn-get-plan:focus {
   outline: none;
+}
+
+.choose-payment-type-wrapper {
+  width: 100%;
+}
+.choose-payment-type-wrapper .list-payment-type {
+  display: flex;
+  align-items: center;
+  gap: 0px 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .list-payment-type {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.choose-payment-type-wrapper li {
+  width: calc((100% - 32px) / 3);
+  height: auto;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper li {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0;
+  }
+}
+.choose-payment-type-wrapper li .icon-checked {
+  display: none;
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+.choose-payment-type-wrapper .ui-tabs-active a {
+  border: 1px solid #E34B31;
+}
+.choose-payment-type-wrapper .ui-tabs-active a .icon-checked {
+  display: block;
+}
+.choose-payment-type-wrapper .ui-tabs-active .non-efundable-tab {
+  border-bottom: none;
+  position: relative;
+  z-index: 999;
+  top: 6px;
+  left: 0;
+  border-radius: 8px 8px 0px 0px;
+  height: 90px;
+  padding-top: 0;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .ui-tabs-active .non-efundable-tab {
+    padding-top: 10px;
+    top: 0;
+    height: auto;
+  }
+}
+.choose-payment-type-wrapper .payment-type-item {
+  padding: 10px 12px 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 0px 16px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .payment-type-item {
+    padding: 10px 16px;
+    gap: 0px 16px;
+  }
+}
+.choose-payment-type-wrapper .payment-type-item:hover {
+  text-decoration: none;
+}
+.choose-payment-type-wrapper .payment-type-item .checked-box {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E0;
+  border-radius: 50%;
+  min-width: 22px;
+  max-width: 22px;
+  min-height: 22px;
+  position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .payment-type-item .checked-box {
+    margin-right: 0 !important;
+  }
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 6px;
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info .payment-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+  margin: 0;
+  padding: 0;
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info .list-payment {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info .list-payment .payment-item {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 4px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  max-height: 20px;
+  max-width: 40px;
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info .list-payment .image-payment-credit {
+  min-width: 21.67px;
+  max-width: 21.67px;
+  height: 18.33px;
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info .list-payment .image-payment-visa {
+  min-width: 30.84px;
+  max-width: 30.84px;
+  height: 10px;
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info .list-payment .image-payment-jcb {
+  min-width: 18.33px;
+  max-width: 18.33px;
+  height: 18.33px;
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info .list-payment .image-payment-union {
+  min-width: 21.33px;
+  max-width: 21.33px;
+  height: 13.33px;
+}
+.choose-payment-type-wrapper .payment-type-item .payment-info .list-payment .image-payment-paypal {
+  min-width: 16px;
+  max-width: 16px;
+  height: 16px;
+}
+.choose-payment-type-wrapper .non-efundable-content-tab {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  margin-top: 8px;
+  border: 1px solid #E34B31;
+  border-radius: 8px 0px 8px 8px;
+  padding: 24px;
+  position: relative;
+  top: -3px;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .non-efundable-content-tab {
+    padding: 0px 40px 16px 56px;
+    border-top: none;
+    margin-top: 0;
+    position: relative;
+    padding-top: 10px;
+    top: -10px;
+  }
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .non-efundable-content-tab .title {
+    margin-bottom: 8px;
+  }
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .highlight {
+  color: #E34B31;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .non-efundable-content-tab .highlight {
+    color: #1A202C;
+  }
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .list-chain {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .non-efundable-content-tab .list-chain {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .chain-item {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .non-efundable-content-tab .chain-item {
+    margin-bottom: 0 !important;
+  }
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .chain-item .chain-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .non-efundable-content-tab .chain-item .chain-title {
+    margin-bottom: 0 !important;
+  }
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .chain-item .list-chain-box {
+  display: flex;
+  align-items: center;
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .chain-item .list-chain-box .chain-box-item {
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  width: 113px;
+  height: 48px;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .chain-item .list-chain-box .chain-box-item:last-of-type {
+  margin-right: 0;
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .chain-item .list-chain-box .chain-box-item .chain-image {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .chain-item .list-chain-box .chain-box-item .chain-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+  text-transform: uppercase;
+}
+.choose-payment-type-wrapper .non-efundable-content-tab .chain-item .active {
+  border: none !important;
+  background-image: url("../images/chain-item-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.payment-table-detail {
+  width: 100%;
+  margin: 24px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .payment-table-detail {
+    margin: 16px 0px;
+  }
+}
+.payment-table-detail .table-row {
+  padding: 10px 0px;
+  border-bottom: 1px solid #EDF2F7;
+  display: flex;
+  justify-content: space-between;
+}
+.payment-table-detail .table-row .title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.payment-table-detail .table-row .value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.payment-table-detail .table-row .text-gray {
+  color: #718096;
+}
+.payment-table-detail .table-row .text-through-line {
+  text-decoration: line-through;
+}
+.payment-table-detail .table-row .text-strong {
+  font-weight: 500;
+}
+.payment-table-detail .table-row .text-green {
+  color: #18B745;
+}
+.payment-table-detail .table-row .text-total {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  text-align: right;
+  /* #E34B31 */
+  color: #E34B31;
+}
+.payment-table-detail .table-row .label {
+  display: inline-block;
+  padding: 0px 6px;
+  background: #FDC400;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #1A202C;
+}
+
+.enter-coupon-code-wrapper {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.enter-coupon-code-wrapper .title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E34B31;
+}
+.enter-coupon-code-wrapper .input-coupon-code-wrapper {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E0;
+  border-radius: 8px;
+  max-width: 306px;
+  position: relative;
+  margin: 12px 0px 8px 0px;
+}
+.enter-coupon-code-wrapper .input-coupon-code-wrapper input {
+  display: block;
+  width: 100%;
+  font-family: "Poppins";
+  padding: 10px 12px;
+  padding-right: 86px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 8px;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #1A202C;
+  cursor: pointer;
+}
+.enter-coupon-code-wrapper .input-coupon-code-wrapper input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  /* Gray:600 */
+  color: #718096;
+}
+.enter-coupon-code-wrapper .input-coupon-code-wrapper input:focus {
+  outline: none;
+}
+.enter-coupon-code-wrapper .input-coupon-code-wrapper .btn-apply {
+  background: #E34B31;
+  border-radius: 8px;
+  padding: 10px 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+.enter-coupon-code-wrapper .input-coupon-code-wrapper .btn-apply:focus {
+  outline: none;
+}
+.enter-coupon-code-wrapper .description {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #18B745;
+}
+.enter-coupon-code-wrapper .description .icon {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=price.css.map */
