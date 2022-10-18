@@ -961,10 +961,12 @@
 .choose-payment-type-wrapper .list-payment-type {
   display: flex;
   align-items: center;
-  gap: 0px 16px;
+  gap: 12px 0px;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  flex-direction: column;
 }
 @media only screen and (max-width: 991px) {
   .choose-payment-type-wrapper .list-payment-type {
@@ -973,7 +975,7 @@
   }
 }
 .choose-payment-type-wrapper li {
-  width: calc((100% - 32px) / 3);
+  width: 100%;
   height: auto;
 }
 @media only screen and (max-width: 991px) {
@@ -1002,11 +1004,8 @@
   border-bottom: none;
   position: relative;
   z-index: 999;
-  top: 6px;
   left: 0;
   border-radius: 8px 8px 0px 0px;
-  height: 90px;
-  padding-top: 0;
 }
 @media only screen and (max-width: 991px) {
   .choose-payment-type-wrapper .ui-tabs-active .non-efundable-tab {
@@ -1053,8 +1052,15 @@
 .choose-payment-type-wrapper .payment-type-item .payment-info {
   display: flex;
   flex-grow: 1;
-  flex-direction: column;
-  gap: 6px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 991px) {
+  .choose-payment-type-wrapper .payment-type-item .payment-info {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+  }
 }
 .choose-payment-type-wrapper .payment-type-item .payment-info .payment-title {
   font-weight: 500;
@@ -1110,12 +1116,11 @@
   width: 100%;
   height: auto;
   background: #FFFFFF;
-  margin-top: 8px;
   border: 1px solid #E34B31;
   border-radius: 8px 0px 8px 8px;
-  padding: 24px;
+  padding: 0px 24px 24px 56px;
   position: relative;
-  top: -3px;
+  top: -6px;
 }
 @media only screen and (max-width: 991px) {
   .choose-payment-type-wrapper .non-efundable-content-tab {

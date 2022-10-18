@@ -1064,10 +1064,12 @@
   .list-payment-type {
     display: flex;
     align-items: center;
-    gap: 0px 16px;
+    gap: 12px 0px;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
+    flex-direction: column;
 
 
     @include mq(max_md) {
@@ -1077,7 +1079,7 @@
   }
 
   li {
-    width: calc((100% - 32px) / 3);
+    width: 100%;
     height: auto;
 
     @include mq(max_md) {
@@ -1109,11 +1111,11 @@
       border-bottom: none;
       position: relative;
       z-index: 999;
-      top: 6px;
+      // top: 6px;
       left: 0;
       border-radius: 8px 8px 0px 0px;
-      height: 90px;
-      padding-top: 0;
+      // height: 90px;
+      // padding-top: 0;
 
       @include mq(max_md) {
         padding-top: 10px;
@@ -1163,9 +1165,15 @@
     .payment-info {
       display: flex;
       flex-grow: 1;
-      flex-direction: column;
-      gap: 6px;
+      flex-direction: row;
+      justify-content: space-between;
+      // gap: 6px;
 
+      @include mq(max_md) {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 6px;
+      }
       .payment-title {
         font-weight: 500;
         font-size: 16px;
@@ -1232,12 +1240,12 @@
     width: 100%;
     height: auto;
     background: #FFFFFF;
-    margin-top: 8px;
+    // margin-top: 8px;
     border: 1px solid #E34B31;
     border-radius: 8px 0px 8px 8px;
-    padding: 24px;
+    padding: 0px 24px 24px 56px;
     position: relative;
-    top: -3px;
+    top: -6px;
 
     @include mq(max_md) {
       padding: 0px 40px 16px 56px;
