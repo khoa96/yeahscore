@@ -5184,7 +5184,379 @@
                 </div>
                 <div id="sub-tab-2">
                   <!-- Team Statistics content -->
-                  Team Statistics content
+                  <h3 class="match-title">Team Characteristics</h3>
+                  <div class="list-club">
+                    <div class="column-50">
+                      <h3 class="club-name">Manchester United</h3>
+                    </div>
+                    <div class="column-50">
+                      <h3 class="club-name">Liverpool</h3>
+                    </div>
+                  </div>
+                  <div class="table-wrapper">
+                    <div class="table-heading">Strengths</div>
+                    <div class="table-content">
+                      <div class="column-50">
+                        <ul>
+                          <li>
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1402_1335)">
+                                <path d="M2.5 6.5L5 9L10 4" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1402_1335">
+                                  <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Created a high number of chances relative to their possession</span>
+                          </li>
+                          <li>
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1402_1335)">
+                                <path d="M2.5 6.5L5 9L10 4" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1402_1335">
+                                  <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Were effective at creating goalscoring opportunities through individual skill</span>
+                          </li>
+                          <li>
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1402_1335)">
+                                <path d="M2.5 6.5L5 9L10 4" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1402_1335">
+                                  <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Were effective at creating goalscoring opportunities from the flanks</span>
+                          </li>
+                          <li>
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1402_1335)">
+                                <path d="M2.5 6.5L5 9L10 4" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1402_1335">
+                                  <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Were effective at creating goalscoring opportunities from set-pieces</span>
+                          </li>
+                          <li>
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1402_1335)">
+                                <path d="M2.5 6.5L5 9L10 4" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1402_1335">
+                                  <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Were strong at finishing</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="column-50">
+                        <ul>
+                          <li>
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1402_1335)">
+                                <path d="M2.5 6.5L5 9L10 4" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1402_1335">
+                                  <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Stole the ball often from the opposition</span>
+                          </li>
+                          <li>
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1402_1335)">
+                                <path d="M2.5 6.5L5 9L10 4" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1402_1335">
+                                  <rect width="12" height="12" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Were effective at creating goalscoring opportunities from long shot situations</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-wrapper">
+                    <div class="table-heading">Weaknesses</div>
+                    <div class="table-content">
+                      <div class="column-50">
+                        <ul>
+                          <li>
+                            <span class="text-grey text-italic">Team has no significant weaknesses</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="column-50">
+                        <ul>
+                          <li>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_131_3536)">
+                                <path d="M9 3L3 9" stroke="#E34B31" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 3L9 9" stroke="#E34B31" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_131_3536">
+                                  <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Lost possession often</span>
+                          </li>
+                          <li>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_131_3536)">
+                                <path d="M9 3L3 9" stroke="#E34B31" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 3L9 9" stroke="#E34B31" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_131_3536">
+                                  <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Gave away a lot of free-kicks around the box</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-wrapper">
+                    <div class="table-heading">Weaknesses</div>
+                    <div class="table-content">
+                      <div class="column-50">
+                        <ul>
+                          <li>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_131_3529)">
+                                <rect x="4" y="4" width="4" height="4" rx="2" fill="#1A202C" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_131_3529">
+                                  <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+
+                            <span>Attacked down the right sides</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="column-50">
+                        <ul>
+                          <li>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_131_3529)">
+                                <rect x="4" y="4" width="4" height="4" rx="2" fill="#1A202C" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_131_3529">
+                                  <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <span>Attacked down the right side</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Per match Statistics -->
+                  <div class="per-match-statistics-wrapper">
+                    <h3 class="match-title">Per match Statistics</h3>
+                    <div id="per-match-statistics-tabs">
+                      <ul class="tables-main-nav">
+                        <li><a href="#tabs-1">Summary</a></li>
+                        <li><a href="#tabs-2">Offensive</a></li>
+                        <li><a href="#tabs-3">Defensive</a></li>
+                      </ul>
+                      <div id="tabs-1">
+                        <div class="filter-box">
+                          <div class="filter-line">
+                            <div class="left-filter">
+                              <span class="filter-item active">Overrall</span>
+                              <span class="filter-item">Home</span>
+                              <span class="filter-item">Away</span>
+                            </div>
+                            <div class="right-filter">
+                              <span class="filter-item active">Overrall</span>
+                              <span class="filter-item">Home</span>
+                              <span class="filter-item">Away</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="per-match-statistics-content">
+                          <div class="per-match-statistics-table">
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">
+                                  <div class="club-info">
+                                     <img src="./images/mu-club.png" alt="" class="club-image">
+                                     <span class="count-player">Played: 38</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="column-20 text-center"></div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">
+                                  <div class="club-info">
+                                  <img src="./images/mc-club.png" alt="" class="club-image">
+                                     <span class="count-player">Played: 38</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">2</div>
+                              </div>
+                              <div class="column-20 text-center">Goals</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">1</div>
+                              </div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">16</div>
+                              </div>
+                              <div class="column-20 text-center">Shots</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">12</div>
+                              </div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">2</div>
+                              </div>
+                              <div class="column-20 text-center">Yellow Cards</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">2</div>
+                              </div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">16</div>
+                              </div>
+                              <div class="column-20 text-center">Red Cards</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">12</div>
+                              </div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">5</div>
+                              </div>
+                              <div class="column-20 text-center">Corners</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">4</div>
+                              </div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">10</div>
+                              </div>
+                              <div class="column-20 text-center">Fouls</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">10</div>
+                              </div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">2</div>
+                              </div>
+                              <div class="column-20 text-center">Offisides</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">1</div>
+                              </div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">2</div>
+                              </div>
+                              <div class="column-20 text-center">Throw ins</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">1</div>
+                              </div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">45%</div>
+                              </div>
+                              <div class="column-20 text-center">Aerial Duel Success</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">45%</div>
+                              </div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">45%</div>
+                              </div>
+                              <div class="column-20 text-center">Possession</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">45%</div>
+                              </div>
+                            </div>
+
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">45%</div>
+                              </div>
+                              <div class="column-20 text-center">Pass Success %</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">45%</div>
+                              </div>
+                            </div>
+
+
+                            <div class="table-row d-flex">
+                              <div class="column-40 flex-end">
+                                <div class="table-column-content">16</div>
+                              </div>
+                              <div class="column-20 text-center">Average Rating</div>
+                              <div class="column-40 flex-start">
+                                <div class="table-column-content">12</div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div id="tabs-2">tab2</div>
+                      <div id="tabs-3">tab3</div>
+                    </div>
+                  </div>
+                  <!-- Per match Statistics -->
+
+                  <!--  -->
+
                   <!-- Team Statistics content -->
                 </div>
                 <div id="sub-tab-3">
@@ -8465,7 +8837,7 @@
                   <div class="column-50">
                     <ul>
                       <li>
-                        <span class="text-grey">Team has no significant weaknesses</span>
+                        <span class="text-grey text-italic">Team has no significant weaknesses</span>
                       </li>
                     </ul>
                   </div>
@@ -8796,6 +9168,10 @@
     })
 
     $("#head-to-head-player-statistics-summary-tabs").tabs({
+      active: 0
+    })
+
+    $("#per-match-statistics-tabs").tabs({
       active: 0
     })
 
