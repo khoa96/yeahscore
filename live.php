@@ -108,6 +108,264 @@
         </div>
       </div>
 
+         <!--Popup chưa nạp vip  https://www.youtube.com/embed/VkGzajNpNwo-->
+      <br />
+      <br />
+      <div class="play-match">
+        <div class="player-wrapper">
+          <div class="box-player">
+            <iframe
+              width="100%"
+               height="100%"
+              src="https://www.youtube.com/embed/VkGzajNpNwo"
+
+               title="YouTube video player"
+               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mask-content-wrapper">
+              <p class="description">Only VIP members can watch in full-screen and no pop-up mode</p>
+              <button class="btn-upgrade">Upgrade Account</button>
+            </div>
+          </div>
+
+          <div class="box-chat">
+            <div class="chat-header">
+              <h4 class="box-title">Chat</h4>
+              <div class="list-dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="chat-content">
+              <div class="list-message">
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat-form">
+              <div class="form-wrapper">
+                <form action="#" method="#">
+                  <input type="text" placeholder="Your comment" name="" value="">
+                </form>
+                <button class="btn-send">
+                  <img src="./images/send.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+          <div class="list-server">
+            <button class="btn-server active">Server 1</button>
+            <button class="btn-server">Server 2</button>
+            <button class="btn-server">Server 3</button>
+          </div>
+          <ul class="list-contact">
+            <li>
+              <a href="#">
+                <img src="./images/icon-facebook.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-twitter.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-share.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+          <!--Popup Trận đấu chưa bắt đầu-->
+          <br />
+      <br />
+      <div class="play-match">
+        <div class="player-wrapper">
+          <div class="box-player">
+            <iframe
+              width="100%"
+               height="100%"
+              src="https://www.youtube.com/embed/VkGzajNpNwo"
+
+               title="YouTube video player"
+               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mask-content-wrapper mask-not-start">
+              <div class="mask-content-overlay">
+                <div class="box-description">
+                  <p class="description-not-start">Purchase a package to remove popups and watch full screen</p>
+                  <button class="btn-upgrade btn-yellow">Upgrade Account</button>
+                </div>
+
+                <div class="mask-match-time">
+                  <span class="label">The match will start in</span>
+                  <div class="list-time">
+                    <div class="time-item-wrapper">
+                      <span class="time">01</span>
+                      <span class="label">Hour</span>
+                    </div>
+                    <div class="time-item-wrapper">
+                      <span class="time">43</span>
+                      <span class="label">Minute</span>
+                    </div>
+                    <div class="time-item-wrapper">
+                      <span class="time">12</span>
+                      <span class="label">Second</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-chat">
+            <div class="chat-header">
+              <h4 class="box-title">Chat</h4>
+              <div class="list-dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="chat-content">
+              <div class="list-message">
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat-form">
+              <div class="form-wrapper">
+                <form action="#" method="#">
+                  <input type="text" placeholder="Your comment" name="" value="">
+                </form>
+                <button class="btn-send">
+                  <img src="./images/send.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+          <div class="list-server">
+            <button class="btn-server active">Server 1</button>
+            <button class="btn-server">Server 2</button>
+            <button class="btn-server">Server 3</button>
+          </div>
+          <ul class="list-contact">
+            <li>
+              <a href="#">
+                <img src="./images/icon-facebook.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-twitter.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-share.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div class="container bet-wrapper">
         <div class="list-club">
           <div class="club-item">
