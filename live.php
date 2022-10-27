@@ -226,8 +226,8 @@
         </div>
       </div>
 
-          <!--Popup Trận đấu chưa bắt đầu-->
-          <br />
+      <!--Popup Trận đấu chưa bắt đầu-->
+      <br />
       <br />
       <div class="play-match">
         <div class="player-wrapper">
@@ -262,6 +262,171 @@
                       <span class="label">Second</span>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-chat">
+            <div class="chat-header">
+              <h4 class="box-title">Chat</h4>
+              <div class="list-dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="chat-content">
+              <div class="list-message">
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+                <div class="message-item">
+                  <a href="#" class="avatar">
+                    <img src="./images/avatar-user.png" alt="">
+                  </a>
+                  <p class="message-detail">We missed you so much, take care of yourself, do well in the gym, and come back as soon as possible,</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat-form">
+              <div class="form-wrapper">
+                <form action="#" method="#">
+                  <input type="text" placeholder="Your comment" name="" value="">
+                </form>
+                <button class="btn-send">
+                  <img src="./images/send.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+          <div class="list-server">
+            <button class="btn-server active">Server 1</button>
+            <button class="btn-server">Server 2</button>
+            <button class="btn-server">Server 3</button>
+          </div>
+          <ul class="list-contact">
+            <li>
+              <a href="#">
+                <img src="./images/icon-facebook.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-twitter.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/icon-share.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+       <!--Popup 10’ trc khi hết tài khoản-->
+      <br />
+      <br />
+      <div class="play-match">
+        <div class="player-wrapper">
+          <div class="box-player">
+            <iframe
+              width="100%"
+               height="100%"
+              src="https://www.youtube.com/embed/VkGzajNpNwo"
+
+               title="YouTube video player"
+               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="mask-content-wrapper mask-upcoming">
+              <div class="mask-upcoming-content">
+                <p class="upcoming-description">
+                  Your 10-minute trial period for today has expired.
+Please upgrade your account to continue watching.
+                </p>
+
+                <div class="box-upcoimg-detail">
+                  <span class="label-month">3 months</span>
+                  <span class="label-price">ONLY $6</span>
+                  <span class="label-per-month">per month</span>
+                </div>
+
+                <div class="box-upgrade">
+                  <ul>
+                    <li>
+                      <span class="icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1876_15151)">
+                        <path d="M3.33398 7.99984L6.66732 11.3332L13.334 4.6665" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1876_15151">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                      </span>
+                      <span class="label-content">High quality</span>
+                    </li>
+                    <li>
+                      <span class="icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1876_15151)">
+                        <path d="M3.33398 7.99984L6.66732 11.3332L13.334 4.6665" stroke="#18B745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1876_15151">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                      </span>
+                      <span class="label-content">Full-screen mode - No popups</span>
+                    </li>
+                  </ul>
+                    <button class="btn-upgrade">Upgrade now</button>
                 </div>
               </div>
             </div>
