@@ -5412,8 +5412,8 @@
                               <div class="column-40 flex-end">
                                 <div class="table-column-content">
                                   <div class="club-info">
-                                     <img src="./images/mu-club.png" alt="" class="club-image">
-                                     <span class="count-player">Played: 38</span>
+                                    <img src="./images/mu-club.png" alt="" class="club-image">
+                                    <span class="count-player">Played: 38</span>
                                   </div>
                                 </div>
                               </div>
@@ -5421,8 +5421,8 @@
                               <div class="column-40 flex-start">
                                 <div class="table-column-content">
                                   <div class="club-info">
-                                  <img src="./images/mc-club.png" alt="" class="club-image">
-                                     <span class="count-player">Played: 38</span>
+                                    <img src="./images/mc-club.png" alt="" class="club-image">
+                                    <span class="count-player">Played: 38</span>
                                   </div>
                                 </div>
                               </div>
@@ -5555,7 +5555,182 @@
                   </div>
                   <!-- Per match Statistics -->
 
-                  <!--  -->
+                  <!-- Situational Statistics -->
+                  <div class="situational-statistics-wrapper">
+                    <h3 class="match-title">Situational Statistics</h3>
+                    <div id="situational-statistics-tabs">
+                      <ul class="tables-main-nav">
+                        <li><a href="#tabs-1">Goal Types</a></li>
+                        <li><a href="#tabs-2">Pass Types</a></li>
+                        <li><a href="#tabs-3">Card Situations</a></li>
+                      </ul>
+                      <div id="tabs-1">
+                        <div class="filter-box">
+                          <div class="filter-line">
+                            <div class="left-filter">
+                              <span class="filter-item active">Overrall</span>
+                              <span class="filter-item">Home</span>
+                              <span class="filter-item">Away</span>
+                            </div>
+                            <div class="right-filter">
+                              <span class="filter-item active">Overrall</span>
+                              <span class="filter-item">Home</span>
+                              <span class="filter-item">Away</span>
+                            </div>
+                          </div>
+                          <div class="filter-line">
+                            <div class="left-filter">
+                              <span class="filter-item active">Scored</span>
+                              <span class="filter-item">Conceded</span>
+
+                            </div>
+                            <div class="right-filter">
+                              <span class="filter-item active">Scored</span>
+                              <span class="filter-item">Conceded</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="situational-report-content">
+                          <h4 class="content-title">Goals per Game</h4>
+                          <div class="attemp-types-table">
+                            <div class="table-heading d-flex">
+                              <div class="column-20 text-right text-score">6</div>
+                              <div class="column-60 text-center">Total</div>
+                              <div class="column-20 d-flex text-score">10</div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-20 text-right text-score">4</div>
+                              <div class="column-60 text-center">Open Play</div>
+                              <div class="column-20 text-left text-score">8</div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-20 text-right text-score">4</div>
+                              <div class="column-60 text-center">Set Piece</div>
+                              <div class="column-20 text-left text-score">6</div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-20 text-right text-score">0</div>
+                              <div class="column-60 text-center">Counter Attack</div>
+                              <div class="column-20 text-left text-score">3</div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-20 text-right text-score">0</div>
+                              <div class="column-60 text-center">Penalty</div>
+                              <div class="column-20 text-left text-score">0</div>
+                            </div>
+                            <div class="table-row d-flex">
+                              <div class="column-20 text-right text-score">0</div>
+                              <div class="column-60 text-center">Own Goal</div>
+                              <div class="column-20 text-left text-score">0</div>
+                            </div>
+                          </div>
+                          <div class="total-wrapper">
+                            <h4 class="content-title">Total</h4>
+                            <div class="compare-wrapper">
+                              <div class="compare-item d-flex">
+                                <div class="column-30 text-right">
+                                  <div class="red-process">
+                                    <div class="progress flex-end">
+                                      <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="column-40 d-flex">
+                                  <div class="column-25 text-center text-score">6</div>
+                                  <div class="column-50 text-center">Shot</div>
+                                  <div class="column-25 text-center text-score">10</div>
+                                </div>
+                                <div class="column-30 text-left">
+                                  <div class="blue-process">
+                                    <div class="progress flex-start">
+                                      <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="compare-item d-flex">
+                                <div class="column-30 text-right">
+                                  <div class="red-process">
+                                    <div class="progress flex-end">
+                                      <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="column-40 d-flex">
+                                  <div class="column-25 text-center text-score">1</div>
+                                  <div class="column-50 text-center">Goals</div>
+                                  <div class="column-25 text-center text-score">0</div>
+                                </div>
+                                <div class="column-30 text-left">
+                                  <div class="blue-process">
+                                    <div class="progress flex-start">
+                                      <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="compare-item d-flex">
+                                <div class="column-30 text-right">
+                                  <div class="red-process">
+                                    <div class="progress flex-end">
+                                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="column-40 d-flex">
+                                  <div class="column-25 text-center text-score">16%</div>
+                                  <div class="column-50 text-center">Conversion Rate</div>
+                                  <div class="column-25 text-center text-score">22%</div>
+                                </div>
+                                <div class="column-30 text-left">
+                                  <div class="blue-process">
+                                    <div class="progress flex-start">
+                                      <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="tabs-2">tab2</div>
+                      <div id="tabs-3">tab3</div>
+                    </div>
+                  </div>
+                  <!-- Situational Statistics -->
+
+                  <!--  Positional Report-->
+                  <div class="positional-report-wrapper">
+                      <h3 class="match-title">Positional Report</h3>
+                    <div id="head-to-head-positional-report-tabs">
+                      <ul class="tables-main-nav">
+                        <li><a href="#tabs-1">Attack Sides</a></li>
+                        <li><a href="#tabs-2">Shot Directions</a></li>
+                        <li><a href="#tabs-3">Shot Zones</a></li>
+                        <li><a href="#tabs-4">Action Zones</a></li>
+                        <li><a href="#tabs-5">Player Positions</a></li>
+                      </ul>
+                      <div id="tabs-1">
+                        <div class="positional-report-content">
+                          <div class="visual-match">
+                            <div class="visual-match-item">
+                              <img src="./images/position-visual-match-1.png" alt="" class="position-visual-match-image">
+                            </div>
+                            <div class="visual-match-item">
+                              <img src="./images/position-visual-match-2.png" alt="" class="position-visual-match-image">
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div id="tabs-2">tab2</div>
+                      <div id="tabs-3">tab3</div>
+                      <div id="tabs-4">tab4</div>
+                      <div id="tabs-5">tab5</div>
+                    </div>
+                  </div>
+                  <!--  Positional Report-->
+
 
                   <!-- Team Statistics content -->
                 </div>
@@ -9043,7 +9218,7 @@
               <!-- Positional Report -->
               <div class="positional-report-wrapper">
                 <h3 class="match-title">Positional Report</h3>
-                <div id="positional-report-tabs">
+                <div id="match-report-positional-report-tabs">
                   <ul class="tables-main-nav">
                     <li><a href="#tabs-1">Attack Sides</a></li>
                     <li><a href="#tabs-2">Shot Directions</a></li>
@@ -9054,8 +9229,12 @@
                   <div id="tabs-1">
                     <div class="positional-report-content">
                       <div class="visual-match">
-                        <div class="visual-matchp-item"></div>
-                        <div class="visual-matchp-item"></div>
+                        <div class="visual-match-item">
+                          <img src="./images/position-visual-match-1.png" alt="" class="position-visual-match-image">
+                        </div>
+                        <div class="visual-match-item">
+                          <img src="./images/position-visual-match-2.png" alt="" class="position-visual-match-image">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -9065,8 +9244,8 @@
                   <div id="tabs-3">
                     Shot Zones
                   </div>
-                  <div id="tabs-4">Action Zones< </div>
-                      <div id="tabs-5">Player Positions</div>
+                  <div id="tabs-4">Action Zones </div>
+                  <div id="tabs-5">Player Positions</div>
                   </div>
                 </div>
                 <!-- Positional Report -->
@@ -9090,7 +9269,7 @@
       active: 0
     })
 
-    $("#positional-report-tabs").tabs({
+    $("#match-report-positional-report-tabs").tabs({
       active: 0
     })
 
@@ -9172,6 +9351,14 @@
     })
 
     $("#per-match-statistics-tabs").tabs({
+      active: 0
+    })
+
+    $("#situational-statistics-tabs").tabs({
+      active: 0
+    })
+
+    $("#head-to-head-positional-report-tabs").tabs({
       active: 0
     })
 
