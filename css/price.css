@@ -1418,14 +1418,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 70px 0px;
+  padding: 70px 0px 65px 0px;
 }
 @media only screen and (max-width: 991px) {
   .popup__body {
     min-width: 100%;
     max-width: 100%;
     border: 5px solid #E34B31;
-    padding: 36px 0px;
+    padding: 30px 0px;
   }
 }
 
@@ -1523,6 +1523,7 @@
   max-width: 215px;
   height: auto;
   padding: 12px 0px;
+  margin-top: 12px;
   text-align: center;
   background: #E34B31;
   border-radius: 7px;
@@ -1542,6 +1543,98 @@
 }
 .btn-grap:hover {
   opacity: 0.8;
+}
+
+.popup-timer-countdown {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 32px;
+  border-top: 1px solid #E2E8F0;
+  padding-top: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .popup-timer-countdown {
+    margin-top: 8px !important;
+    max-width: 80%;
+  }
+}
+.popup-timer-countdown .label {
+  font-style: normal;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+  display: block;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .popup-timer-countdown .label {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px;
+  }
+}
+.popup-timer-countdown .list-time {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .popup-timer-countdown .list-time {
+    gap: 12px;
+  }
+}
+.popup-timer-countdown .list-time .time-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.popup-timer-countdown .list-time .time-item-wrapper .time {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  background: #461A53;
+  border-radius: 100px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 991px) {
+  .popup-timer-countdown .list-time .time-item-wrapper .time {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.popup-timer-countdown .list-time .time-item-wrapper .label {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  /* Gray:900 */
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .popup-timer-countdown {
+    margin-top: 24px;
+  }
 }
 
 /*# sourceMappingURL=price.css.map */
