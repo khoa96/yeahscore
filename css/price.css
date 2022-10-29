@@ -1552,13 +1552,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 32px;
+  margin-top: 22px;
   border-top: 1px solid #E2E8F0;
   padding-top: 12px;
 }
 @media only screen and (max-width: 991px) {
   .popup-timer-countdown {
-    margin-top: 8px !important;
     max-width: 80%;
   }
 }
