@@ -1756,12 +1756,21 @@
     align-items: center;
 
     @include mq(max_md) {
-      gap: 12px;
+      gap: 0px;
     }
 
     .time-item-wrapper {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: max-content;
+      max-width: max-content;
+
+      @include mq(max_md) {
+        min-width: 55px;
+        max-width: 55px;
+      }
 
       .time {
         display: flex;

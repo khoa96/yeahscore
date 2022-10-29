@@ -1587,12 +1587,22 @@
 }
 @media only screen and (max-width: 991px) {
   .popup-timer-countdown .list-time {
-    gap: 12px;
+    gap: 0px;
   }
 }
 .popup-timer-countdown .list-time .time-item-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: max-content;
+  max-width: max-content;
+}
+@media only screen and (max-width: 991px) {
+  .popup-timer-countdown .list-time .time-item-wrapper {
+    min-width: 55px;
+    max-width: 55px;
+  }
 }
 .popup-timer-countdown .list-time .time-item-wrapper .time {
   display: flex;
