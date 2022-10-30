@@ -70,7 +70,7 @@
                 </div>
                 <div class="row-detail">
                   <div class="column-50 text-right">Date:</div>
-                  <div class="column-50">June 22, 2022</div>
+                  <div class="column-50 max-content">June 22, 2022</div>
                 </div>
               </div>
             </div>

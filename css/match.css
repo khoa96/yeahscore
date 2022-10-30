@@ -93,6 +93,9 @@
 .match-wrapper .column-50 {
   width: 50%;
 }
+.match-wrapper .max-content {
+  min-width: max-content;
+}
 .match-wrapper .column-40 {
   width: 40%;
 }
@@ -390,6 +393,7 @@
   width: 100%;
   justify-content: center;
   list-style: none;
+  padding: 0;
 }
 .match-wrapper .match-center-sub-nav .sub-nav-item {
   border: none;
@@ -419,15 +423,10 @@
   display: block;
   width: 100%;
   height: 100%;
-  min-width: fit-content;
+  min-width: max-content;
 }
 .match-wrapper .match-center-sub-nav li a:hover {
   text-decoration: none;
-}
-@media only screen and (max-width: 991px) {
-  .match-wrapper .match-center-sub-nav li a {
-    font-size: 13px;
-  }
 }
 @media only screen and (max-width: 991px) {
   .match-wrapper .match-center-sub-nav {
@@ -523,7 +522,6 @@
 }
 .match-wrapper .match-banner .list-club .club-item:first-child {
   justify-content: flex-end;
-  margin-right: 80px;
 }
 @media only screen and (max-width: 991px) {
   .match-wrapper .match-banner .list-club .club-item:first-child {
@@ -633,11 +631,16 @@
   font-size: 32px;
   line-height: 48px;
   color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 480px;
 }
 @media only screen and (max-width: 991px) {
   .match-wrapper .match-banner .club-info .club-name {
     font-size: 14px;
     line-height: 18px;
+    max-width: 100px;
   }
 }
 .match-wrapper .match-banner .club-info .club-image {
@@ -746,6 +749,7 @@
 .match-wrapper .head-to-head-wrapper .list-club {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 .match-wrapper .match-report-wrapper .list-club .club-name,
 .match-wrapper .head-to-head-wrapper .list-club .club-name {

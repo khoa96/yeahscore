@@ -1253,6 +1253,7 @@ button,
   width: 100%;
   justify-content: center;
   list-style: none;
+  padding: 0;
 }
 .live-main-content .wrapper-content .live-sub-nav li a {
   text-decoration: none;
@@ -1265,12 +1266,7 @@ button,
   display: block;
   width: 100%;
   height: 100%;
-  min-width: fit-content;
-}
-@media only screen and (max-width: 991px) {
-  .live-main-content .wrapper-content .live-sub-nav li a {
-    font-size: 13px;
-  }
+  min-width: max-content;
 }
 @media only screen and (max-width: 991px) {
   .live-main-content .wrapper-content .live-sub-nav {
@@ -1601,7 +1597,6 @@ button,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 252px;
 }
 @media only screen and (max-width: 991px) {
   .table-1-wrapper .table-content .list-timeline .collapsible .collapse-title .date-time {
@@ -1666,6 +1661,24 @@ button,
   line-height: 21px;
   color: #1a202c;
   min-width: max-content;
+  display: block;
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .table-1-wrapper .table-content .list-timeline .collapsible .collapse-title .list-club .club-name {
+    max-width: 120px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    min-width: auto;
+  }
+}
+.table-1-wrapper .table-content .list-timeline .collapsible .collapse-title .list-club .club-name:first-of-type {
+  text-align: right;
+}
+.table-1-wrapper .table-content .list-timeline .collapsible .collapse-title .list-club .club-name:last-of-type {
+  text-align: left;
 }
 .table-1-wrapper .table-content .list-timeline .collapsible .collapse-title .list-club .list-score {
   display: flex;
@@ -1675,7 +1688,9 @@ button,
 .table-1-wrapper .table-content .list-timeline .collapsible .collapse-title .list-club .score {
   display: block;
   width: 24px;
-  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1708,7 +1723,7 @@ button,
   background-color: #f7fafc;
 }
 .table-1-wrapper .table-content .list-timeline .timeline-content .timeline-detail .empty {
-  width: 506px;
+  width: 586px;
 }
 .table-1-wrapper .table-content .list-timeline .timeline-content .timeline-detail .timeline-result {
   display: flex;

@@ -1606,7 +1606,7 @@
                             <div class="column-25 text-left">
                               <div class="tournament-info">
                                 <img src="./images/flag-match-3.png" alt="" class="tournament-image">
-                                <a href="#"><span class="tournament-name">Champions League<< /span></a>
+                                <a href="#"><span class="tournament-name">Champions League</span></a>
                               </div>
                             </div>
                             <div class="column-75 d-flex">
