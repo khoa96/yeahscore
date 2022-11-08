@@ -1305,16 +1305,20 @@
   color: #E34B31;
 }
 .enter-coupon-code-wrapper .input-coupon-code-wrapper {
-  background: #FFFFFF;
-  border: 1px solid #CBD5E0;
-  border-radius: 8px;
-  max-width: 306px;
+  width: 100%;
   position: relative;
-  margin: 12px 0px 8px 0px;
+  margin: 12px 0px 24px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 991px) {
+  .enter-coupon-code-wrapper .input-coupon-code-wrapper {
+    display: none;
+  }
 }
 .enter-coupon-code-wrapper .input-coupon-code-wrapper input {
   display: block;
-  width: 100%;
+  width: 50%;
   font-family: "Poppins";
   padding: 10px 12px;
   padding-right: 86px;
@@ -1324,10 +1328,17 @@
   font-size: 14px;
   line-height: 21px;
   border-radius: 8px;
+  border-radius: 8px;
+  background: #EDF2F7;
+  border: none;
   /* identical to box height */
   /* Gray:900 */
   color: #1A202C;
   cursor: pointer;
+  margin-right: 24px;
+}
+.enter-coupon-code-wrapper .input-coupon-code-wrapper input:last-of-type {
+  margin-right: 0;
 }
 .enter-coupon-code-wrapper .input-coupon-code-wrapper input::placeholder {
   font-style: normal;
@@ -1338,6 +1349,7 @@
   /* identical to box height */
   /* Gray:600 */
   color: #718096;
+  font-style: normal;
 }
 .enter-coupon-code-wrapper .input-coupon-code-wrapper input:focus {
   outline: none;
@@ -2014,6 +2026,145 @@
   .page-payment-wrapper .submit-wrapper .btn-submit {
     padding: 6px 0px;
   }
+}
+
+.viva-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .viva-wrapper {
+    display: none;
+  }
+}
+.viva-wrapper .label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #1A202C;
+  margin-right: 12px;
+}
+.viva-wrapper .list-viva {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.viva-wrapper .list-viva li {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+.viva-wrapper .list-viva li:last-of-type {
+  margin-right: 0;
+}
+.viva-wrapper .list-viva a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.renew-account-wrapper {
+  background: #FFFFFF;
+  /* Gray:300 */
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: flex;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .renew-account-wrapper {
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+}
+.renew-account-wrapper .icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.renew-account-wrapper .detail-box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.renew-account-wrapper .detail-box .title {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+}
+.renew-account-wrapper .detail-box .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  /* Gray:600 */
+  color: #718096;
+  margin: 2px 0px 14px;
+}
+@media only screen and (max-width: 991px) {
+  .renew-account-wrapper .detail-box .description {
+    margin: 2px 0px 16px;
+  }
+}
+.renew-account-wrapper .detail-box .list-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .renew-account-wrapper .detail-box .list-option {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.renew-account-wrapper .detail-box .list-option .option-item {
+  margin-right: 110px;
+}
+.renew-account-wrapper .detail-box .list-option .option-item:last-of-type {
+  margin: 0;
+}
+@media only screen and (max-width: 991px) {
+  .renew-account-wrapper .detail-box .list-option .option-item {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+}
+.renew-account-wrapper .detail-box .list-option .option-item label {
+  display: flex;
+  align-items: center;
+}
+.renew-account-wrapper .detail-box .list-option .option-item input {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  accent-color: #E34B31;
+}
+.renew-account-wrapper .detail-box .list-option .option-item .label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #1A202C;
 }
 
 /*# sourceMappingURL=price.css.map */
